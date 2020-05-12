@@ -1,0 +1,11 @@
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\bin\Debug\netcoreapp2.1\02.Task.deps.json
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\bin\Debug\netcoreapp2.1\02.Task.runtimeconfig.json
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\bin\Debug\netcoreapp2.1\02.Task.runtimeconfig.dev.json
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\bin\Debug\netcoreapp2.1\02.Task.dll
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\bin\Debug\netcoreapp2.1\02.Task.pdb
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\obj\Debug\netcoreapp2.1\02.Task.csprojAssemblyReference.cache
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\obj\Debug\netcoreapp2.1\02.Task.csproj.CoreCompileInputs.cache
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\obj\Debug\netcoreapp2.1\02.Task.AssemblyInfoInputs.cache
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\obj\Debug\netcoreapp2.1\02.Task.AssemblyInfo.cs
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\obj\Debug\netcoreapp2.1\02.Task.dll
+D:\SoftUni\Fundamentals module\05.Week\Wednesday\Homework\Homeworkd\02.Task\obj\Debug\netcoreapp2.1\02.Task.pdb

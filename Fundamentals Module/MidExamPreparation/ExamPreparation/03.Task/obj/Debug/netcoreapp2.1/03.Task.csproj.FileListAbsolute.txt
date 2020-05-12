@@ -1,0 +1,11 @@
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\obj\Debug\netcoreapp2.1\03.Task.csprojAssemblyReference.cache
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\obj\Debug\netcoreapp2.1\03.Task.csproj.CoreCompileInputs.cache
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\obj\Debug\netcoreapp2.1\03.Task.AssemblyInfoInputs.cache
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\obj\Debug\netcoreapp2.1\03.Task.AssemblyInfo.cs
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\bin\Debug\netcoreapp2.1\03.Task.deps.json
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\bin\Debug\netcoreapp2.1\03.Task.runtimeconfig.json
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\bin\Debug\netcoreapp2.1\03.Task.runtimeconfig.dev.json
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\bin\Debug\netcoreapp2.1\03.Task.dll
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\bin\Debug\netcoreapp2.1\03.Task.pdb
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\obj\Debug\netcoreapp2.1\03.Task.dll
+D:\SoftUni\ExamPreparation\ExamPreparation\03.Task\obj\Debug\netcoreapp2.1\03.Task.pdb

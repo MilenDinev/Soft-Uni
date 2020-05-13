@@ -1,0 +1,11 @@
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\obj\Debug\netcoreapp3.0\01.Vehicles.csprojAssemblyReference.cache
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\obj\Debug\netcoreapp3.0\01.Vehicles.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\obj\Debug\netcoreapp3.0\01.Vehicles.AssemblyInfo.cs
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\bin\Debug\netcoreapp3.0\01.Vehicles.exe
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\bin\Debug\netcoreapp3.0\01.Vehicles.deps.json
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\bin\Debug\netcoreapp3.0\01.Vehicles.runtimeconfig.json
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\bin\Debug\netcoreapp3.0\01.Vehicles.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\bin\Debug\netcoreapp3.0\01.Vehicles.dll
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\bin\Debug\netcoreapp3.0\01.Vehicles.pdb
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\obj\Debug\netcoreapp3.0\01.Vehicles.dll
+D:\SoftUni\Advanced module\OOP\05.Polymorphism\Exercises\Homework\01.Vehicles\obj\Debug\netcoreapp3.0\01.Vehicles.pdb

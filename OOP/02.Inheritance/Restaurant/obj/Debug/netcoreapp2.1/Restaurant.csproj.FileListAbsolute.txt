@@ -1,0 +1,10 @@
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.AssemblyInfo.cs
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.deps.json
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.runtimeconfig.json
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.dll
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.pdb
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.dll
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.pdb
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.csprojAssemblyReference.cache

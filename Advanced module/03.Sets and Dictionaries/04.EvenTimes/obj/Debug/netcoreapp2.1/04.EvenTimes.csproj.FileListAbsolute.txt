@@ -1,0 +1,10 @@
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\bin\Debug\netcoreapp2.1\04.EvenTimes.deps.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\bin\Debug\netcoreapp2.1\04.EvenTimes.runtimeconfig.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\bin\Debug\netcoreapp2.1\04.EvenTimes.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\bin\Debug\netcoreapp2.1\04.EvenTimes.dll
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\bin\Debug\netcoreapp2.1\04.EvenTimes.pdb
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\obj\Debug\netcoreapp2.1\04.EvenTimes.csproj.CoreCompileInputs.cache
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\obj\Debug\netcoreapp2.1\04.EvenTimes.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\obj\Debug\netcoreapp2.1\04.EvenTimes.AssemblyInfo.cs
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\obj\Debug\netcoreapp2.1\04.EvenTimes.dll
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\04.EvenTimes\obj\Debug\netcoreapp2.1\04.EvenTimes.pdb

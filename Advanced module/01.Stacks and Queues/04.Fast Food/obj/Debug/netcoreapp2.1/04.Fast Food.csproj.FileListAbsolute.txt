@@ -1,0 +1,10 @@
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\bin\Debug\netcoreapp2.1\04.Fast Food.deps.json
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\bin\Debug\netcoreapp2.1\04.Fast Food.runtimeconfig.json
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\bin\Debug\netcoreapp2.1\04.Fast Food.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\bin\Debug\netcoreapp2.1\04.Fast Food.dll
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\bin\Debug\netcoreapp2.1\04.Fast Food.pdb
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\obj\Debug\netcoreapp2.1\04.Fast Food.csproj.CoreCompileInputs.cache
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\obj\Debug\netcoreapp2.1\04.Fast Food.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\obj\Debug\netcoreapp2.1\04.Fast Food.AssemblyInfo.cs
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\obj\Debug\netcoreapp2.1\04.Fast Food.dll
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\04.Fast Food\obj\Debug\netcoreapp2.1\04.Fast Food.pdb

@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SoftUni\\Advanced module\\OOP\\01.Working With Abstraction\\Exercises\\Homework\\02.CarsSalesman\\02.CarsSalesman.csproj": {}
+  },
+  "projects": {
+    "D:\\SoftUni\\Advanced module\\OOP\\01.Working With Abstraction\\Exercises\\Homework\\02.CarsSalesman\\02.CarsSalesman.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SoftUni\\Advanced module\\OOP\\01.Working With Abstraction\\Exercises\\Homework\\02.CarsSalesman\\02.CarsSalesman.csproj",
+        "projectName": "02.CarsSalesman",
+        "projectPath": "D:\\SoftUni\\Advanced module\\OOP\\01.Working With Abstraction\\Exercises\\Homework\\02.CarsSalesman\\02.CarsSalesman.csproj",
+        "packagesPath": "C:\\Users\\dinev\\.nuget\\packages\\",
+        "outputPath": "D:\\SoftUni\\Advanced module\\OOP\\01.Working With Abstraction\\Exercises\\Homework\\02.CarsSalesman\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dinev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

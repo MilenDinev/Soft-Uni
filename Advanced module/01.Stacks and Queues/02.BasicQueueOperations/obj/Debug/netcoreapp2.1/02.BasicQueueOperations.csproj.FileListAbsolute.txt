@@ -1,0 +1,22 @@
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.deps.json
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.runtimeconfig.json
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.dll
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.pdb
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.csproj.CoreCompileInputs.cache
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.AssemblyInfo.cs
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.dll
+D:\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.deps.json
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.runtimeconfig.json
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.runtimeconfig.dev.json
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.dll
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\bin\Debug\netcoreapp2.1\02.BasicQueueOperations.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.csprojAssemblyReference.cache
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.AssemblyInfo.cs
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.dll
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\02.BasicQueueOperations\obj\Debug\netcoreapp2.1\02.BasicQueueOperations.genruntimeconfig.cache

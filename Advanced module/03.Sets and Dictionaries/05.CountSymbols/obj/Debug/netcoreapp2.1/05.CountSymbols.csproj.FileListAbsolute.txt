@@ -1,0 +1,10 @@
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\bin\Debug\netcoreapp2.1\05.CountSymbols.deps.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\bin\Debug\netcoreapp2.1\05.CountSymbols.runtimeconfig.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\bin\Debug\netcoreapp2.1\05.CountSymbols.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\bin\Debug\netcoreapp2.1\05.CountSymbols.dll
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\bin\Debug\netcoreapp2.1\05.CountSymbols.pdb
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\obj\Debug\netcoreapp2.1\05.CountSymbols.csproj.CoreCompileInputs.cache
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\obj\Debug\netcoreapp2.1\05.CountSymbols.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\obj\Debug\netcoreapp2.1\05.CountSymbols.AssemblyInfo.cs
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\obj\Debug\netcoreapp2.1\05.CountSymbols.dll
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\05.CountSymbols\obj\Debug\netcoreapp2.1\05.CountSymbols.pdb

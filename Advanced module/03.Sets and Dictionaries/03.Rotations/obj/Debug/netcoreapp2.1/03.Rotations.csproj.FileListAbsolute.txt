@@ -1,0 +1,10 @@
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\bin\Debug\netcoreapp2.1\03.Rotations.deps.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\bin\Debug\netcoreapp2.1\03.Rotations.runtimeconfig.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\bin\Debug\netcoreapp2.1\03.Rotations.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\bin\Debug\netcoreapp2.1\03.Rotations.dll
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\bin\Debug\netcoreapp2.1\03.Rotations.pdb
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\obj\Debug\netcoreapp2.1\03.Rotations.csproj.CoreCompileInputs.cache
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\obj\Debug\netcoreapp2.1\03.Rotations.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\obj\Debug\netcoreapp2.1\03.Rotations.AssemblyInfo.cs
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\obj\Debug\netcoreapp2.1\03.Rotations.dll
+D:\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\03.Rotations\obj\Debug\netcoreapp2.1\03.Rotations.pdb

@@ -1,0 +1,10 @@
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\bin\Debug\netcoreapp2.1\01.Person.deps.json
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\bin\Debug\netcoreapp2.1\01.Person.runtimeconfig.json
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\bin\Debug\netcoreapp2.1\01.Person.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\bin\Debug\netcoreapp2.1\01.Person.dll
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\bin\Debug\netcoreapp2.1\01.Person.pdb
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\obj\Debug\netcoreapp2.1\01.Person.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\obj\Debug\netcoreapp2.1\01.Person.AssemblyInfo.cs
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\obj\Debug\netcoreapp2.1\01.Person.dll
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\obj\Debug\netcoreapp2.1\01.Person.pdb
+D:\SoftUni\Advanced module\OOP\02.Inheritance\Exercises\Homework\01.Person\obj\Debug\netcoreapp2.1\01.Person.csprojAssemblyReference.cache

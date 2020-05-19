@@ -1,2 +1,6 @@
 # Soft-Uni
-Software University Courses
+Software University Courses:
+
+Fundamentals Module
+Advanced Module
+OOP module

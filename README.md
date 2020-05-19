@@ -1,6 +1,6 @@
 # Soft-Uni
 Software University Courses:
 
-Fundamentals Module
+\n Fundamentals Module
 Advanced Module
 OOP module

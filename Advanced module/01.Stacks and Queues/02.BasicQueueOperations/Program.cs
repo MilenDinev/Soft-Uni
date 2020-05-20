@@ -9,9 +9,6 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            var input = Console.ReadLine().Split().ToString();
-            Console.WriteLine(input);
-
             int[] numbersArgs = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
             int n = numbersArgs[0];

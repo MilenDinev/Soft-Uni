@@ -1,0 +1,12 @@
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\bin\Debug\netcoreapp2.1\09.SimpleTextEditor.deps.json
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\bin\Debug\netcoreapp2.1\09.SimpleTextEditor.runtimeconfig.json
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\bin\Debug\netcoreapp2.1\09.SimpleTextEditor.runtimeconfig.dev.json
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\bin\Debug\netcoreapp2.1\09.SimpleTextEditor.dll
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\bin\Debug\netcoreapp2.1\09.SimpleTextEditor.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.csprojAssemblyReference.cache
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.AssemblyInfo.cs
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.dll
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\01.Stacks and Queues\Exercises\Exercises\09.SimpleTextEditor\obj\Debug\netcoreapp2.1\09.SimpleTextEditor.genruntimeconfig.cache

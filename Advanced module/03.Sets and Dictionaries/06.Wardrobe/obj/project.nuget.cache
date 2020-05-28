@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "VoA7SrDy2tWloZXFRJlSPQxr7wk5pzcaYZPERMxDgBolJeKhtjcy7uFGFgSsWdk1IizIq9zVghumk0FoDOhuuA==",
+  "success": true,
+  "projectFilePath": "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\03.Sets and Dictionaries\\Homework\\Sets And Dictionaries Advanced\\06.Wardrobe\\06.Wardrobe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

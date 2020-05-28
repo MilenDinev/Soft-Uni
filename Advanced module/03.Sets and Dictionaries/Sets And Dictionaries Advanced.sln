@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.UniqueUsernames", "01.UniqueUsernames\01.UniqueUsernames.csproj", "{9FE74C3D-6D44-4C0F-8CD4-9260C900891C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.UniqueUsernames", "01.UniqueUsernames\01.UniqueUsernames.csproj", "{9FE74C3D-6D44-4C0F-8CD4-9260C900891C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SetsOfElements", "02.SetsOfElements\02.SetsOfElements.csproj", "{3442C016-0D5C-4D11-ABC8-3346BBFDD081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.SetsOfElements", "02.SetsOfElements\02.SetsOfElements.csproj", "{3442C016-0D5C-4D11-ABC8-3346BBFDD081}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Rotations", "03.Rotations\03.Rotations.csproj", "{33802576-5D51-4CDF-9727-D5EBC1C6B2D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Rotations", "03.Rotations\03.Rotations.csproj", "{33802576-5D51-4CDF-9727-D5EBC1C6B2D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.EvenTimes", "04.EvenTimes\04.EvenTimes.csproj", "{52B91DD8-9DE6-4555-A6DA-F428276E19DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.EvenTimes", "04.EvenTimes\04.EvenTimes.csproj", "{52B91DD8-9DE6-4555-A6DA-F428276E19DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.CountSymbols", "05.CountSymbols\05.CountSymbols.csproj", "{56EF4DAF-C9FA-4773-B9A9-B8AEAAD68EA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.CountSymbols", "05.CountSymbols\05.CountSymbols.csproj", "{56EF4DAF-C9FA-4773-B9A9-B8AEAAD68EA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Wardrobe", "06.Wardrobe\06.Wardrobe.csproj", "{B0AF9FBF-276E-45BA-B948-35626232C727}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Wardrobe", "06.Wardrobe\06.Wardrobe.csproj", "{B0AF9FBF-276E-45BA-B948-35626232C727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.TheVLogger", "07.TheVLogger\07.TheVLogger.csproj", "{D3A5E8DE-C6A9-4F23-B47D-C203DC5E0A5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B0AF9FBF-276E-45BA-B948-35626232C727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0AF9FBF-276E-45BA-B948-35626232C727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0AF9FBF-276E-45BA-B948-35626232C727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A5E8DE-C6A9-4F23-B47D-C203DC5E0A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A5E8DE-C6A9-4F23-B47D-C203DC5E0A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A5E8DE-C6A9-4F23-B47D-C203DC5E0A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A5E8DE-C6A9-4F23-B47D-C203DC5E0A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\bin\Debug\netcoreapp3.1\07.TheVLogger.exe
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\bin\Debug\netcoreapp3.1\07.TheVLogger.deps.json
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\bin\Debug\netcoreapp3.1\07.TheVLogger.runtimeconfig.json
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\bin\Debug\netcoreapp3.1\07.TheVLogger.runtimeconfig.dev.json
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\bin\Debug\netcoreapp3.1\07.TheVLogger.dll
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\bin\Debug\netcoreapp3.1\07.TheVLogger.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.csprojAssemblyReference.cache
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.AssemblyInfo.cs
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.dll
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\07.TheVLogger\obj\Debug\netcoreapp3.1\07.TheVLogger.genruntimeconfig.cache

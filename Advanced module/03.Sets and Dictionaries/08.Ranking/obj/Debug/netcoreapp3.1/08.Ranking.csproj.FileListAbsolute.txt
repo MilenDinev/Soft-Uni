@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\bin\Debug\netcoreapp3.1\08.Ranking.exe
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\bin\Debug\netcoreapp3.1\08.Ranking.deps.json
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\bin\Debug\netcoreapp3.1\08.Ranking.runtimeconfig.json
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\bin\Debug\netcoreapp3.1\08.Ranking.runtimeconfig.dev.json
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\bin\Debug\netcoreapp3.1\08.Ranking.dll
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\bin\Debug\netcoreapp3.1\08.Ranking.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.csprojAssemblyReference.cache
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.AssemblyInfo.cs
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.dll
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\03.Sets and Dictionaries\Homework\Sets And Dictionaries Advanced\08.Ranking\obj\Debug\netcoreapp3.1\08.Ranking.genruntimeconfig.cache

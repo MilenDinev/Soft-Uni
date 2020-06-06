@@ -1,0 +1,23 @@
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.deps.json
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.runtimeconfig.json
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.runtimeconfig.dev.json
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.dll
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.pdb
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.csprojAssemblyReference.cache
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.csproj.CoreCompileInputs.cache
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.AssemblyInfoInputs.cache
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.AssemblyInfo.cs
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.dll
+D:\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.deps.json
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.runtimeconfig.json
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.runtimeconfig.dev.json
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.dll
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\bin\Debug\netcoreapp2.1\02.CarExtension.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.csprojAssemblyReference.cache
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.AssemblyInfo.cs
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.dll
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.pdb
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\02.CarExtension\obj\Debug\netcoreapp2.1\02.CarExtension.genruntimeconfig.cache

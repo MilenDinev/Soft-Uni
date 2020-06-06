@@ -1,0 +1,4 @@
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\04.CarEngineAndTires\obj\Debug\netcoreapp2.1\04.CarEngineAndTires.csprojAssemblyReference.cache
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\04.CarEngineAndTires\obj\Debug\netcoreapp2.1\04.CarEngineAndTires.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\04.CarEngineAndTires\obj\Debug\netcoreapp2.1\04.CarEngineAndTires.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\Advanced module\Advanced\06.Defining Classes\Lecture\Lab\04.CarEngineAndTires\obj\Debug\netcoreapp2.1\04.CarEngineAndTires.AssemblyInfo.cs

@@ -7,10 +7,6 @@ namespace DefiningClasses
     {
         private List<Person> people = new List<Person>();
 
-        public Family()
-        {
-            this.people = new List<Person>();
-        }
 
         public void AddMember(Person person)
         {

@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace DefiningClasses
 {
-    class Startup
+   public  class Startup
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             List<Person> people = new List<Person>();
 

@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _01.RawData
+﻿namespace _01.RawData
 {
-    public class Engine
+   public class Engine
     {
-        public int Speed { get; set; }
-        public int Power { get; set; }
-
-        public Engine(int speed, int power)
+        public Engine(int engineSpeed, int enginePower)
         {
-            this.Speed = speed;
-            this.Power = power;
+            this.Speed = engineSpeed;
+            this.Power = enginePower;
         }
+
+        public int Speed { get; private set; }
+        public int Power { get; private set; }
     }
 }

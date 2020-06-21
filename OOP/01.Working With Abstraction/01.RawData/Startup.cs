@@ -1,47 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿namespace _01.RawData
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
-namespace _01.RawData
-{ 
-    public class Startup
+
+    class RawData
     {
-       public  static void Main(string[] args)
+        static void Main(string[] args)
         {
-            List<Car> cars = new List<Car>();
-            Command print= new Command();
 
-            int lines = int.Parse(Console.ReadLine());
+            int counter = int.Parse(Console.ReadLine());
+            CarFabric fabric = new CarFabric();
+            List<Car> cars = new List<Car>(fabric.Build(counter));
 
+            string cargoType = Console.ReadLine();
 
-            for (int i = 0; i < lines; i++)
+            if (cargoType == "fragile")
             {
-                string[] parameters = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                string model = parameters[0];
-                int engineSpeed = int.Parse(parameters[1]);
-                int enginePower = int.Parse(parameters[2]);
-
-                int cargoWeight = int.Parse(parameters[3]);
-                string cargoType = parameters[4];
-               
-                Tire[] tires = new Tire[4];
-
-                foreach (var car in cars)
-                {
-                    car.GetTires(tires, parameters);
-                }
-
-                Cargo cargo = new Cargo(cargoWeight, cargoType);
-                Engine engine = new Engine(engineSpeed, enginePower);
-
-
-                cars.Add(new Car(model, engine, cargo, tires));
+                cars.Where(x => x.Cargo.Type == "fragile" && x.Tires.Any(p => p.Pressure < 1.0)).ToList().ForEach(x => Console.WriteLine(x.Model));
             }
 
-            string command = Console.ReadLine();
-            print.Info(command, cars);
+
+            else if (cargoType == "flamable")
+            {
+                cars.Where(x => x.Cargo.Type == "flamable" && x.Engine.Power > 250).ToList().ForEach(x => Console.WriteLine(x.Model));
+            }
         }
-
-
     }
 }

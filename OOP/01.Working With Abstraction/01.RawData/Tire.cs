@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _01.RawData
+﻿namespace _01.RawData
 {
     public class Tire
     {
@@ -12,9 +8,8 @@ namespace _01.RawData
             this.Age = age;
         }
 
-        public double Pressure { get; set; }
-
-        public int Age { get; set; }
-
-    }   
+        public double Pressure { get; private set; }
+        public int Age { get; private set; }
+    };
 }
+

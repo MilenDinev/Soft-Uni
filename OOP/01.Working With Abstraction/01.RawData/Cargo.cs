@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _01.RawData
+﻿namespace _01.RawData
 {
     public class Cargo
     {
-        public Cargo(int weight, string type)
+        public Cargo(int cargoWeight, string cargoType)
         {
-            this.Weight = weight;
-            this.Type = type;
+            this.Weight = cargoWeight;
+            this.Type = cargoType;
         }
 
         public int Weight { get; private set; }
+
         public string Type { get; private set; }
     }
 }

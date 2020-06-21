@@ -14,7 +14,7 @@
 
             int carCount = int.Parse(Console.ReadLine());
             CarConstructor carConstructor = new CarConstructor();
-            List<Car> cars = new List<Car>(carConstructor.Build(engineCount, engines));
+            List<Car> cars = new List<Car>(carConstructor.Build(carCount, engines));
 
 
             foreach (var car in cars)

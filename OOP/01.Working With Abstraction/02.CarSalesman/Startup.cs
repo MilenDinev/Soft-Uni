@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace _02.CarSalesman
+﻿namespace _02.CarSalesman
 {
- 
-   
-    public class CarSalesman
+    using System;
+    using System.Collections.Generic;
+
+    public class Startup
     {
         static void Main(string[] args)
         {

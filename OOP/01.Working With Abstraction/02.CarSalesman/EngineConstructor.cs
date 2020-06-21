@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _02.CarSalesman
+﻿namespace _02.CarSalesman
 {
+    using System;
+    using System.Collections.Generic;
+
     public class EngineConstructor
     {
         private List<Engine> engines = new List<Engine>();
-      public List<Engine> Build(int engineCount)
+        public List<Engine> Build(int engineCount)
         {
             for (int i = 0; i < engineCount; i++)
             {

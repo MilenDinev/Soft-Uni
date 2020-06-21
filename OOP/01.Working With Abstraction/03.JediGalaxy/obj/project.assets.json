@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\02.CarSalesman\\02.CarSalesman.csproj",
-      "projectName": "02.CarSalesman",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\02.CarSalesman\\02.CarSalesman.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\03.JediGalaxy\\03.JediGalaxy.csproj",
+      "projectName": "03.JediGalaxy",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\03.JediGalaxy\\03.JediGalaxy.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\02.CarSalesman\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\03.JediGalaxy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",

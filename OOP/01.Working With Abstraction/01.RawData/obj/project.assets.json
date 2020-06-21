@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\Exercises\\01.RawData\\01.RawData.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\01.RawData\\01.RawData.csproj",
       "projectName": "01.RawData",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\Exercises\\01.RawData\\01.RawData.csproj",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\01.RawData\\01.RawData.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\Exercises\\01.RawData\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\01.RawData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",

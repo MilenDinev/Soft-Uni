@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.RawData", "01.RawData\01.RawData.csproj", "{20D505C7-E2D4-42B1-A85B-0E5766A82CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CarSalesman", "02.CarSalesman\02.CarSalesman.csproj", "{3BEA1804-EE69-4731-B0F4-3ACD357456BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.CarSalesman", "02.CarSalesman\02.CarSalesman.csproj", "{3BEA1804-EE69-4731-B0F4-3ACD357456BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.JediGalaxy", "03.JediGalaxy\03.JediGalaxy.csproj", "{FA19184C-03BE-4A5B-90AA-B2F9CC935E4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3BEA1804-EE69-4731-B0F4-3ACD357456BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BEA1804-EE69-4731-B0F4-3ACD357456BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BEA1804-EE69-4731-B0F4-3ACD357456BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA19184C-03BE-4A5B-90AA-B2F9CC935E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA19184C-03BE-4A5B-90AA-B2F9CC935E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA19184C-03BE-4A5B-90AA-B2F9CC935E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA19184C-03BE-4A5B-90AA-B2F9CC935E4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

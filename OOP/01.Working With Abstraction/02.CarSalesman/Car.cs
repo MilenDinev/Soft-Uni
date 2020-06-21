@@ -5,10 +5,12 @@
     {
         private const string offset = "  ";
 
-
         public string Model { get; private set; }
+
         public Engine Engine { get; private set; }
+
         public int Weight { get; private set; }
+
         public string Color { get; private set; }
 
         public Car(string model, Engine engine)

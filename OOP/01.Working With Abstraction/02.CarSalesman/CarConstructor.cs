@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace _02.CarSalesman
+﻿namespace _02.CarSalesman
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class CarConstructor
     {
-
-
         public List<Car> Build(int carCount, List<Engine> engines)
         {
             List<Car> cars = new List<Car>();
@@ -39,7 +36,6 @@ namespace _02.CarSalesman
                 else
                 {
                     cars.Add(new Car(model, engine));
-                    
                 }
             }
 

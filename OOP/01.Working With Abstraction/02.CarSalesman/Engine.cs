@@ -1,14 +1,17 @@
-﻿using System.Text;
-
-namespace _02.CarSalesman
+﻿namespace _02.CarSalesman
 {
+    using System.Text;
+
     public class Engine
     {
         private const string offset = "  ";
 
         public string Model { get; private set; }
+
         public int Power { get; private set; }
+
         public int Displacement { get; private set; }
+
         public string Efficiency { get; private set; }
 
         public Engine(string model, int power)
@@ -38,8 +41,6 @@ namespace _02.CarSalesman
             this.Displacement = displacement;
             this.Efficiency = efficiency;
         }
-
-
 
         public override string ToString()
         {

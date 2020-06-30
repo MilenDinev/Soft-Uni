@@ -76,7 +76,7 @@
                     Console.WriteLine(string.Join("\n", doctors[args[0] + args[1]].OrderBy(x => x)));
                 }
 
-                command = Console.ReadLine();
+                command = Console.ReadLine(); 
             }
         }
     }

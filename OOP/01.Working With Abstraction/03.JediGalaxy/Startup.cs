@@ -5,7 +5,7 @@ namespace _03.JediGalaxy
 {
     public class Startup
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] dimestions = Console.ReadLine().Split((' '), StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
             int x = dimestions[0];

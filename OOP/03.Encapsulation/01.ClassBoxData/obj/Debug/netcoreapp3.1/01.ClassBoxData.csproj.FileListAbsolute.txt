@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\bin\Debug\netcoreapp3.1\01.ClassBoxData.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\bin\Debug\netcoreapp3.1\01.ClassBoxData.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\bin\Debug\netcoreapp3.1\01.ClassBoxData.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\bin\Debug\netcoreapp3.1\01.ClassBoxData.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\bin\Debug\netcoreapp3.1\01.ClassBoxData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\bin\Debug\netcoreapp3.1\01.ClassBoxData.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\01.ClassBoxData\obj\Debug\netcoreapp3.1\01.ClassBoxData.genruntimeconfig.cache

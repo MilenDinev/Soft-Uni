@@ -5,7 +5,7 @@
 
     public class Startup
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int engineCount = int.Parse(Console.ReadLine());
             EngineConstructor engineConstructor = new EngineConstructor();
@@ -15,7 +15,6 @@
             int carCount = int.Parse(Console.ReadLine());
             CarConstructor carConstructor = new CarConstructor();
             List<Car> cars = new List<Car>(carConstructor.Build(carCount, engines));
-
 
             foreach (var car in cars)
             {

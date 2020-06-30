@@ -9,6 +9,7 @@
         }
 
         public int Speed { get; private set; }
+
         public int Power { get; private set; }
     }
 }

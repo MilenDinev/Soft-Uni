@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\bin\Debug\netcoreapp3.1\03.ShoppingSpree.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\bin\Debug\netcoreapp3.1\03.ShoppingSpree.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\bin\Debug\netcoreapp3.1\03.ShoppingSpree.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\bin\Debug\netcoreapp3.1\03.ShoppingSpree.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\bin\Debug\netcoreapp3.1\03.ShoppingSpree.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\bin\Debug\netcoreapp3.1\03.ShoppingSpree.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\03.Encapsulation\03.ShoppingSpree\obj\Debug\netcoreapp3.1\03.ShoppingSpree.genruntimeconfig.cache

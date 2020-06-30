@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace _01.RawData
+﻿namespace _01.RawData
 {
-   public class CarFabric
-    {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
-        public List<Car> Build (int  counter)
+    public class CarFabric
+    {
+        public List<Car> Build(int counter)
         {
             List<Car> cars = new List<Car>();
             for (int i = 0; i < counter; i++)
@@ -16,13 +14,8 @@ namespace _01.RawData
                 string[] inputArgs = Console.ReadLine().Split().ToArray();
 
                 string carModel = inputArgs[0];
-
-
                 int engineSpeed = int.Parse(inputArgs[1]);
                 int enginePower = int.Parse(inputArgs[2]);
-
-
-
                 int cargoWeight = int.Parse(inputArgs[3]);
                 string type = inputArgs[4];
 

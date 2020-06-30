@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
         "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\01.Working With Abstraction\\01.RawData\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

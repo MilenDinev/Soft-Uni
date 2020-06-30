@@ -5,7 +5,8 @@
 
     public class EngineConstructor
     {
-        private List<Engine> engines = new List<Engine>();
+        readonly List<Engine> engines = new List<Engine>();
+
         public List<Engine> Build(int engineCount)
         {
             for (int i = 0; i < engineCount; i++)
@@ -14,29 +15,27 @@
                 string model = inputArgs[0];
                 int power = int.Parse(inputArgs[1]);
 
-                int displacement = -1;
-
-                if (inputArgs.Length == 3 && int.TryParse(inputArgs[2], out displacement))
+                if (inputArgs.Length == 3 && int.TryParse(inputArgs[2], out int displacement))
                 {
-                    engines.Add(new Engine(model, power, displacement));
+                    this.engines.Add(new Engine(model, power, displacement));
                 }
                 else if (inputArgs.Length == 3)
                 {
                     string efficiency = inputArgs[2];
-                    engines.Add(new Engine(model, power, efficiency));
+                    this.engines.Add(new Engine(model, power, efficiency));
                 }
                 else if (inputArgs.Length == 4)
                 {
                     string efficiency = inputArgs[3];
-                    engines.Add(new Engine(model, power, int.Parse(inputArgs[2]), efficiency));
+                    this.engines.Add(new Engine(model, power, int.Parse(inputArgs[2]), efficiency));
                 }
                 else
                 {
-                    engines.Add(new Engine(model, power));
+                    this.engines.Add(new Engine(model, power));
                 }
             }
 
-            return engines;
+            return this.engines;
         }
     }
 }

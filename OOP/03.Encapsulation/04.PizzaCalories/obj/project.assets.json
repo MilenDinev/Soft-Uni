@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\02.AnimalFarm\\02.AnimalFarm.csproj",
-      "projectName": "02.AnimalFarm",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\02.AnimalFarm\\02.AnimalFarm.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\04.PizzaCalories.csproj",
+      "projectName": "04.PizzaCalories",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\04.PizzaCalories.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\02.AnimalFarm\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

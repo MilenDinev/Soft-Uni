@@ -4,7 +4,6 @@
     {
         public Mammal(string name) : base(name)
         {
-
         }
     }
 }

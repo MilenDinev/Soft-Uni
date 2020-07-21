@@ -4,7 +4,6 @@
     {
         public Bear(string name) : base(name)
         {
-
         }
     }
 }

@@ -4,7 +4,6 @@
     {
         public Snake(string name) : base(name)
         {
-            
         }
     }
 }

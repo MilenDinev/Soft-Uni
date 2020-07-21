@@ -1,11 +1,12 @@
-﻿using System;
-namespace Zoo
+﻿namespace Zoo
 {
+    using System;
+
     public class StartUp
     {
-        private static void Main()
+        static void Main()
         {
-            Animal animal = new Animal("Pesho");
+            
         }
     }
 }

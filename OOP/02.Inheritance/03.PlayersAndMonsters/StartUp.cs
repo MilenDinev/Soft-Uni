@@ -1,14 +1,13 @@
-﻿using System;
-
-namespace PlayersAndMonsters
+﻿namespace PlayersAndMonsters
 {
+    using System;
     public class StartUp
     {
         static void Main(string[] args)
         {
-            MuseElf elf = new MuseElf("Ivan", 24);
 
-            Console.WriteLine(elf);
+
+
         }
     }
 }

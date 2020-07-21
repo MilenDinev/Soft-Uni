@@ -1,11 +1,11 @@
-﻿
-using System;
-using System.Text;
-
-namespace _01.Person
+﻿namespace _01.Person
 {
+    using System;
+    using System.Text;
+
     public class Person
     {
+        private string name;
         private int age;
 
         public Person(string name, int age)
@@ -14,19 +14,22 @@ namespace _01.Person
             this.Age = age;
         }
 
-        public string Name { get; set; }
+        public string Name { get; private set; }
+
+
         public virtual int Age
         {
-            get
-            {
-                return this.age;
+            get 
+            { 
+                return this.age; 
             }
-            set
+            set 
             {
                 if (value > 0)
                 {
                     this.age = value;
                 }
+
             }
         }
 
@@ -40,7 +43,5 @@ namespace _01.Person
 
             return stringBuilder.ToString();
         }
-
-
     }
 }

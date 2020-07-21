@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace _01.Person
+﻿namespace _01.Person
 {
+    using System;
+
     public class Startup
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
             string name = Console.ReadLine();
             int age = int.Parse(Console.ReadLine());
@@ -23,9 +23,6 @@ namespace _01.Person
                 person = new Child(name, age);
                 Console.WriteLine(person);
             }
-
-            
-
         }
     }
 }

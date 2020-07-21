@@ -4,7 +4,6 @@
     {
         public Lizard(string name) : base(name)
         {
-            base.Name = name;
         }
     }
 }

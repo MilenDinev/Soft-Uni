@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\bin\Debug\netcoreapp3.1\01.Person.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\bin\Debug\netcoreapp3.1\01.Person.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\bin\Debug\netcoreapp3.1\01.Person.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\bin\Debug\netcoreapp3.1\01.Person.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\bin\Debug\netcoreapp3.1\01.Person.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\bin\Debug\netcoreapp3.1\01.Person.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\01.Person\obj\Debug\netcoreapp3.1\01.Person.genruntimeconfig.cache

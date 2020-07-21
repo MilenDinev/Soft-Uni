@@ -4,7 +4,7 @@
     {
         public Animal(string name)
         {
-            Name = name;
+            this.Name = name;
         }
 
         public string Name { get; set; }

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Zoo", "02.Zoo\02.Zoo.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.PlayersAndMonsters", "03.PlayersAndMonsters\03.PlayersAndMonsters.csproj", "{AB4375AD-1F98-4FCA-990C-4EB27AC33BCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.NeedForSpeed", "04.NeedForSpeed\04.NeedForSpeed.csproj", "{FFC3DF26-B9CA-46CC-8BE3-5AFDF1DEDF94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.NeedForSpeed", "04.NeedForSpeed\04.NeedForSpeed.csproj", "{FFC3DF26-B9CA-46CC-8BE3-5AFDF1DEDF94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Restaurant", "05.Restaurant\05.Restaurant.csproj", "{A9E8DE10-A96D-4685-8360-D84CD62156BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FFC3DF26-B9CA-46CC-8BE3-5AFDF1DEDF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFC3DF26-B9CA-46CC-8BE3-5AFDF1DEDF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFC3DF26-B9CA-46CC-8BE3-5AFDF1DEDF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E8DE10-A96D-4685-8360-D84CD62156BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E8DE10-A96D-4685-8360-D84CD62156BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E8DE10-A96D-4685-8360-D84CD62156BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E8DE10-A96D-4685-8360-D84CD62156BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

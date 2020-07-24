@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\02.Inheritance\\05.Restaurant\\05.Restaurant.csproj",
-      "projectName": "05.Restaurant",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\02.Inheritance\\05.Restaurant\\05.Restaurant.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\02.Inheritance\\06.Animals\\06.Animals.csproj",
+      "projectName": "06.Animals",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\02.Inheritance\\06.Animals\\06.Animals.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\02.Inheritance\\05.Restaurant\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\02.Inheritance\\06.Animals\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\bin\Debug\netcoreapp3.1\06.Animals.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\bin\Debug\netcoreapp3.1\06.Animals.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\bin\Debug\netcoreapp3.1\06.Animals.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\bin\Debug\netcoreapp3.1\06.Animals.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\bin\Debug\netcoreapp3.1\06.Animals.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\bin\Debug\netcoreapp3.1\06.Animals.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\OOP\02.Inheritance\06.Animals\obj\Debug\netcoreapp3.1\06.Animals.genruntimeconfig.cache

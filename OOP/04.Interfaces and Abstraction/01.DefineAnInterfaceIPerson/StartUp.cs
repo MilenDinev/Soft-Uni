@@ -1,16 +1,14 @@
-﻿using System;
-
-namespace PersonInfo
+﻿namespace PersonInfo
 {
-   public class StartUp
+    using System;
+
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             string name = Console.ReadLine();
             int age = int.Parse(Console.ReadLine());
-
             IPerson person = new Citizen(name, age);
-
             Console.WriteLine(person.Name);
             Console.WriteLine(person.Age);
         }

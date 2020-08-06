@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace PersonInfo
+﻿namespace PersonInfo
 {
+    using System;
+
     public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             string name = Console.ReadLine();
             int age = int.Parse(Console.ReadLine());
@@ -12,7 +12,6 @@ namespace PersonInfo
             string birthdate = Console.ReadLine();
             IIdentifiable identifiable = new Citizen(name, age, id, birthdate);
             IBirthable birthable = new Citizen(name, age, id, birthdate);
-
             Console.WriteLine(identifiable.Id);
             Console.WriteLine(birthable.Birthdate);
 

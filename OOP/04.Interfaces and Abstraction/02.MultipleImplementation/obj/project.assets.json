@@ -1,41 +1,41 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\dinev\\.nuget\\packages\\": {},
+    "C:\\Users\\MIlen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\02.MultipleImplementation\\02.MultipleImplementation.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\02.MultipleImplementation\\02.MultipleImplementation.csproj",
       "projectName": "02.MultipleImplementation",
-      "projectPath": "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\02.MultipleImplementation\\02.MultipleImplementation.csproj",
-      "packagesPath": "C:\\Users\\dinev\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\02.MultipleImplementation\\obj\\",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\02.MultipleImplementation\\02.MultipleImplementation.csproj",
+      "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\02.MultipleImplementation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dinev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp3.1": {
           "projectReferences": {}
         }
       },
@@ -46,7 +46,7 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.0": {
+      "netcoreapp3.1": {
         "imports": [
           "net461",
           "net462",
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

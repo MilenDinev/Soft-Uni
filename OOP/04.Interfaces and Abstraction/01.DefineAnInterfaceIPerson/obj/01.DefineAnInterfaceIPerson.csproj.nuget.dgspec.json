@@ -1,34 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj": {}
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj": {}
   },
   "projects": {
-    "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj": {
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj",
+        "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj",
         "projectName": "01.DefineAnInterfaceIPerson",
-        "projectPath": "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj",
-        "packagesPath": "C:\\Users\\dinev\\.nuget\\packages\\",
-        "outputPath": "D:\\SoftUni\\Advanced module\\OOP\\04.Interfaces and Avstraction\\Exercises\\Homework\\01.DefineAnInterfaceIPerson\\obj\\",
+        "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\01.DefineAnInterfaceIPerson\\01.DefineAnInterfaceIPerson.csproj",
+        "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
+        "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\04.Interfaces and Abstraction\\01.DefineAnInterfaceIPerson\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dinev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -39,7 +39,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp3.1": {
           "imports": [
             "net461",
             "net462",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

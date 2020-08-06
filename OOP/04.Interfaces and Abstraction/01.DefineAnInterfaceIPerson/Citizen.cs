@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PersonInfo
+﻿namespace PersonInfo
 {
     public class Citizen : IPerson
     {
@@ -13,6 +9,7 @@ namespace PersonInfo
         }
 
         public string Name { get; private set; }
-        public int Age { get; private set; }
+
+        public int Age { get; private set;}
     }
 }

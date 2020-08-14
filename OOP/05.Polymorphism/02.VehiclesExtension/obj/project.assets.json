@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\05.Polymorphism\\01.Vehicles\\01.Vehicles.csproj",
-      "projectName": "01.Vehicles",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\05.Polymorphism\\01.Vehicles\\01.Vehicles.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\05.Polymorphism\\02.VehiclesExtension\\02.VehiclesExtension.csproj",
+      "projectName": "02.VehiclesExtension",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\05.Polymorphism\\02.VehiclesExtension\\02.VehiclesExtension.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\05.Polymorphism\\01.Vehicles\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\05.Polymorphism\\02.VehiclesExtension\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

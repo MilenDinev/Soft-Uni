@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\bin\Debug\netcoreapp3.1\ClubParty.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\bin\Debug\netcoreapp3.1\ClubParty.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\bin\Debug\netcoreapp3.1\ClubParty.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\bin\Debug\netcoreapp3.1\ClubParty.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\bin\Debug\netcoreapp3.1\ClubParty.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\bin\Debug\netcoreapp3.1\ClubParty.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ClubParty\obj\Debug\netcoreapp3.1\ClubParty.genruntimeconfig.cache

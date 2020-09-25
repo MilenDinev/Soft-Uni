@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\01.Stacks and Queues\\Exercises\\Exercises\\11.KeyRevolver\\11.KeyRevolver.csproj": {}
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Advanced module\\01.Stacks and Queues\\11.KeyRevolver\\11.KeyRevolver.csproj": {}
   },
   "projects": {
-    "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\01.Stacks and Queues\\Exercises\\Exercises\\11.KeyRevolver\\11.KeyRevolver.csproj": {
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Advanced module\\01.Stacks and Queues\\11.KeyRevolver\\11.KeyRevolver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\01.Stacks and Queues\\Exercises\\Exercises\\11.KeyRevolver\\11.KeyRevolver.csproj",
+        "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Advanced module\\01.Stacks and Queues\\11.KeyRevolver\\11.KeyRevolver.csproj",
         "projectName": "11.KeyRevolver",
-        "projectPath": "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\01.Stacks and Queues\\Exercises\\Exercises\\11.KeyRevolver\\11.KeyRevolver.csproj",
+        "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Advanced module\\01.Stacks and Queues\\11.KeyRevolver\\11.KeyRevolver.csproj",
         "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-        "outputPath": "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\01.Stacks and Queues\\Exercises\\Exercises\\11.KeyRevolver\\obj\\",
+        "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Advanced module\\01.Stacks and Queues\\11.KeyRevolver\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -52,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

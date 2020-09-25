@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lXMtUun8dAuLeb04E119/GGvcSIk+nzZFBpibE81N47XcQps0B6g/svK3e7O2y+pim35Org1NkTmBJ97zOfdsg==",
+  "dgSpecHash": "jf+Gf51Qyd2D9iwDudSLTiqHYNYwsBtCh+fk6bgvyEV0wtoTeuU69VYCQRQdtQjxBAOFpTB1WfH/0rraJyZ/Lw==",
   "success": true,
-  "projectFilePath": "D:\\My Files\\SoftUni\\Advanced module\\Advanced\\01.Stacks and Queues\\Exercises\\Exercises\\04.Fast Food\\04.Fast Food.csproj",
+  "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Advanced module\\01.Stacks and Queues\\04.Fast Food\\04.Fast Food.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",

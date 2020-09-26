@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\bin\Debug\netcoreapp3.1\Lootbox.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\bin\Debug\netcoreapp3.1\Lootbox.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\bin\Debug\netcoreapp3.1\Lootbox.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\bin\Debug\netcoreapp3.1\Lootbox.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\bin\Debug\netcoreapp3.1\Lootbox.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\bin\Debug\netcoreapp3.1\Lootbox.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Lootbox\obj\Debug\netcoreapp3.1\Lootbox.genruntimeconfig.cache

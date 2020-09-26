@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\bin\Debug\netcoreapp3.1\FlowerWreaths.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\bin\Debug\netcoreapp3.1\FlowerWreaths.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\bin\Debug\netcoreapp3.1\FlowerWreaths.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\bin\Debug\netcoreapp3.1\FlowerWreaths.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\bin\Debug\netcoreapp3.1\FlowerWreaths.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\bin\Debug\netcoreapp3.1\FlowerWreaths.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\FlowerWreaths\obj\Debug\netcoreapp3.1\FlowerWreaths.genruntimeconfig.cache

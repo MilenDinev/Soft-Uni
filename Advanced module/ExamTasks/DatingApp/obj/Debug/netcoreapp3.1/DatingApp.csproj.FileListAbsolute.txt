@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\bin\Debug\netcoreapp3.1\DatingApp.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\bin\Debug\netcoreapp3.1\DatingApp.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\bin\Debug\netcoreapp3.1\DatingApp.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\bin\Debug\netcoreapp3.1\DatingApp.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\bin\Debug\netcoreapp3.1\DatingApp.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\bin\Debug\netcoreapp3.1\DatingApp.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.genruntimeconfig.cache

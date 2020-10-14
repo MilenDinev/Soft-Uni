@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\bin\Debug\netcoreapp3.1\Snake.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\bin\Debug\netcoreapp3.1\Snake.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\bin\Debug\netcoreapp3.1\Snake.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\bin\Debug\netcoreapp3.1\Snake.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\bin\Debug\netcoreapp3.1\Snake.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\bin\Debug\netcoreapp3.1\Snake.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Snake\obj\Debug\netcoreapp3.1\Snake.genruntimeconfig.cache

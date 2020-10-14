@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\bin\Debug\netcoreapp3.1\ReVolt.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\bin\Debug\netcoreapp3.1\ReVolt.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\bin\Debug\netcoreapp3.1\ReVolt.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\bin\Debug\netcoreapp3.1\ReVolt.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\bin\Debug\netcoreapp3.1\ReVolt.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\bin\Debug\netcoreapp3.1\ReVolt.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\ReVolt\obj\Debug\netcoreapp3.1\ReVolt.genruntimeconfig.cache

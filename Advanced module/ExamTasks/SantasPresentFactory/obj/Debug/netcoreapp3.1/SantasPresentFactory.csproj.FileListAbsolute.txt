@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\bin\Debug\netcoreapp3.1\SantasPresentFactory.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\bin\Debug\netcoreapp3.1\SantasPresentFactory.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\bin\Debug\netcoreapp3.1\SantasPresentFactory.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\bin\Debug\netcoreapp3.1\SantasPresentFactory.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\bin\Debug\netcoreapp3.1\SantasPresentFactory.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\bin\Debug\netcoreapp3.1\SantasPresentFactory.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\SantasPresentFactory\obj\Debug\netcoreapp3.1\SantasPresentFactory.genruntimeconfig.cache

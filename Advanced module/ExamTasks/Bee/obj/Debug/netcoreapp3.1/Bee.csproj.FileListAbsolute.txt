@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\bin\Debug\netcoreapp3.1\Bee.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\bin\Debug\netcoreapp3.1\Bee.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\bin\Debug\netcoreapp3.1\Bee.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\bin\Debug\netcoreapp3.1\Bee.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\bin\Debug\netcoreapp3.1\Bee.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\bin\Debug\netcoreapp3.1\Bee.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Bee\obj\Debug\netcoreapp3.1\Bee.genruntimeconfig.cache

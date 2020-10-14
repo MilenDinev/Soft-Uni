@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SantasPresentFactory/1.0.0": {
+        "runtime": {
+          "SantasPresentFactory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SantasPresentFactory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

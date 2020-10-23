@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\bin\Debug\netcoreapp3.1\TronRacers.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\bin\Debug\netcoreapp3.1\TronRacers.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\bin\Debug\netcoreapp3.1\TronRacers.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\bin\Debug\netcoreapp3.1\TronRacers.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\bin\Debug\netcoreapp3.1\TronRacers.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\bin\Debug\netcoreapp3.1\TronRacers.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\Tron\obj\Debug\netcoreapp3.1\TronRacers.genruntimeconfig.cache

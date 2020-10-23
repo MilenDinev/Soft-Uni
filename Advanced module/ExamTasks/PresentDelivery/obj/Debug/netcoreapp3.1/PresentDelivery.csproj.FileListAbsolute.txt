@@ -1,0 +1,13 @@
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.AssemblyInfo.cs
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\bin\Debug\netcoreapp3.1\PresentDelivery.exe
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\bin\Debug\netcoreapp3.1\PresentDelivery.deps.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\bin\Debug\netcoreapp3.1\PresentDelivery.runtimeconfig.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\bin\Debug\netcoreapp3.1\PresentDelivery.runtimeconfig.dev.json
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\bin\Debug\netcoreapp3.1\PresentDelivery.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\bin\Debug\netcoreapp3.1\PresentDelivery.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.csprojAssemblyReference.cache
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.dll
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.pdb
+D:\My Files\SoftUni\SoftUniExercises\Exercises\PresentDelivery\obj\Debug\netcoreapp3.1\PresentDelivery.genruntimeconfig.cache

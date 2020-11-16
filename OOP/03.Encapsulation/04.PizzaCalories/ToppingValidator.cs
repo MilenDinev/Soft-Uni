@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace _04.PizzaCalories
+﻿namespace _04.PizzaCalories
 {
+    using System.Collections.Generic;
 
     public class ToppingValidator
     {
@@ -19,14 +18,14 @@ namespace _04.PizzaCalories
         }
 
 
-        public static bool IsValidTopping(string topping)
+        public static bool IsValidTopping(string type)
         {
             if (toppings == null)
             {
                 InitializeToppings();
             }
 
-            return toppings.ContainsKey(topping.ToLower());
+            return toppings.ContainsKey(type.ToLower());
         }
 
         public static double GetToppingModifier(string type)

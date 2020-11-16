@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace _04.PizzaCalories
+﻿namespace _04.PizzaCalories
 {
+    using System;
+
     public class Topping
     {
         private string type;
@@ -9,8 +9,8 @@ namespace _04.PizzaCalories
 
         public Topping(double weight, string type)
         {
-            this.Weight = weight;
             this.Type = type;
+            this.Weight = weight;
         }
 
         public double Weight
@@ -24,12 +24,11 @@ namespace _04.PizzaCalories
             {
                 if (value < 1 || value > 50)
                 {
-                    throw new Exception($"{this.type} weight should be in the range[1..50].");
+                    throw new Exception($"{this.Type} weight should be in the range[1..50].");
                 }
                 this.weight = value; 
             }
         }
-
         public string Type
         {
             get 
@@ -47,10 +46,11 @@ namespace _04.PizzaCalories
             }
         }
 
+
         public double GetTotalCalories()
         {
 
-            return (this.Weight * 2) * ToppingValidator.GetToppingModifier(this.Type.ToLower());
+            return (this.Weight * 2) * ToppingValidator.GetToppingModifier(this.Type);
         }
 
     }

@@ -7,10 +7,11 @@
 
     public class Pizza
     {
-        private List<Topping> toppings;
+        private readonly List<Topping> toppings;
         private string name;
 
         public Dough Dough { get; }
+
         public Pizza(string name, Dough dough)
         {
             this.Name = name;

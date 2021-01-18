@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EDZeaflcpYAq9n7rtfW5en05hE0FKVRI3V2bJ7srY/nfdyoFGNJDKJ/AAo3zQwYiAxr1F25FPGzB1ASyx0oORw==",
+  "dgSpecHash": "zP1Ur71HOQiGjcOvBKevj2agIFnHKIetGGFaxJWaBmUG6nlzMJ+WI8hl25SF6aMGHhiS30xF7GzU06c2IfL8bQ==",
   "success": true,
   "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\06.SOLID\\01.Logger\\01.Logger.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

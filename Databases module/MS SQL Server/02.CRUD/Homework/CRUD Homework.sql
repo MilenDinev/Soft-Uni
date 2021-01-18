@@ -90,6 +90,11 @@ SELECT PeakName
 FROM Peaks
 ORDER BY PeakName ASC
 
+SELECT TOP(30) CountryName, [Population]
+FROM Countries
+Where ContinentCode = 'EU'
+ORDER BY [Population] DESC, CountryName ASC
+
 SELECT CountryName, CurrencyCode, 
 CASE
 	WHEN CurrencyCode = 'EUR' THEN 'EURO'

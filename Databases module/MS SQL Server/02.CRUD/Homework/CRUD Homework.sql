@@ -57,7 +57,10 @@ SELECT FirstName, LastName, Salary
 FROM Employees
 
 CREATE VIEW V_EmployeeNameJobTitle AS
-SELECT FirstName + ' ' + COALESCE(MiddleName, '') + ' ' + LastName AS FullName, JobTitle
+SELECT FirstName + ' ' + COALESCE(MiddleName, '') + ' ' + LastName AS FullName, JobTitle --/or ISNULL instead of COALESCE
+FROM Employees
+
+SELECT DISTINCT JobTitle
 FROM Employees
 
 --SELECT *
@@ -95,11 +98,11 @@ FROM Countries
 Where ContinentCode = 'EU'
 ORDER BY [Population] DESC, CountryName ASC
 
-SELECT CountryName, CurrencyCode, 
+SELECT CountryName, CountryCode, 
 CASE
-	WHEN CurrencyCode = 'EUR' THEN 'EURO'
+	WHEN CurrencyCode = 'EUR' THEN 'Euro'
 	--WHEN CurrencyCode <> 'EUR' THEN 'Not Euro'
-	ELSE 'Not Euro' 
+	ELSE 'Not Euro'  
 END AS Currency
 	FROM Countries
 	ORDER BY CountryName ASC
@@ -109,3 +112,4 @@ USE Diablo
 SELECT [Name]
 FROM Characters
 ORDER BY [Name] ASC
+

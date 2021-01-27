@@ -1,103 +1,103 @@
-----1
---SELECT TOP(5) e.EmployeeID, e.JobTitle, e.AddressID, a.AddressText
---FROM Employees AS e
---JOIN Addresses AS a ON e.AddressID = a.AddressID
---ORDER BY AddressID ASC
+--1
+SELECT TOP(5) e.EmployeeID, e.JobTitle, e.AddressID, a.AddressText
+FROM Employees AS e
+JOIN Addresses AS a ON e.AddressID = a.AddressID
+ORDER BY AddressID ASC
 
-----2
---SELECT TOP(50) e.FirstName, e.LastName, t.[Name] AS Town, a.AddressText
---FROM Employees e 
---JOIN Addresses a ON a.AddressID = e.AddressID
---JOIN Towns t ON t.TownID = a.TownID
---ORDER BY e.FirstName, e.LastName
+--2
+SELECT TOP(50) e.FirstName, e.LastName, t.[Name] AS Town, a.AddressText
+FROM Employees e 
+JOIN Addresses a ON a.AddressID = e.AddressID
+JOIN Towns t ON t.TownID = a.TownID
+ORDER BY e.FirstName, e.LastName
 
-----3
---SELECT e.EmployeeID, e.FirstName, e.LastName, d.[Name] AS DepartmentName
---FROM Employees e
---JOIN Departments d ON e.DepartmentID = d.DepartmentID
---WHERE d.[Name] = 'SALES'
+--3
+SELECT e.EmployeeID, e.FirstName, e.LastName, d.[Name] AS DepartmentName
+FROM Employees e
+JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE d.[Name] = 'SALES'
 
-----4
+--4
 
---SELECT TOP(5) e.EmployeeID, e.FirstName, e.Salary, d.Name AS DepartmentName
---FROM Employees AS e
---JOIN Departments AS d ON e.DepartmentID = d.DepartmentID
---ORDER BY d.DepartmentID ASC
+SELECT TOP(5) e.EmployeeID, e.FirstName, e.Salary, d.Name AS DepartmentName
+FROM Employees AS e
+JOIN Departments AS d ON e.DepartmentID = d.DepartmentID
+ORDER BY d.DepartmentID ASC
 
-----5
+--5
 
---SELECT TOP(3) e.EmployeeID, e.FirstName
---FROM Employees AS e
---LEFT JOIN EmployeesProjects AS ep ON e.EmployeeID = ep.EmployeeID
---WHERE ep.ProjectID IS NULL
---ORDER BY e.EmployeeID ASC
-
-
-----6
---SELECT e.FirstName, e.LastName, e.HireDate, d.[Name] AS DeptName
---FROM Employees e
---JOIN Departments d ON e.DepartmentID = d.DepartmentID
---WHERE d.[Name] = 'SALES' OR d.[Name] = 'Finance' 
---		AND DATEPART(YEAR, e.HireDate) > 1998
-
-----7
-
---SELECT TOP(5) e.EmployeeID, e.FirstName, p.[Name] AS ProjectName
---FROM Employees AS e
---JOIN EmployeesProjects AS ep ON e.EmployeeID = ep.EmployeeID
---JOIN Projects AS p ON ep.ProjectID = p.ProjectID
---WHERE p.StartDate > CONVERT(smalldatetime,'13/08/2002', 103) AND p.EndDate IS NULL
---ORDER BY e.EmployeeID ASC
-
-----8
+SELECT TOP(3) e.EmployeeID, e.FirstName
+FROM Employees AS e
+LEFT JOIN EmployeesProjects AS ep ON e.EmployeeID = ep.EmployeeID
+WHERE ep.ProjectID IS NULL
+ORDER BY e.EmployeeID ASC
 
 
---SELECT e.EmployeeID, e.FirstName,
--- --IIF(DATEPART(YEAR,p.StartDate) >= 2005, NULL, p.[Name]) AS ProjectName
---CASE
---WHEN DATEPART(YEAR,p.StartDate) >= 2005 THEN NULL 
---ELSE p.[Name]
---END
---AS ProjectName
---FROM Employees AS e
---JOIN EmployeesProjects AS ep ON e.EmployeeID = ep.EmployeeID
---JOIN Projects AS p ON ep.ProjectID = p.ProjectID
---WHERE ep.EmployeeID = 24
+--6
+SELECT e.FirstName, e.LastName, e.HireDate, d.[Name] AS DeptName
+FROM Employees e
+JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE d.[Name] = 'SALES' OR d.[Name] = 'Finance' 
+		AND DATEPART(YEAR, e.HireDate) > 1998
 
-----9
+--7
 
---SELECT e.EmployeeID, e.FirstName, m.EmployeeID, m.FirstName AS ManagerName
+SELECT TOP(5) e.EmployeeID, e.FirstName, p.[Name] AS ProjectName
+FROM Employees AS e
+JOIN EmployeesProjects AS ep ON e.EmployeeID = ep.EmployeeID
+JOIN Projects AS p ON ep.ProjectID = p.ProjectID
+WHERE p.StartDate > CONVERT(smalldatetime,'13/08/2002', 103) AND p.EndDate IS NULL
+ORDER BY e.EmployeeID ASC
 
---FROM Employees AS e
--- JOIN Employees AS m ON m.EmployeeID = e.ManagerID
--- WHERE e.ManagerID IN (3, 7)
--- ORDER BY e.EmployeeID ASC
+--8
 
-----10
+
+SELECT e.EmployeeID, e.FirstName,
+ --IIF(DATEPART(YEAR,p.StartDate) >= 2005, NULL, p.[Name]) AS ProjectName
+CASE
+WHEN DATEPART(YEAR,p.StartDate) >= 2005 THEN NULL 
+ELSE p.[Name]
+END
+AS ProjectName
+FROM Employees AS e
+JOIN EmployeesProjects AS ep ON e.EmployeeID = ep.EmployeeID
+JOIN Projects AS p ON ep.ProjectID = p.ProjectID
+WHERE ep.EmployeeID = 24
+
+--9
+
+SELECT e.EmployeeID, e.FirstName, m.EmployeeID, m.FirstName AS ManagerName
+
+FROM Employees AS e
+ JOIN Employees AS m ON m.EmployeeID = e.ManagerID
+ WHERE e.ManagerID IN (3, 7)
+ ORDER BY e.EmployeeID ASC
+
+--10
 
  
---SELECT TOP(50) e.EmployeeID, e.FirstName + ' ' + e.LastName AS EmployeeName,
---		m.FirstName + ' ' + m.LastName AS ManagerName,
---		d.[Name] AS DepartmentName 
---FROM Employees AS e
---LEFT JOIN Employees AS m ON m.EmployeeID = e.ManagerID
---LEFT JOIN Departments AS d ON d.DepartmentID = e.DepartmentID
---ORDER BY e.EmployeeID ASC
+SELECT TOP(50) e.EmployeeID, e.FirstName + ' ' + e.LastName AS EmployeeName,
+		m.FirstName + ' ' + m.LastName AS ManagerName,
+		d.[Name] AS DepartmentName 
+FROM Employees AS e
+LEFT JOIN Employees AS m ON m.EmployeeID = e.ManagerID
+LEFT JOIN Departments AS d ON d.DepartmentID = e.DepartmentID
+ORDER BY e.EmployeeID ASC
 
---SELECT* FROM Employees AS e
--- WHERE e.DepartmentID IN 
---  (
---   SELECT d.DepartmentID     
---   FROM Departments AS d
---    WHERE d.[Name] = 'Finance'
---  )
+SELECT* FROM Employees AS e
+ WHERE e.DepartmentID IN 
+  (
+   SELECT d.DepartmentID     
+   FROM Departments AS d
+    WHERE d.[Name] = 'Finance'
+  )
 
-----11
---SELECT TOP(1) (SELECT AVG(Salary)
---		FROM Employees AS e
---		WHERE e.DepartmentID = d.DepartmentID) AS MinAverageSalary
---FROM Departments AS d
---ORDER BY MinAverageSalary
+--11
+SELECT TOP(1) (SELECT AVG(Salary)
+		FROM Employees AS e
+		WHERE e.DepartmentID = d.DepartmentID) AS MinAverageSalary
+FROM Departments AS d
+ORDER BY MinAverageSalary
 
 
 --12
@@ -143,20 +143,42 @@ ORDER BY MostUsedCurrency.ContinentCode, MostUsedCurrency.CurrencyUsage
 SELECT COUNT(c.CountryName) AS [Count]
 FROM Countries AS c
 LEFT JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode 
-LEFT JOIN Mountains AS m ON mc.MountainId = m.Id
-WHERE m.MountainRange IS NULL
+WHERE mc.MountainId IS NULL
 
 
 --17
 SELECT TOP(5) c.CountryName, MAX(p.Elevation) AS HighestPeakElevation, MAX(r.Length) AS LongestRiverLength
 FROM Countries AS c
-JOIN CountriesRivers AS cr ON c.CountryCode = cr.CountryCode
-JOIN Rivers AS r ON cr.RiverId = r.Id
-JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode 
-JOIN Mountains AS m ON mc.MountainId = m.Id 
-JOIN Peaks AS p ON m.Id = p.MountainId 
+LEFT JOIN CountriesRivers AS cr ON c.CountryCode = cr.CountryCode
+LEFT JOIN Rivers AS r ON cr.RiverId = r.Id
+LEFT JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode 
+LEFT JOIN Mountains AS m ON mc.MountainId = m.Id 
+LEFT JOIN Peaks AS p ON m.Id = p.MountainId 
 GROUP BY c.CountryName
 ORDER BY HighestPeakElevation DESC, LongestRiverLength DESC, c.CountryName ASC
 
 
+--18
+SELECT TOP(5) k.CountryName, k.[HighestPeakName], k.[HighestPeakElevation], k.Mountain
+FROM (SELECT CountryName,
+	   ISNULL(p.PeakName, '(no highest peak)') AS [HighestPeakName],
+	   ISNULL(m.MountainRange, '(no mountain)') AS Mountain, 
+	   ISNULL(MAX(p.Elevation),0) AS [HighestPeakElevation], DENSE_RANK() OVER (PARTITION BY CountryName ORDER BY MAX(p.Elevation) DESC) AS Ranked
+FROM Countries AS c
+LEFT JOIN CountriesRivers AS cr ON c.CountryCode = cr.CountryCode
+LEFT JOIN Rivers AS r ON cr.RiverId = r.Id
+LEFT JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode 
+LEFT JOIN Mountains AS m ON mc.MountainId = m.Id 
+LEFT JOIN Peaks AS p ON m.Id = p.MountainId 
+GROUP BY c.CountryName, p.PeakName, m.MountainRange) AS k
+WHERE Ranked = 1
+ORDER BY CountryName, [HighestPeakName]
 
+--18
+SELECT TOP (5) WITH TIES c.CountryName, ISNULL(p.PeakName, '(no highest peak)') AS 'HighestPeakName', ISNULL(MAX(p.Elevation), 0) AS 'HighestPeakElevation', ISNULL(m.MountainRange, '(no mountain)')
+FROM Countries AS c
+LEFT JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode
+LEFT JOIN Mountains AS m ON mc.MountainId = m.Id
+LEFT JOIN Peaks AS p ON m.Id = p.MountainId
+GROUP BY c.CountryName, p.PeakName, m.MountainRange
+ORDER BY c.CountryName, p.PeakName

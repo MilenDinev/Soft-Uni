@@ -23,7 +23,7 @@ ORDER BY [Name] ASC
 
 SELECT *
 FROM Towns
-WHERE [Name] NOT LIKE'[R,B,D]%' --търсене по първа буква в колона
+WHERE [Name] NOT LIKE'[R,B,D]%' 
 --WHERE LEFT([Name],1) IN ('M','K','B','E')
 ORDER BY [Name] ASC
 
@@ -33,7 +33,7 @@ ORDER BY [Name] ASC
 CREATE VIEW V_EmployeesHiredAfter2000 AS
 SELECT FirstName, LastName
 FROM Employees
-WHERE  DATEPART(YEAR,HireDate) > 2000 -- връщане на по голяма дата
+WHERE  DATEPART(YEAR,HireDate) > 2000 
 --WHERE HireDate > '2001'
 
 

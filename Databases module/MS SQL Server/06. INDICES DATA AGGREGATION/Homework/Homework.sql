@@ -28,9 +28,10 @@
 
 --4
 
- SELECT DepositGroup, MAX(MagicWandSize) AS LongestMagicWand
+ SELECT TOP(2) DepositGroup
  FROM WizzardDeposits
  GROUP BY DepositGroup
+ ORDER BY AVG(MagicWandSize)
 
 --5
 
@@ -108,3 +109,5 @@ WHERE DepartmentID = 1
 SELECT DepartmentID, AVG(Salary) AS AverageSalary
 FROM NewTable
 GROUP BY DepartmentID
+
+--16

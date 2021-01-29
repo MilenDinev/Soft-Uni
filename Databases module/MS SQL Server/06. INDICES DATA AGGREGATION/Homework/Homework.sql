@@ -63,6 +63,7 @@
 
 --9
 
+
 --10
 SELECT DISTINCT LEFT(FirstName, 1) AS FirstLetter
 FROM WizzardDeposits
@@ -79,4 +80,16 @@ ORDER BY DepositGroup DESC, IsDepositExpired ASC
 --12
 
 --13
+SELECT DepartmentID, SUM(Salary) AS TotalSalary
+FROM Employees
+GROUP BY DepartmentID
+ORDER BY DepartmentID
 
+--14
+SELECT DepartmentID, Min(Salary) AS MinimumSalary
+FROM Employees
+WHERE HireDate > '01/01/2000'
+GROUP BY DepartmentID
+HAVING DepartmentID IN (2,5,7)
+
+--15

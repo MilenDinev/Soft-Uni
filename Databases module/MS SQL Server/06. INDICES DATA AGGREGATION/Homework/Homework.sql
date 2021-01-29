@@ -97,6 +97,12 @@ SELECT SUM(Guest.DepositAmount - Host.DepositAmount) AS [Difference]
 FROM WizzardDeposits AS Host
 JOIN WizzardDeposits AS Guest ON Host.Id = Guest.Id + 1
 
+------ Other Solution 
+SELECT TOP 1
+  (SELECT DepositAmount FROM WizzardDeposits WHERE Id = (SELECT MIN(Id) FROM WizzardDeposits)) - 
+  (SELECT DepositAmount FROM WizzardDeposits WHERE Id = (SELECT MAX(Id) FROM WizzardDeposits)) 
+  AS SumDifference
+FROM WizzardDeposits
 
 --13
 SELECT DepartmentID, SUM(Salary) AS TotalSalary
@@ -113,7 +119,7 @@ HAVING DepartmentID IN (2,5,7)
 
 --15
 SELECT * 
-INTO NewTable
+INTO NewTable  
 FROM Employees
 WHERE Salary > 30000
 
@@ -129,3 +135,8 @@ FROM NewTable
 GROUP BY DepartmentID
 
 --16
+
+SELECT DepartmentID, MAX(Salary)
+FROM Employees
+GROUP BY DepartmentID
+HAVING MAX(Salary) NOT BETWEEN 30000 AND 70000

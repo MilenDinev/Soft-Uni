@@ -93,6 +93,11 @@ ORDER BY DepositGroup DESC, IsDepositExpired ASC
 
 --12
 
+SELECT SUM(Guest.DepositAmount - Host.DepositAmount) AS [Difference]
+FROM WizzardDeposits AS Host
+JOIN WizzardDeposits AS Guest ON Host.Id = Guest.Id + 1
+
+
 --13
 SELECT DepartmentID, SUM(Salary) AS TotalSalary
 FROM Employees

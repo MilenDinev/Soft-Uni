@@ -64,8 +64,6 @@
 
 --9
 
-
-
 SELECT Result.AgeGroup, COUNT(Result.AgeGroup)
 
 FROM (SELECT CASE
@@ -79,7 +77,6 @@ FROM (SELECT CASE
 	   END AS AgeGroup
 FROM WizzardDeposits) AS Result
 GROUP BY Result.AgeGroup
-
 
 --10
 SELECT DISTINCT LEFT(FirstName, 1) AS FirstLetter

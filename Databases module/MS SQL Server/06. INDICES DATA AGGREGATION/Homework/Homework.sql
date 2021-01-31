@@ -147,3 +147,18 @@ FROM Employees
 WHERE ManagerID  IS NULL
 
 --18
+
+SELECT DISTINCT k.DepartmentID, k.Salary
+FROM (SELECT DepartmentID, Salary, 
+	DENSE_RANK() OVER(PARTITION BY DepartmentID ORDER BY Salary DESC) AS [Ranked]
+FROM Employees) AS k
+WHERE k.Ranked = 3
+
+--19
+SELECT TOP(10) FirstName, LastName, DepartmentID
+FROM Employees AS emp
+WHERE Salary > (SELECT AVG(Salary)
+					FROM Employees
+					WHERE DepartmentID = emp.DepartmentID
+				GROUP BY DepartmentID)
+ORDER BY DepartmentID

@@ -1,5 +1,5 @@
 ﻿--T-SQL declaring variable types
-DECLARE @Year SMALLINT;--  = 2021;
+DECLARE @Year SMALLINT;-- = 2021;
 SELECT @Year
 SET @Year = 1
 SELECT @Year
@@ -17,15 +17,15 @@ FROM @MyTempTable
 
 -- Conditional Statements
 IF (DATEPART(YEAR,(GETDATE())) = 2023)
-	SET @Year = 2024
+	SET @Year = 2024;
 ELSE IF (YEAR(GETDATE())  = 2021)
   BEGIN -- начало на тяло
-	  SET @Year = 2021
+	  SET @Year = 2021;
 	  INSERT INTO @MyTempTable ([Name])
 	  VALUES('2021')
   END -- край на тяло
 ELSE 
-	SET @Year = -2000
+	SET @Year = -2000; 
 
 SELECT CASE @Year
 		WHEN 2020 THEN '2020'
@@ -82,7 +82,7 @@ GO
 
 
 
-SELECT dbo.udf_BigPower(2,100)
+SELECT dbo.udf_BigPower(3,79)
 
 -- Дефиниране на функция
 --CREATE FUNCTION udf_BigPower  (@Base INT, @Exp INT)
@@ -100,17 +100,17 @@ SELECT dbo.udf_BigPower(2,100)
 --END
 
 CREATE OR ALTER FUNCTION ufn_GetSalaryLevel(@Salary MONEY)
-RETURNS NVARCHAR(MAX)
+RETURNS NVARCHAR(20)
 AS
 BEGIN
 	IF @Salary IS NULL
 		RETURN NULL
 	IF (@Salary < 30000)
-		RETURN N'Low'
+		RETURN 'Low'
 	ELSE IF @Salary <= 50000
-		RETURN N'Average'
+		RETURN 'Average'
 	ELSE 
-		RETURN N'High'
+		RETURN 'High'
 
 	RETURN NULL
 END
@@ -118,3 +118,75 @@ END
 
 SELECT FirstName,LastName, Salary,  dbo.ufn_GetSalaryLevel(Salary) AS Salary
 FROM Employees
+
+CREATE FUNCTION udf_EmployeesByYear(@Year SMALLINT)
+RETURNS TABLE
+AS
+RETURN
+(
+SELECT * 
+FROM Employees
+WHERE YEAR(HireDate) = @Year
+)
+
+SELECT * FROM udf_EmployeesByYear(1999)
+
+
+CREATE OR  ALTER FUNCTION udf_AllPowers(@MaxPower INT)
+RETURNS @Table TABLE (Id INT IDENTITY PRIMARY KEY, [Square] BIGINT)
+AS
+BEGIN
+	DECLARE @I INT = 1;
+	WHILE(@MaxPower >= @I)
+	BEGIN
+		INSERT INTO @Table ([Square]) VALUES (@I * @I)
+		SET @I +=1;
+	END
+	RETURN
+END
+
+SELECT * FROM dbo.udf_AllPowers(10)
+WHERE [Square] % 2 = 1
+ORDER BY [Square] DESC
+
+SELECT * FROM udf_EmployeesByYear(1999)
+
+---- Stored Procedures
+
+CREATE PROC sp_TwoSelects
+AS
+	SELECT COUNT(*) AS EmployeesCout
+	FROM Employees
+		SELECT COUNT(*) AS AddressesCount
+	FROM Addresses
+GO
+
+
+EXEC sp_TwoSelects
+
+----------------------------------------------------------------------------------------------
+
+CREATE PROC sp_AddAndMultiply(
+							@FirstNumber INT, @SecondNumber INT,
+							@Sum INT OUTPUT, @Product INT OUTPUT)
+AS
+	SET @Sum = @FirstNumber + @SecondNumber 
+	SET @Product = @FirstNumber * @SecondNumber
+GO
+
+
+DECLARE @Sum INT;
+DECLARE @Prod INT;
+
+EXEC sp_AddAndMultiply 2, 3, @Sum OUTPUT, @Prod OUTPUT
+
+SELECT @Sum AS Sum
+
+SELECT @Prod AS Prod
+
+------------------------------------------------------------------------------------
+
+EXEC sp_monitor
+
+
+----- Error Handling

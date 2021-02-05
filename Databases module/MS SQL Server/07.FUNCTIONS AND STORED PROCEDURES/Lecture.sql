@@ -190,3 +190,34 @@ EXEC sp_monitor
 
 
 ----- Error Handling
+
+CREATE OR ALTER FUNCTION udf_HoursToComplete
+	(@StartDate DATETIME, @EndDate DATETIME)
+RETURNS INT
+AS
+BEGIN 
+	IF @StartDate IS NULL AND @EndDate IS NULL
+		RETURN 0
+		---THROW 5001, 'Start date and end date are both NULL!', 1
+	IF @StartDate IS NULL
+		RETURN 0
+	IF @EndDate IS NULL
+		RETURN 0
+	RETURN DATEDIFF(hour, @StartDate, @EndDate)
+	
+END
+
+CREATE OR ALTER PROC sp_AddEmployeeToPRoject(@EmployeeId INT, @ProjectId INT)
+AS
+	DECLARE @CountEmployeeProject INT = 
+			(SELECT COUNT(*) FROM EmployeesProjects
+				WHERE EmployeeID = @EmployeeId
+					AND ProjectID = @ProjectId);
+	IF @CountEmployeeProject > 0
+		THROW 50001, 'This Employee is already in the project', 1
+	
+	INSERT INTO EmployeesProjects(EmployeeID, ProjectID)
+		VALUES (@EmployeeId, @ProjectId);
+GO
+
+EXEC sp_AddEmployeeToPRoject 1, 104

@@ -230,4 +230,28 @@ BEGIN CATCH
 			ERROR_MESSAGE(), ERROR_STATE(),ERROR_SEVERITY()
 END CATCH
 
+GO 
 
+CREATE OR ALTER PROC [dbo].[sp_AddToProject](@EmployeeId INT, @ProjectId INT)
+AS
+	DECLARE @EmployeesProjects INT = 
+		(SELECT COUNT(*) FROM EmployeesProjects
+			WHERE EmployeeID = @EmployeeId);
+	
+	IF(@EmployeesProjects >=3)
+	THROW 50001, 'Employee has more than 3 projects', 1;
+
+	DECLARE @EmployeeInThisProjectCount INT = 
+			(SELECT COUNT(*) FROM EmployeesProjects
+				WHERE EmployeeID = @EmployeeId
+					AND ProjectID = @ProjectId);
+	IF @EmployeeInThisProjectCount > 0
+		THROW 50002, 'This Employee is already in the project', 1
+
+
+	INSERT INTO EmployeesProjects (EmployeeID, ProjectID)
+		VALUES (@EmployeeId, @ProjectId)
+
+GO
+
+EXEC sp_AddToProject 6,20

@@ -70,3 +70,59 @@ CREATE TABLE OrderParts
 	Quantity INT DEFAULT 1 CHECK (Quantity > 0) 
 )
 
+
+CREATE TABLE PartsNeeded
+(
+	JobId INT,
+	PartId INT,
+	CONSTRAINT PK_PartsNeeded PRIMARY KEY (JobId, PartId),
+	CONSTRAINT FK_JobId FOREIGN KEY (JobId) REFERENCES Jobs(JobId),
+	CONSTRAINT FK_PartsId FOREIGN KEY (PartId) REFERENCES Parts(PartId),
+	Quantity INT DEFAULT 1 CHECK (Quantity > 0) 
+)
+
+
+INSERT INTO Clients (FirstName, LastName, Phone)
+VALUES
+('Teri','Ennaco','570-889-5187'),
+('Merlyn','Lawler','201-588-7810'),
+('Georgene','Montezuma','925-615-5185'),
+('Jettie','Mconnell','908-802-3564'),
+('Lemuel','Latzke','631-748-6479'),
+('Melodie','Knipp','805-690-1682'),
+('Candida','Corbley','908-275-8357')
+
+
+INSERT INTO Parts (SerialNumber, [Description], Price, VendorId)
+VALUES
+
+('WP8182119','Door Boot Seal', 117.86, 2),
+('W10780048','Suspension Rod', 42.81, 1),
+('W10841140','Silicone Adhesive', 6.77, 4),
+('WPY055980','High Temperature Adhesive', 13.94, 3)
+
+
+UPDATE Jobs
+SET MechanicId = 3 , [Status] = 'In Progress'
+WHERE [Status] = 'Pending'
+
+DELETE FROM OrderParts WHERE OrderId = 19
+DELETE FROM Orders WHERE OrderId = 19
+
+
+SELECT CONCAT(m.FirstName,' ', m.LastName) AS FullName, j.[Status], j.IssueDate
+FROM Mechanics as m
+Join Jobs as j ON m.MechanicId = j.MechanicId
+ORDER BY m.MechanicId, j.IssueDate, j.JobId
+
+
+SELECT CONCAT(c.FirstName,' ', c.LastName) AS Client, 
+		DATEDIFF(DAY,j.IssueDate, 
+		CONVERT(datetime, '24/04/2017', 103)) AS [Days going],
+		j.[Status]	
+FROM Clients AS c
+Join Jobs AS j ON c.ClientId = j.ClientId
+WHERE j.[Status] != 'Finished'
+ORDER BY [Days going] DESC, c.ClientId ASC
+
+

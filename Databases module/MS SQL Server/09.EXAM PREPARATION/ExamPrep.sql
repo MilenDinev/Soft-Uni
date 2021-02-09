@@ -95,8 +95,6 @@ VALUES
 ('Melodie','Knipp','805-690-1682'),
 ('Candida','Corbley','908-275-8357')
 
---3
-
 INSERT INTO Parts (SerialNumber, [Description], Price, VendorId)
 VALUES
 
@@ -105,25 +103,19 @@ VALUES
 ('W10841140','Silicone Adhesive', 6.77, 4),
 ('WPY055980','High Temperature Adhesive', 13.94, 3)
 
---4
+--3
 
 UPDATE Jobs
 SET MechanicId = 3 , [Status] = 'In Progress'
 WHERE [Status] = 'Pending'
 
---5
+--4
 DELETE FROM OrderParts WHERE OrderId = 19
 DELETE FROM Orders WHERE OrderId = 19
 
 
---6
-SELECT CONCAT(m.FirstName,' ', m.LastName) AS FullName, j.[Status], j.IssueDate
-FROM Mechanics as m
-Join Jobs as j ON m.MechanicId = j.MechanicId
-ORDER BY m.MechanicId, j.IssueDate, j.JobId
+--5
 
-
---7
 SELECT CONCAT(c.FirstName,' ', c.LastName) AS Client, 
 		DATEDIFF(DAY,j.IssueDate, 
 		CONVERT(datetime, '24/04/2017', 103)) AS [Days going],
@@ -134,3 +126,55 @@ WHERE j.[Status] != 'Finished'
 ORDER BY [Days going] DESC, c.ClientId ASC
 
 
+
+--6
+
+SELECT CONCAT(m.FirstName,' ', m.LastName) AS FullName, j.[Status], j.IssueDate
+FROM Mechanics as m
+Join Jobs as j ON m.MechanicId = j.MechanicId
+ORDER BY m.MechanicId, j.IssueDate, j.JobId
+
+--7
+
+
+
+--8
+
+SELECT m.FirstName + ' ' + m.LastName AS Available
+FROM Mechanics AS m
+LEFT JOIN Jobs AS j ON j.MechanicId = m.MechanicId
+WHERE j.JobId IS NULL OR (SELECT COUNT(JobId)
+								FROM Jobs
+								WHERE [Status] <> 'Finished' AND MechanicId = m.MechanicId
+								GROUP BY MechanicId, [Status]) IS NULL
+GROUP BY m.MechanicId , (m.FirstName + ' ' + m.LastName)
+
+--9
+
+SELECT j.JobId, ISNULL(SUM(p.Price * op.Quantity), 0)
+FROM Jobs AS j
+LEFT JOIN Orders AS o ON j.JobId = o.JobId
+LEFT JOIN OrderParts AS op ON o.OrderId = op.OrderId
+LEFT JOIN Parts AS p ON op.PartId = p.PartId
+WHERE j.Status = 'Finished'
+GROUP BY j.JobId
+ORDER BY SUM(p.Price) DESC, j.JobId ASC 
+
+--10
+
+SELECT p.PartId, p.[Description], pn.Quantity AS [Required], p.StockQty AS [In Stock], 
+		 IIF(o.Delivered = 0, op.Quantity, 0) AS [Ordered]
+	FROM Parts p
+LEFT JOIN PartsNeeded AS pn ON p.PartId = pn.PartId
+LEFT JOIN OrderParts AS op ON p.PartId = op.PartId
+LEFT JOIN Jobs AS j ON pn.JobId = j.JobId
+LEFT JOIN Orders AS o ON j.JobId = o.JobId
+WHERE  j.[Status] <> 'Finished' AND p.StockQty + IIF(o.Delivered = 0, op.Quantity, 0) < pn.Quantity
+ORDER BY p.PartId ASC
+
+SELECT *
+
+FROM Parts p
+LEFT JOIN PartsNeeded AS pn ON p.PartId = pn.PartId
+LEFT JOIN OrderParts AS op ON pn.PartId = op.PartId 
+WHERE (p.StockQty + op.Quantity) - pn.Quantity < 0

@@ -1,6 +1,8 @@
 --CREATE DATABASE WMS
 --USE WMS
 
+--1
+
 CREATE TABLE Clients
 (
 	ClientId INT PRIMARY KEY IDENTITY,
@@ -81,6 +83,7 @@ CREATE TABLE PartsNeeded
 	Quantity INT DEFAULT 1 CHECK (Quantity > 0) 
 )
 
+--2
 
 INSERT INTO Clients (FirstName, LastName, Phone)
 VALUES
@@ -92,6 +95,7 @@ VALUES
 ('Melodie','Knipp','805-690-1682'),
 ('Candida','Corbley','908-275-8357')
 
+--3
 
 INSERT INTO Parts (SerialNumber, [Description], Price, VendorId)
 VALUES
@@ -101,21 +105,25 @@ VALUES
 ('W10841140','Silicone Adhesive', 6.77, 4),
 ('WPY055980','High Temperature Adhesive', 13.94, 3)
 
+--4
 
 UPDATE Jobs
 SET MechanicId = 3 , [Status] = 'In Progress'
 WHERE [Status] = 'Pending'
 
+--5
 DELETE FROM OrderParts WHERE OrderId = 19
 DELETE FROM Orders WHERE OrderId = 19
 
 
+--6
 SELECT CONCAT(m.FirstName,' ', m.LastName) AS FullName, j.[Status], j.IssueDate
 FROM Mechanics as m
 Join Jobs as j ON m.MechanicId = j.MechanicId
 ORDER BY m.MechanicId, j.IssueDate, j.JobId
 
 
+--7
 SELECT CONCAT(c.FirstName,' ', c.LastName) AS Client, 
 		DATEDIFF(DAY,j.IssueDate, 
 		CONVERT(datetime, '24/04/2017', 103)) AS [Days going],

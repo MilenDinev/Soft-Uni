@@ -136,8 +136,12 @@ ORDER BY m.MechanicId, j.IssueDate, j.JobId
 
 --7
 
-
-
+SELECT CONCAT(m.FirstName,' ', m.LastName) AS Mechanic ,AVG(DATEDIFF(DAY,j.IssueDate, j.FinishDate)) AS [Average Days]
+FROM Mechanics AS m
+JOIN Jobs AS j ON m.MechanicId = j.MechanicId
+WHERE j.[Status] = 'Finished'
+GROUP BY m.MechanicId, CONCAT(m.FirstName,' ', m.LastName)
+ORDER BY m.MechanicId ASC
 --8
 
 SELECT m.FirstName + ' ' + m.LastName AS Available

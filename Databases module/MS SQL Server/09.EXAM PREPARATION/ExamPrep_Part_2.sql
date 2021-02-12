@@ -6,7 +6,6 @@ CREATE TABLE Cities
 	Id INT PRIMARY KEY IDENTITY,
 	[Name] NVARCHAR(20) NOT NULL,
 	CountryCode CHAR(2) NOT NULL
-	CHECK (LEN(CountryCode) = 2) 
 )
 
 CREATE TABLE Hotels

@@ -95,5 +95,8 @@ ORDER BY c.[Name] ASC
 
 --6
 
-SELECT *
-FROM Cities
+SELECT c.[Name], COUNT(h.Id)
+FROM Cities AS c
+JOIN Hotels AS h ON c.Id = h.CityId
+GROUP BY c.[Name]
+ORDER BY COUNT(h.Id) DESC, c.[Name]

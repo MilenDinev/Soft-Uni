@@ -133,3 +133,19 @@ JOIN Cities AS c ON h.CityId = c.Id
 WHERE a.CityId = h.CityId
 GROUP BY a.Id, a.Email, c.Name
 ORDER BY COUNT(t.Id) DESC, a.Id
+
+
+--10 
+
+SELECT t.Id, CONCAT(a.FirstName,' ', MiddleName, ' ', a.LastName) AS FullName, 
+			ca.[Name] AS [From], c.[Name] AS [To],
+			IIF(t.CancelDate IS NULL, CONCAT(CAST(DATEDIFF(DAY,t.ArrivalDate, t.ReturnDate) AS VARCHAR(10)), ' ', 'days') , 'Canceled') AS Duration
+FROM Accounts AS a
+JOIN AccountsTrips AS [at] ON a.Id = [at].AccountId
+JOIN Trips AS t ON [at].TripId = t.Id
+JOIN Rooms AS r ON t.RoomId = r.Id
+JOIN Hotels AS h ON r.HotelId = h.Id
+JOIN Cities AS c ON h.CityId = c.Id
+JOIN Cities AS ca ON a.CityId = ca.Id
+GROUP BY t.Id, CONCAT(a.FirstName,' ', MiddleName, ' ', a.LastName), ca.[Name], c.[Name], DATEDIFF(DAY,t.ArrivalDate, t.ReturnDate), t.CancelDate
+ORDER BY FullName, t.Id

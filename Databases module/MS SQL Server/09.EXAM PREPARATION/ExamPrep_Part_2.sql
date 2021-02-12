@@ -60,6 +60,7 @@
 --	CONSTRAINT FK_Trips FOREIGN KEY (TripId) REFERENCES Trips(Id)
 --)
 
+--2 
 INSERT INTO Accounts (FirstName, MiddleName, LastName, CityId, BirthDate, Email)
 VALUES
 ('John', 'Smith', 'Smith', 34, '1975-07-21', 'j_smith@gmail.com'),
@@ -76,8 +77,23 @@ VALUES
 (104, '2012-03-17', '2012-03-31', '2012-04-01',	'2012-01-10'),
 (109, '2017-08-07', '2017-08-28', '2017-08-29',	NULL)
 
-
+--3
 UPDATE Rooms
 SET Price += Price * 0.14
 WHERE HotelId IN (5, 7, 9)
 
+--4
+DELETE FROM AccountsTrips
+WHERE AccountId = 47
+
+--5
+SELECT FirstName, LastName, CONVERT (VARCHAR, BirthDate, 110) AS BirthDate, c.[Name] AS Hometown, a.Email
+FROM Accounts AS a
+JOIN Cities AS c ON a.CityId = c.Id
+WHERE Email LIKE 'e%'
+ORDER BY c.[Name] ASC
+
+--6
+
+SELECT *
+FROM Cities

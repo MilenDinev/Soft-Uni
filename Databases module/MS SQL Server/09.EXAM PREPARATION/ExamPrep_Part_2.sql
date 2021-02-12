@@ -112,3 +112,13 @@ JOIN Trips AS t ON [at].TripId = t.Id
 WHERE a.MiddleName IS NULL AND t.CancelDate IS NULL
 GROUP BY a.Id, CONCAT(a.FirstName,' ', a.LastName)
 ORDER BY LongestTrip DESC, ShortestTrip ASC
+
+--8
+
+SELECT TOP(10) c.Id, c.[Name], c.CountryCode, COUNT(a.Id)
+FROM Accounts AS a
+JOIN Cities AS c ON a.CityId = c.Id
+GROUP BY c.Id, c.[Name], c.CountryCode
+ORDER BY COUNT(a.Id) DESC
+
+--9

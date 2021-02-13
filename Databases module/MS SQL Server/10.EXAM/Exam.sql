@@ -120,3 +120,18 @@ JOIN Commits AS c ON c.ContributorId = u.Id
 JOIN Files AS f ON f.CommitId = c.Id
 GROUP BY u.Username
 ORDER BY SUM(f.Size) / COUNT(f.CommitId) DESC, u.Username ASC
+
+--11
+
+CREATE FUNCTION udf_AllUserCommits(@username VARCHAR(50)) 
+RETURNS INT
+AS
+BEGIN
+DECLARE @result INT = (SELECT COUNT(c.Id)
+FROM Users AS u
+JOIN Commits AS c ON c.ContributorId = u.Id
+WHERE u.Username = @username)
+
+
+RETURN @result
+END

@@ -96,3 +96,9 @@ SELECT Id, [Name], Size
 FROM Files
 WHERE Size > 1000 AND [Name] LIKE '%html%'
 ORDER BY Size DESC, Id ASC, [Name] ASC
+
+--7 
+SELECT i.Id, CONCAT(u.Username,' ', ':',' ', i.Title) AS IssueAssignee
+FROM Issues AS i
+JOIN Users AS u ON i.AssigneeId = u.Id
+ORDER BY i.Id DESC, IssueAssignee ASC

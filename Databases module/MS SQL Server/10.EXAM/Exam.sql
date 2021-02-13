@@ -75,3 +75,18 @@ VALUES
 UPDATE Issues
 SET IssueStatus = 'closed'
 WHERE AssigneeId = 6
+
+
+--4
+
+DELETE FROM Issues
+WHERE RepositoryId = 3
+
+DELETE FROM RepositoriesContributors
+WHERE RepositoryId = 3
+
+DELETE FROM Commits
+WHERE RepositoryId = 3
+
+DELETE FROM Repositories
+WHERE Id = 3

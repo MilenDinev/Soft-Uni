@@ -102,3 +102,12 @@ SELECT i.Id, CONCAT(u.Username,' ', ':',' ', i.Title) AS IssueAssignee
 FROM Issues AS i
 JOIN Users AS u ON i.AssigneeId = u.Id
 ORDER BY i.Id DESC, IssueAssignee ASC
+
+--9
+
+SELECT TOP(5) r.Id, r.[Name], COUNT(c.Id) 
+FROM RepositoriesContributors AS rc
+JOIN Repositories AS r ON rc.RepositoryId = r.Id
+JOIN Commits AS c ON r.Id = c.RepositoryId
+GROUP BY r.Id, r.[Name]
+ORDER BY COUNT(c.Id)  DESC, r.Id ASC, r.[Name] ASC

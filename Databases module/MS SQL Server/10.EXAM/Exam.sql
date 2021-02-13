@@ -84,3 +84,8 @@ WHERE RepositoryId = 3
 
 DELETE FROM RepositoriesContributors
 WHERE RepositoryId = 3
+
+--5
+SELECT Id, [Message], RepositoryId, ContributorId
+FROM Commits
+ORDER BY Id ASC, [Message] ASC, RepositoryId ASC, ContributorId ASC

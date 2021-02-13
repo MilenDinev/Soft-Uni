@@ -70,3 +70,8 @@ VALUES
 ('Typo fix in Judge.html', 'open', 4, 3),
 ('Implement documentation for UsersService.cs', 'closed', 8, 2),
 ('Unreachable code in Index.cs', 'open', 9, 8)
+
+--3
+UPDATE Issues
+SET IssueStatus = 'closed'
+WHERE AssigneeId = 6

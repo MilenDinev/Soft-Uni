@@ -135,3 +135,15 @@ WHERE u.Username = @username)
 
 RETURN @result
 END
+
+
+--12
+
+CREATE PROC usp_SearchForFiles(@fileExtension VARCHAR(10)) 
+AS
+SELECT Id, [Name], CONCAT(Size, 'KB') AS Size
+FROM Files
+WHERE [Name] LIKE '%' + @fileExtension
+GO
+
+EXEC usp_SearchForFiles 'txt'

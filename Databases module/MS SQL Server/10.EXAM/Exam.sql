@@ -84,9 +84,3 @@ WHERE RepositoryId = 3
 
 DELETE FROM RepositoriesContributors
 WHERE RepositoryId = 3
-
-DELETE FROM Commits
-WHERE RepositoryId = 3
-
-DELETE FROM Repositories
-WHERE Id = 3

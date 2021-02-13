@@ -20,3 +20,13 @@ CREATE TABLE RepositoriesContributors
 	CONSTRAINT FK_Repositories FOREIGN KEY (RepositoryId) REFERENCES Repositories(Id),
 	CONSTRAINT FK_Contributors FOREIGN KEY (ContributorId) REFERENCES Users(Id)
 )
+
+
+CREATE TABLE Issues
+(
+	Id INT PRIMARY KEY IDENTITY,
+	Title VARCHAR(255) NOT NULL,
+	IssueStatus CHAR(6) NOT NULL,
+	RepositoryId INT NOT NULL FOREIGN KEY REFERENCES Repositories(Id),
+	AssigneeId INT NOT NULL FOREIGN KEY REFERENCES Users(Id)
+)

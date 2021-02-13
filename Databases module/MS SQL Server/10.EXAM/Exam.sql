@@ -89,3 +89,10 @@ WHERE RepositoryId = 3
 SELECT Id, [Message], RepositoryId, ContributorId
 FROM Commits
 ORDER BY Id ASC, [Message] ASC, RepositoryId ASC, ContributorId ASC
+
+--6
+
+SELECT Id, [Name], Size
+FROM Files
+WHERE Size > 1000 AND [Name] LIKE '%html%'
+ORDER BY Size DESC, Id ASC, [Name] ASC

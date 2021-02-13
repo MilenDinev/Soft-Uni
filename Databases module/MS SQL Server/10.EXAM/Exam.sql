@@ -11,3 +11,12 @@ CREATE TABLE Repositories
 	Id INT PRIMARY KEY IDENTITY,
   [Name] VARCHAR(50) NOT NULL
 )
+
+CREATE TABLE RepositoriesContributors
+(
+	RepositoryId INT NOT NULL,
+	ContributorId INT NOT NULL
+	CONSTRAINT PK_Repositories_Contributors PRIMARY KEY(RepositoryId, ContributorId),
+	CONSTRAINT FK_Repositories FOREIGN KEY (RepositoryId) REFERENCES Repositories(Id),
+	CONSTRAINT FK_Contributors FOREIGN KEY (ContributorId) REFERENCES Users(Id)
+)

@@ -111,3 +111,12 @@ JOIN Repositories AS r ON rc.RepositoryId = r.Id
 JOIN Commits AS c ON r.Id = c.RepositoryId
 GROUP BY r.Id, r.[Name]
 ORDER BY COUNT(c.Id)  DESC, r.Id ASC, r.[Name] ASC
+
+--10
+
+SELECT u.Username ,SUM(f.Size) / COUNT(f.CommitId)  AS Size
+FROM Users AS u
+JOIN Commits AS c ON c.ContributorId = u.Id
+JOIN Files AS f ON f.CommitId = c.Id
+GROUP BY u.Username
+ORDER BY SUM(f.Size) / COUNT(f.CommitId) DESC, u.Username ASC

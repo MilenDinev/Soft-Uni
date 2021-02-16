@@ -12,26 +12,37 @@
             using (connection)
             {
                 connection.Open();
-                var createTables = CreateTables();
+                //var createTables = CreateTables();
 
-                foreach (var table in createTables)
+                //foreach (var table in createTables)
+                //{
+                //    ExecuteNonQuery(connection, table);
+                //}
+
+                var insertData = InserDataToTables();
+                foreach (var record in insertData)
                 {
-                    ExecuteNonQuery(connection, table);
+                    ExecuteNonQuery(connection, record);
                 }
 
             }
 
         }
 
-
-
-        private static void ExecuteNonQuery(SqlConnection connection, string query)
+        private static string[] InserDataToTables()
         {
-            using SqlCommand sqlCommand = new SqlCommand(query, connection);
-            sqlCommand.ExecuteNonQuery();
-        }
+            var result = new string[]
+            {
+                "INSERT INTO Countries ([Name]) VALUES ('Bulgaria'), ('Norway'), ('Cyprus'), ('Greece'), ('UK')",
+                "INSERT INTO Towns ([Name], CountryCode) VALUES ('Stara Zagora', 1), ('Athens', 4), ('London', 5), ('Oslo', 2), ('Larnaca', 3)",
+                "INSERT INTO Minions ([Name], Age, TownId) VALUES ('Milen', 25, 1), ('George', 20, 5), ('John', 18, 4), ('Kevin', 28, 2), ('Jimm', 17, 3)",
+                "INSERT INTO EvilnessFactors ([Name]) VALUES ('bad'), ('good'), ('evil'), ('super evil'), (' super good')",
+                "INSERT INTO Villains ([Name], EvilnessFactorId) VALUES ('Ivan', 1), ('Mitko', 5), ('Pesho', 3), ('Toshko', 2), ('Anton', 4)",
+                "INSERT INTO MinionsVillains VALUES (1,2), (2,4), (3,1), (5,3), (4,5)"
+            };
 
-
+            return result;
+        }    
         private static string[] CreateTables()
         {
             var result = new string[]
@@ -45,6 +56,12 @@
             };
 
             return result;
+        }
+
+        private static void ExecuteNonQuery(SqlConnection connection, string query)
+        {
+            using SqlCommand sqlCommand = new SqlCommand(query, connection);
+            sqlCommand.ExecuteNonQuery();
         }
     }
 }

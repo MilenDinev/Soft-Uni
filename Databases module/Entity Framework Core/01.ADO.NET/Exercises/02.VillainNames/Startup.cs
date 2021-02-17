@@ -16,8 +16,6 @@
                 GetVillianCounter(connection);
             }    
 
-
-
         }
 
         private static void GetVillianCounter(SqlConnection connection)
@@ -28,7 +26,6 @@
                                 JOIN Minions AS m ON mv.MinionId = m.Id
                                 GROUP BY v.[Name]
                                 --HAVING COUNT(mv.MinionId) > 3";
-
             using (var command = new SqlCommand(query, connection))
             {
                 using (var reader = command.ExecuteReader())

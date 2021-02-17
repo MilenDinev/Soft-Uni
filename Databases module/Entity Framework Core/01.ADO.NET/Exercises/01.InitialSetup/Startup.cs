@@ -27,7 +27,6 @@
 
                 //---------------------------------------------
 
-                //GetVillianCounter(connection);
 
                 int id = int.Parse(Console.ReadLine());
 
@@ -66,35 +65,11 @@
 
                     }
                 }
-
-
             }
 
         }
 
-        private static void GetVillianCounter(SqlConnection connection)
-        {
-            string query = @"SELECT v.[Name], COUNT(mv.MinionId) AS Count
-                                FROM Villains AS v
-                                JOIN MinionsVillains AS mv ON v.Id = mv.VillainId
-                                JOIN Minions AS m ON mv.MinionId = m.Id
-                                GROUP BY v.[Name]
-                                --HAVING COUNT(mv.MinionId) > 3";
 
-            using (var command = new SqlCommand(query, connection))
-            {
-                using (var reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        var name = reader["Name"];
-                        var count = reader["Count"];
-                        Console.WriteLine($"{name} - {count}");
-
-                    }
-                }
-            }
-        }
         private static string[] InserDataToTables()
         {
             var result = new string[]

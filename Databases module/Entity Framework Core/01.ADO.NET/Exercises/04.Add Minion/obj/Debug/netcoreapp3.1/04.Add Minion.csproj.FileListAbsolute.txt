@@ -1,0 +1,41 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\04.Add Minion.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\04.Add Minion.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\04.Add Minion.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\04.Add Minion.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\04.Add Minion.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\04.Add Minion.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\01.ADO.NET\Exercises\04.Add Minion\obj\Debug\netcoreapp3.1\04.Add Minion.genruntimeconfig.cache

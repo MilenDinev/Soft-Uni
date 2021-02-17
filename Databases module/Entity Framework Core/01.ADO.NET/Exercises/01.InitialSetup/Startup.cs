@@ -2,6 +2,7 @@
 {
     using Microsoft.Data.SqlClient;
     using System;
+    using System.Collections.Generic;
 
     class Startup
     {
@@ -18,14 +19,33 @@
                 //{
                 //    ExecuteNonQuery(connection, table);
                 //}
-
                 //var insertData = InserDataToTables();
                 //foreach (var record in insertData)
                 //{
                 //    ExecuteNonQuery(connection, record);
                 //}
 
-                GetVillianCounter(connection);
+                //---------------------------------------------
+
+                //GetVillianCounter(connection);
+
+                int id = int.Parse(Console.ReadLine());
+
+                string villainNameQuery = "SELECT Name FROM Villains WHERE Id = @Id";
+                using SqlCommand command = new SqlCommand(villainNameQuery, connection);
+                command.Parameters.AddWithValue("@Id", id);
+                var result = command.ExecuteScalar();
+
+                if (result == null)
+                {
+                    Console.WriteLine($"No villain with ID {id} exists in the database.");
+                }
+                else
+                {
+                    Console.WriteLine(result);
+                }
+
+
             }
 
         }
@@ -53,7 +73,6 @@
                 }
             }
         }
-
         private static string[] InserDataToTables()
         {
             var result = new string[]
@@ -88,5 +107,6 @@
             using SqlCommand sqlCommand = new SqlCommand(query, connection);
             sqlCommand.ExecuteNonQuery();
         }
+
     }
 }

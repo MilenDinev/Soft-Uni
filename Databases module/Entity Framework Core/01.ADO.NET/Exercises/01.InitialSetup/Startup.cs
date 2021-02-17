@@ -13,58 +13,18 @@
             using (connection)
             {
                 connection.Open();
-                //var createTables = CreateTables();
+                var createTables = CreateTables();
 
-                //foreach (var table in createTables)
-                //{
-                //    ExecuteNonQuery(connection, table);
-                //}
-                //var insertData = InserDataToTables();
-                //foreach (var record in insertData)
-                //{
-                //    ExecuteNonQuery(connection, record);
-                //}
-
-                //---------------------------------------------
-
-
-                int id = int.Parse(Console.ReadLine());
-
-                string villainNameQuery = "SELECT Name FROM Villains WHERE Id = @Id";
-                using SqlCommand command = new SqlCommand(villainNameQuery, connection);
-                command.Parameters.AddWithValue("@Id", id);
-                var result = command.ExecuteScalar();
-
-                string minnionsQuery = @"SELECT ROW_NUMBER() OVER (ORDER BY m.Name) AS RowNum, m.Name, m.Age 
-                                            FROM MinionsVillains AS mv 
-                                            JOIN Minions AS m ON mv.MinionId = m.Id
-                                            WHERE mv.VillainId = @Id
-                                        ORDER BY m.Name";
-
-                if (result == null)
+                foreach (var table in createTables)
                 {
-                    Console.WriteLine($"No villain with ID {id} exists in the database.");
+                    ExecuteNonQuery(connection, table);
                 }
-                else
+                var insertData = InserDataToTables();
+                foreach (var record in insertData)
                 {
-                    Console.WriteLine($"Villain: {result}");
-                    using (var minionsCommnad = new SqlCommand(minnionsQuery, connection))
-                    {
-                        minionsCommnad.Parameters.AddWithValue("@Id", id);
-                        using (var reader = minionsCommnad.ExecuteReader())
-                        {
-                            if (!reader.HasRows)
-                            {
-                                Console.WriteLine("(no minions)");
-                            }
-                            while (reader.Read())
-                            {
-                                Console.WriteLine($"{reader[0]}. {reader[1]} {reader[2]}");
-                            }
-                        }
-
-                    }
+                    ExecuteNonQuery(connection, record);
                 }
+
             }
 
         }

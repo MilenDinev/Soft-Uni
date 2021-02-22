@@ -14,5 +14,9 @@ namespace EFCoreCodeFirstDemo.Models
         public string Content { get; set; }
 
         public DateTime CreatedOn { get; set; }
+
+        public string Author { get; set; }
+
+        public ICollection<Comment> Comments { get; set; }
     }
 }

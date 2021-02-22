@@ -33,6 +33,7 @@ namespace EFCoreIntroductionDemo.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Server=.;Database=SoftUni;Integrated Security=true");
             }
         }
@@ -43,14 +44,7 @@ namespace EFCoreIntroductionDemo.Models
 
             modelBuilder.Entity<Address>(entity =>
             {
-                entity.Property(e => e.AddressId).HasColumnName("AddressID");
-
-                entity.Property(e => e.AddressText)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.TownId).HasColumnName("TownID");
+                entity.Property(e => e.AddressText).IsUnicode(false);
 
                 entity.HasOne(d => d.Town)
                     .WithMany(p => p.Addresses)
@@ -60,22 +54,12 @@ namespace EFCoreIntroductionDemo.Models
 
             modelBuilder.Entity<Country>(entity =>
             {
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(30)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).IsUnicode(false);
             });
 
             modelBuilder.Entity<Department>(entity =>
             {
-                entity.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
-
-                entity.Property(e => e.ManagerId).HasColumnName("ManagerID");
-
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).IsUnicode(false);
 
                 entity.HasOne(d => d.Manager)
                     .WithMany(p => p.Departments)
@@ -86,36 +70,13 @@ namespace EFCoreIntroductionDemo.Models
 
             modelBuilder.Entity<Employee>(entity =>
             {
-                entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
+                entity.Property(e => e.FirstName).IsUnicode(false);
 
-                entity.Property(e => e.AddressId).HasColumnName("AddressID");
+                entity.Property(e => e.JobTitle).IsUnicode(false);
 
-                entity.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
+                entity.Property(e => e.LastName).IsUnicode(false);
 
-                entity.Property(e => e.FirstName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.HireDate).HasColumnType("smalldatetime");
-
-                entity.Property(e => e.JobTitle)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.ManagerId).HasColumnName("ManagerID");
-
-                entity.Property(e => e.MiddleName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Salary).HasColumnType("money");
+                entity.Property(e => e.MiddleName).IsUnicode(false);
 
                 entity.HasOne(d => d.Address)
                     .WithMany(p => p.Employees)
@@ -138,10 +99,6 @@ namespace EFCoreIntroductionDemo.Models
             {
                 entity.HasKey(e => new { e.EmployeeId, e.ProjectId });
 
-                entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
-
-                entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
-
                 entity.HasOne(d => d.Employee)
                     .WithMany(p => p.EmployeesProjects)
                     .HasForeignKey(d => d.EmployeeId)
@@ -157,122 +114,52 @@ namespace EFCoreIntroductionDemo.Models
 
             modelBuilder.Entity<NewTable>(entity =>
             {
-                entity.HasNoKey();
+                entity.Property(e => e.EmployeeId).ValueGeneratedOnAdd();
 
-                entity.ToTable("NewTable");
+                entity.Property(e => e.FirstName).IsUnicode(false);
 
-                entity.Property(e => e.AddressId).HasColumnName("AddressID");
+                entity.Property(e => e.JobTitle).IsUnicode(false);
 
-                entity.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
+                entity.Property(e => e.LastName).IsUnicode(false);
 
-                entity.Property(e => e.EmployeeId)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("EmployeeID");
-
-                entity.Property(e => e.FirstName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.HireDate).HasColumnType("smalldatetime");
-
-                entity.Property(e => e.JobTitle)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.ManagerId).HasColumnName("ManagerID");
-
-                entity.Property(e => e.MiddleName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Salary).HasColumnType("money");
+                entity.Property(e => e.MiddleName).IsUnicode(false);
             });
 
             modelBuilder.Entity<Project>(entity =>
             {
-                entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
-
-                entity.Property(e => e.Description).HasColumnType("ntext");
-
-                entity.Property(e => e.EndDate).HasColumnType("smalldatetime");
-
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.StartDate).HasColumnType("smalldatetime");
+                entity.Property(e => e.Name).IsUnicode(false);
             });
 
             modelBuilder.Entity<Town>(entity =>
             {
-                entity.Property(e => e.TownId).HasColumnName("TownID");
-
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).IsUnicode(false);
             });
 
             modelBuilder.Entity<VEmployeeNameJobTitle>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToView("V_EmployeeNameJobTitle");
 
-                entity.Property(e => e.FullName)
-                    .HasMaxLength(152)
-                    .IsUnicode(false);
+                entity.Property(e => e.FullName).IsUnicode(false);
 
-                entity.Property(e => e.JobTitle)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.JobTitle).IsUnicode(false);
             });
 
             modelBuilder.Entity<VEmployeesHiredAfter2000>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToView("V_EmployeesHiredAfter2000");
 
-                entity.Property(e => e.FirstName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.FirstName).IsUnicode(false);
 
-                entity.Property(e => e.HireDate).HasColumnType("smalldatetime");
-
-                entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.LastName).IsUnicode(false);
             });
 
             modelBuilder.Entity<VEmployeesSalary>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToView("V_EmployeesSalaries");
 
-                entity.Property(e => e.FirstName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.FirstName).IsUnicode(false);
 
-                entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Salary).HasColumnType("money");
+                entity.Property(e => e.LastName).IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

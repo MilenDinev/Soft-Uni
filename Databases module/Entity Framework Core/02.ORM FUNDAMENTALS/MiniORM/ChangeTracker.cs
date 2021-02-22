@@ -7,7 +7,7 @@
 	using System.Reflection;
 
 	internal class ChangeTracker<T>
-		where T: class, new()
+		where T : class, new()
 	{
 		private readonly List<T> allEntities;
 

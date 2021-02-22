@@ -12,9 +12,11 @@
             var db = new SoftUniContext();
             Console.WriteLine(db.Employees.Count());
             Console.WriteLine(db.Employees.Where(x => x.Salary < 100000).Count());
-            foreach (var employee in db.Employees)
+            var salaries = db.Employees.Where(x => x.Salary > 100000).Select(x => new {x.Salary }).ToList();
+
+            foreach (var salary in salaries)
             {
-               // Console.WriteLine(employee.Salary);
+                Console.WriteLine(salary);
             }
             
         }

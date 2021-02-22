@@ -21,7 +21,7 @@ namespace EFCoreCodeFirstDemo.Models
         {
             if (!optionBuilder.IsConfigured)
             {
-                optionBuilder.UseSqlServer("Server=.;DatabaseSliDo;Integrated Security=true");
+                optionBuilder.UseSqlServer("Server=.;Database=SliDo;Integrated Security=true");
             }
         }
         public DbSet<Comment> Comments { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EFCoreCodeFirstDemo.Models;
+using System;
 
 namespace EFCoreCodeFirstDemo
 {
@@ -6,7 +7,8 @@ namespace EFCoreCodeFirstDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var db = new SliDoDbContext();
+            db.Database.EnsureCreated();
         }
     }
 }

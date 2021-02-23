@@ -19,10 +19,10 @@
 
             foreach (var employee in employeesInfo)
             {
-                System.Console.WriteLine($"{employee.FirstName} {employee.LastName} {employee.MiddleName} {employee.Salary:f2} ");
+                System.Console.WriteLine($"{employee.FirstName} {employee.LastName} {employee.MiddleName} {employee.JobTitle} {employee.Salary:f2} ");
             }
 
-            return "";
+            return null;
         }
     }
 }

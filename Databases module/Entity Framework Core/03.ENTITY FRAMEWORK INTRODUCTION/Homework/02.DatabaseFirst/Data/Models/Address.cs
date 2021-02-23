@@ -1,4 +1,4 @@
-﻿namespace _02.DatabaseFirst.Data.Models
+﻿namespace SoftUni.Data.Models
 {
     using System.Collections.Generic;
 

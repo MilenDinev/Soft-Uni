@@ -1,4 +1,4 @@
-﻿namespace SoftUni.Data.Models
+﻿namespace SoftUni.Models
 {
     using System.Collections.Generic;
 

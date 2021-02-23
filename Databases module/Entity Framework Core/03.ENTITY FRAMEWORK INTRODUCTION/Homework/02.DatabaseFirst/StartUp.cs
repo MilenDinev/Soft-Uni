@@ -1,8 +1,7 @@
-﻿namespace _02.DatabaseFirst
+﻿namespace SoftUni
 {
-    using Data.Models;
+    using SoftUni.Data;
     using System.Linq;
-    using System.Security.Cryptography.X509Certificates;
 
     public class StartUp
     {

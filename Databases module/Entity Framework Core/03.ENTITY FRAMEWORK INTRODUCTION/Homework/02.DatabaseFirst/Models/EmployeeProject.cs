@@ -1,4 +1,4 @@
-﻿namespace _02.DatabaseFirst.Data.Models
+﻿namespace SoftUni.Models
 {
     public partial class EmployeeProject
     {

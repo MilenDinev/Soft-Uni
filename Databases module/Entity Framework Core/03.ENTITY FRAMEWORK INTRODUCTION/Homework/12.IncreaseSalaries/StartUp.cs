@@ -13,31 +13,29 @@
         {
             var db = new SoftUniContext();
 
-            System.Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(db));
+            System.Console.WriteLine(IncreaseSalaries(db));
         }
 
-        public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context)
+        public static string IncreaseSalaries(SoftUniContext context)
         {
             StringBuilder sb = new StringBuilder();
             string[] deparments = { "Engineering", "Tool Design", "Marketing", "Information Services" };
 
             var employees = context.Employees
-                .Select(x => new 
-                {
-                    x.FirstName,
-                    x.LastName,
-                    x.JobTitle,
-                    x.Salary
-                })
-                .Where(x => x.FirstName.StartsWith("Sa"))
-                .OrderBy(x => x.FirstName)
-                .ThenBy(x => x.LastName)
+                .Include(x => x.Department)
+                .Where(x => deparments.Contains(x.Department.Name))
                 .ToList();
-
 
             foreach (var employee in employees)
             {
-                sb.AppendLine($"{employee.FirstName} {employee.LastName} - {employee.JobTitle} - (${employee.Salary:f2})");
+                employee.Salary *= 1.12m;
+            }
+
+            context.SaveChanges();
+
+            foreach (var employee in employees.OrderBy(e => e.FirstName).ThenBy(e => e.LastName))
+            {
+                sb.AppendLine($"{employee.FirstName} {employee.LastName} (${employee.Salary:f2})");
 
             }
 

@@ -5,10 +5,6 @@
 
     public class StudentSystemContext : DbContext
     {
-        //create constructor
-        // dbsets
-        // connect sql server
-        // fluent api relation
 
         public StudentSystemContext()
         {

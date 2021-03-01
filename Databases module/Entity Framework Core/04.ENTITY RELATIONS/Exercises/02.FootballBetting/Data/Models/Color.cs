@@ -1,10 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _02.FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
-    class Color
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    public class Color
     {
+        public Color()
+        {
+            Teams = new HashSet<Team>();
+        }
+
+        public int ColorId { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        public ICollection<Team> Teams { get; set; }
     }
 }

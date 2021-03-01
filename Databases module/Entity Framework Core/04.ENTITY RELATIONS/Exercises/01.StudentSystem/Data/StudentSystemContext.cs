@@ -40,7 +40,7 @@
         {
             modelBuilder.Entity<StudentCourse>(x =>
             {
-                x.HasKey(x => new { x.CourseId, x.StudentId });
+                x.HasKey(x => new { x.CourseId, x.StudentId});
             });
         }
     }

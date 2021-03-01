@@ -1,10 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _02.FootballBetting.Data
+﻿namespace P03_FootballBetting.Data
 {
-    class FootballBettingContext
+    using Microsoft.EntityFrameworkCore;
+
+    public class FootballBettingContext : DbContext
     {
+        public FootballBettingContext()
+        {
+
+        }
+
+        public FootballBettingContext(DbContextOptions options):base(options)
+        {
+
+        }
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=.;Database=FootballBetting;Integrated Security=True;");
+
+                base.OnConfiguring(optionsBuilder);
+            }
+        }
     }
 }

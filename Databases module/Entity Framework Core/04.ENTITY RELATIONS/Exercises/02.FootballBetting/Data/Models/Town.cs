@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _02.FootballBetting.Data.Models
+﻿namespace P03_FootballBetting.Data.Models
 {
-    class Town
+    using System.ComponentModel.DataAnnotations;
+   public class Town
     {
+        public int TownId { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+        public int CountryId { get; set; }
     }
 }

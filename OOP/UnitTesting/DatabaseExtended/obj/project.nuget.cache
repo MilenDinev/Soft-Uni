@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NDORqb3vVlfe8ANqxxoZpZqoAddm5oYcp+dkcwFtJcPg/EIoOjDyxcXGgwRSWy3ktvC3Zda+FkBTefOUT8dq7g==",
+  "success": true,
+  "projectFilePath": "D:\\My Files\\SoftUni\\Advanced module\\OOP 2020\\UnitTesting\\DatabaseExtended\\DatabaseExtended.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -6,14 +6,12 @@
     {
         public Color()
         {
-            Teams = new HashSet<Team>();
+            this.PrimaryKitTeams = new HashSet<Team>();
+            this.SecondaryKitTeams = new HashSet<Team>();
         }
-
         public int ColorId { get; set; }
-
-        [Required]
         public string Name { get; set; }
-
-        public ICollection<Team> Teams { get; set; }
+        public ICollection<Team> PrimaryKitTeams { get; set; }
+        public ICollection<Team> SecondaryKitTeams { get; set; }
     }
 }

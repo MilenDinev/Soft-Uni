@@ -6,12 +6,10 @@ function equalDigits(number){
 
     for (let i = 0; i < string.length; i++) {
         
-        if(i < string.lenght){
-
-            if (string[i] !== string[i+1]); {
-                equal = false;
-            }
-        }
+       if (string[i] !== string[i+1]&& i < string.lenght); {
+            equal = false;
+            
+       }
 
         sum += Number(string[i]);
     }

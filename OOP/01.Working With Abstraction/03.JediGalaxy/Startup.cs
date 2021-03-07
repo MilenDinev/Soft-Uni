@@ -1,8 +1,8 @@
-﻿using System;
-using System.Linq;
-
-namespace _03.JediGalaxy
+﻿namespace _03.JediGalaxy
 {
+    using System;
+    using System.Linq;
+
     public class Startup
     {
         static void Main()

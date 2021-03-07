@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace _03.JediGalaxy
+﻿namespace _03.JediGalaxy
 {
     public class Universe
     {

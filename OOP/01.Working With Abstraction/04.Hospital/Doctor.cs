@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace _04.Hospital
+﻿namespace _04.Hospital
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     public class Doctor
     {
         public Doctor(string firstName, string lastName)

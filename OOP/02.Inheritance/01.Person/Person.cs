@@ -5,34 +5,31 @@
 
     public class Person
     {
-        private string name;
         private int age;
-
         public Person(string name, int age)
         {
             this.Name = name;
             this.Age = age;
         }
 
-        public string Name { get; private set; }
-
-
-        public virtual int Age
+        public string Name { get; set; }
+        public virtual int Age 
         {
-            get 
-            { 
-                return this.age; 
-            }
-            set 
+            get
             {
-                if (value > 0)
+                return this.age;
+            }
+
+            set
+            {
+                if (value < 0)
                 {
-                    this.age = value;
+                    throw new ArgumentException("Age should be greater than 0");
                 }
 
+                this.age = value;
             }
         }
-
 
         public override string ToString()
         {
@@ -42,6 +39,7 @@
                                  this.Age));
 
             return stringBuilder.ToString();
+
         }
     }
 }

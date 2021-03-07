@@ -4,11 +4,9 @@
     {
         public Child(string name, int age) : base(name, age)
         {
-
         }
 
-
-        public override int Age 
+        public override int Age
         {
             get
             {
@@ -17,7 +15,7 @@
 
             set
             {
-                if (value <=15)
+                if (value <= 15)
                 {
                     base.Age = value;
                 }

@@ -9,20 +9,17 @@
             string name = Console.ReadLine();
             int age = int.Parse(Console.ReadLine());
 
-
             Person person;
-
             if (age > 15)
             {
                 person = new Person(name, age);
-                Console.WriteLine(person);
             }
-
-            else if (age <= 15)
+            else
             {
                 person = new Child(name, age);
-                Console.WriteLine(person);
             }
+
+            Console.WriteLine(person);
         }
     }
 }

@@ -4,6 +4,9 @@ const divClassErr = document.querySelector('div.error');
 const paras = document.querySelectorAll('p');
 
 console.log(para);
+//console.log(para.innerText);
+para.innerText = 'ninjas are awesome'
+console.log(para.innerText)
 console.log(classErr);
 console.log(divClassErr);
 console.log(paras);
@@ -15,8 +18,10 @@ paras.forEach(p => {
 });
 
 
-const tittle = document.getElementById('page-title')
-const errors = document.getElementsByClassName('error')
+const tittle = document.getElementById('page-title');
+const errors = document.getElementsByClassName('error');
 
-console.log(tittle)
-console.log(errors)
+console.log(tittle);
+console.log(errors);
+console.log(errors[0]);
+

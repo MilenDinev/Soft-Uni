@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\01.ClassBoxData\\01.ClassBoxData.csproj",
-      "projectName": "01.ClassBoxData",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\01.ClassBoxData\\01.ClassBoxData.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\05.FootballTeam.csproj",
+      "projectName": "05.FootballTeam",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\05.FootballTeam.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\01.ClassBoxData\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",

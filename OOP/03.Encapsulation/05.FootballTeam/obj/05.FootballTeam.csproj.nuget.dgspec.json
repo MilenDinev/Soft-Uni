@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\04.PizzaCalories.csproj": {}
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\05.FootballTeam.csproj": {}
   },
   "projects": {
-    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\04.PizzaCalories.csproj": {
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\05.FootballTeam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\04.PizzaCalories.csproj",
-        "projectName": "04.PizzaCalories",
-        "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\04.PizzaCalories.csproj",
+        "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\05.FootballTeam.csproj",
+        "projectName": "05.FootballTeam",
+        "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\05.FootballTeam.csproj",
         "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-        "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\04.PizzaCalories\\obj\\",
+        "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\OOP\\03.Encapsulation\\05.FootballTeam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",

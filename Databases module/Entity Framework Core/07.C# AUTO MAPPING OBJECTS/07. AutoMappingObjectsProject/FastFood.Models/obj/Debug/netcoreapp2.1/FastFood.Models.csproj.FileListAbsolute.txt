@@ -1,0 +1,9 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\07.C# AUTO MAPPING OBJECTS\07. AutoMappingObjectsProject\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.pdb

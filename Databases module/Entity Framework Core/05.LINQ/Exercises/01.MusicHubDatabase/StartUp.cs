@@ -7,6 +7,7 @@
     using Data;
     using Initializer;
     using Microsoft.EntityFrameworkCore;
+    using MusicHub.Data.Models;
 
     public class StartUp
     {
@@ -17,7 +18,9 @@
 
             DbInitializer.ResetDatabase(context);
 
-            Console.WriteLine(ExportAlbumsInfo(context, 9));
+            //Console.WriteLine(ExportAlbumsInfo(context, 9));
+
+            Console.WriteLine(ExportSongsAboveDuration(context, 4));
         }
 
         public static string ExportAlbumsInfo(MusicHubDbContext context, int producerId)
@@ -65,7 +68,41 @@
 
         public static string ExportSongsAboveDuration(MusicHubDbContext context, int duration)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            var songs = context.Songs
+                .Include(x => x.Album)
+                .Include(x => x.SongPerformers)
+                .ToList()
+                .Where(x => x.Duration.TotalSeconds > duration)
+                .Select(x => new
+                {
+                    x.Name,
+                    WriteName = x.Writer.Name,
+                    PerformerFulllName = x.SongPerformers.Select(x => x.Performer.FirstName + ' ' + x.Performer.LastName).FirstOrDefault(),
+                    AlbumProducer = x.Album.Producer.Name,
+                    x.Duration
+                })
+                .OrderBy(x => x.Name)
+                .ThenBy(x => x.WriteName)
+                .ThenBy(x => x.PerformerFulllName);
+
+            int counter = 1;
+
+            foreach (var song in songs)
+            {
+                sb.AppendLine($"-Song #{counter}");
+                sb.AppendLine($"---SongName: {song.Name}");
+                sb.AppendLine($"---Writer: {song.WriteName}");
+                sb.AppendLine($"---Performer: {string.Join(", ", song.PerformerFulllName)}");
+                sb.AppendLine($"---AlbumProducer: {song.AlbumProducer}");
+                sb.AppendLine($"---Duration: {song.Duration:c}");
+
+                counter++;
+            }
+
+            return sb.ToString().TrimEnd();
+
         }
 
     }

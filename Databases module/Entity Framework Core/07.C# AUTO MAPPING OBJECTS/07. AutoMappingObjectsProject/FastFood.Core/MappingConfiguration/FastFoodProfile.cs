@@ -16,7 +16,8 @@
             this.CreateMap<Position, PositionsAllViewModel>()
                 .ForMember(x => x.Name, y => y.MapFrom(s => s.Name));
             //Employee
-            this.CreateMap<Position, RegisterEmployeeViewModel>();
+            this.CreateMap<Position, RegisterEmployeeViewModel>()
+                .ForMember(x => x.PositionId, y => y.MapFrom(s => s.Id));
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿namespace FastFood.Core.MappingConfiguration
 {
     using AutoMapper;
+    using FastFood.Core.ViewModels.Categories;
     using FastFood.Core.ViewModels.Employees;
     using FastFood.Models;
     using ViewModels.Positions;
@@ -23,6 +24,10 @@
 
             this.CreateMap<Employee, EmployeesAllViewModel>()
                 .ForMember(x => x.Position, y => y.MapFrom(x => x.Position.Name));
+
+            //Categories
+
+            this.CreateMap<Category, CategoryAllViewModel>();
         }
     }
 }

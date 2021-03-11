@@ -1,11 +1,10 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-namespace JSONDemo
+﻿namespace JSONDemo
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Text.Json;
+    using System.Text.Json.Serialization;
 
     class Program
     {
@@ -37,10 +36,6 @@ namespace JSONDemo
             Console.WriteLine(json);
 
             Console.WriteLine(JsonSerializer.Serialize(car));
-
-            //Newton JSon library
-            //JsonConvert.DeserializeObject<Car>(json);
-            //JsonConvert.SerializeObject(json);
 
         }
     }

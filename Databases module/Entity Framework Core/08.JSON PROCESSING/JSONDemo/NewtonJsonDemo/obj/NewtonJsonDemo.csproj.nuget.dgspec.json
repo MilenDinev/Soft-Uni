@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\JSONDemo\\JSONDemo.csproj": {}
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\NewtonJsonDemo\\NewtonJsonDemo.csproj": {}
   },
   "projects": {
-    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\JSONDemo\\JSONDemo.csproj": {
+    "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\NewtonJsonDemo\\NewtonJsonDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\JSONDemo\\JSONDemo.csproj",
-        "projectName": "JSONDemo",
-        "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\JSONDemo\\JSONDemo.csproj",
+        "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\NewtonJsonDemo\\NewtonJsonDemo.csproj",
+        "projectName": "NewtonJsonDemo",
+        "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\NewtonJsonDemo\\NewtonJsonDemo.csproj",
         "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-        "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\JSONDemo\\obj\\",
+        "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\NewtonJsonDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MIlen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "System.Text.Json": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

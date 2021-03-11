@@ -1,0 +1,15 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\NewtonJsonDemo.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\NewtonJsonDemo.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\NewtonJsonDemo.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\NewtonJsonDemo.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\NewtonJsonDemo.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\NewtonJsonDemo.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\08.JSON PROCESSING\JSONDemo\NewtonJsonDemo\obj\Debug\netcoreapp3.1\NewtonJsonDemo.genruntimeconfig.cache

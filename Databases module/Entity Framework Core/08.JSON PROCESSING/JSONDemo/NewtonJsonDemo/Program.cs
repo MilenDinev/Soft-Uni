@@ -24,6 +24,7 @@
                 }
             };
 
+ 
             File.WriteAllText("myCar.json", JsonConvert.SerializeObject(car));
             var json = File.ReadAllText("myCar.json");
             JsonConvert.DeserializeObject<Car>(json);
@@ -39,6 +40,16 @@
             };
 
             Console.WriteLine(JsonConvert.SerializeObject(car, options));
+
+
+            var a = new
+            {
+                Model = "",
+                Price = 00.00m
+            };
+
+
+            Console.WriteLine(JsonConvert.DeserializeAnonymousType(json, a, options));
         }
     }
 }

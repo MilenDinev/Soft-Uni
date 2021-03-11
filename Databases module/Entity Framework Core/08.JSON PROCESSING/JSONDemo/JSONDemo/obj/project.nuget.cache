@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BF01rklGE0txw2Oo7lBMjumKnR+4bXH7YUMFjVMmncVpK20a6WphJKYOnD4TVSJsXPSsM3LC/6BdB+OTT9OCBg==",
+  "dgSpecHash": "mBwA2IBdyJCgzyPKTrExHaH6OqR4HLOswqjjTNNPReWFrx5gNo255kSkVXWiHboScYYvup1evchr3D3v22Uk1A==",
   "success": true,
   "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\08.JSON PROCESSING\\JSONDemo\\JSONDemo\\JSONDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MIlen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
   ],
   "logs": []

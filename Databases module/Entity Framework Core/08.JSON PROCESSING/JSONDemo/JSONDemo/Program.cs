@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 namespace JSONDemo
@@ -11,7 +13,7 @@ namespace JSONDemo
         {
             Car car = new Car
             {
-                Extras = new List<string> { "klimatronik", "4x4", "Farove" },
+                Extras = new List<string> { "Klimatronik", "4x4", "Farove" },
                 ManufacturedOn = DateTime.Now,
                 Model = "Golf",
                 Vendor = "VW",
@@ -22,7 +24,24 @@ namespace JSONDemo
                 }
             };
 
-            JsonSerializer.Serialize(car);
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+
+            File.WriteAllText("myCar.json", JsonSerializer.Serialize(car));
+            var json = File.ReadAllText("myCar.json");
+
+            Car carJ = JsonSerializer.Deserialize<Car>(json);
+
+            Console.WriteLine(json);
+
+            Console.WriteLine(JsonSerializer.Serialize(car));
+
+            //Newton JSon library
+            //JsonConvert.DeserializeObject<Car>(json);
+            //JsonConvert.SerializeObject(json);
+
         }
     }
 }

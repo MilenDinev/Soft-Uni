@@ -4,7 +4,9 @@ using System.Text;
 
 namespace JSONDemo
 {
-    class Engine
+   public class Engine
     {
+        public int HorsePower { get; set; }
+        public float Volume { get; set;}
     }
 }

@@ -33,7 +33,6 @@
         public IActionResult Create(CreateItemInputModel model)
         {
             var item = this.mapper.Map<Item>(model);
-
             this.context.Items.Add(item);
 
             this.context.SaveChanges();

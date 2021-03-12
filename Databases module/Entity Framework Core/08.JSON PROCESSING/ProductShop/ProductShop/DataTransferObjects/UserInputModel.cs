@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ProductShop.DataTransferObjects
+﻿namespace ProductShop.DataTransferObjects
 {
-    class UserInputModel
+    public class UserInputModel
     {
+        public string FirstName { get; set; }
+        public string Lastname { get; set; }
+        public int? Age { get; set; }
     }
 }

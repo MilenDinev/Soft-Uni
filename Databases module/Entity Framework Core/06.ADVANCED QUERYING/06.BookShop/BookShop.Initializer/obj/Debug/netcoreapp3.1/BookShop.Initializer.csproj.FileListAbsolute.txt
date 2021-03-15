@@ -1,0 +1,14 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Initializer.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Initializer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Initializer.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Data.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\bin\Debug\netcoreapp3.1\BookShop.Models.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Initializer\obj\Debug\netcoreapp3.1\BookShop.Initializer.pdb

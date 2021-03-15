@@ -16,7 +16,9 @@
             //string command = Console.ReadLine();
             //Console.WriteLine(GetBooksByAgeRestriction(db, command));
             //Console.WriteLine(GetGoldenBooks(db));
-            Console.WriteLine(GetBooksByPrice(db));
+            //Console.WriteLine(GetBooksByPrice(db));
+            //int year = int.Parse(Console.ReadLine());
+            //Console.WriteLine(GetBooksNotReleasedIn(db,year));
 
         }
 
@@ -92,7 +94,24 @@
         //5
         public static string GetBooksNotReleasedIn(BookShopContext context, int year)
         {
+            StringBuilder sb = new StringBuilder();
+            var books = context.Books
+                .Select(x => new
+                {
+                    x.BookId,
+                    x.Title,
+                    x.ReleaseDate
+                })
+                .Where(x => x.ReleaseDate.Value.Year != 2000)
+                .OrderBy(x => x.BookId)
+                .ToList();
 
+            foreach (var book in books)
+            {
+                sb.AppendLine($"{book.Title}");
+            }
+
+            return sb.ToString().TrimEnd();
         }
     }
 }

@@ -28,7 +28,6 @@
             StringBuilder sb = new StringBuilder();
 
             var albums = context.Albums
-                .Include(x => x.Producer)
                 .Select(x => new
                 {
                     x.ProducerId,
@@ -71,8 +70,6 @@
             StringBuilder sb = new StringBuilder();
 
             var songs = context.Songs
-                .Include(x => x.Album)
-                .Include(x => x.SongPerformers)
                 .ToList()
                 .Where(x => x.Duration.TotalSeconds > duration)
                 .Select(x => new

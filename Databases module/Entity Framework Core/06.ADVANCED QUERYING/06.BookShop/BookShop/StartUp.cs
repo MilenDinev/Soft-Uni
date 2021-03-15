@@ -15,10 +15,12 @@
             DbInitializer.ResetDatabase(db);
             //string command = Console.ReadLine();
             //Console.WriteLine(GetBooksByAgeRestriction(db, command));
-            Console.WriteLine(GetGoldenBooks(db));
+            //Console.WriteLine(GetGoldenBooks(db));
+            Console.WriteLine(GetBooksByPrice(db));
 
         }
 
+        //2
         public static string GetBooksByAgeRestriction(BookShopContext context, string command)
         {
             //var ageRestriction = Enum.Parse(typeof(AgeRestriction), command, true);
@@ -45,6 +47,7 @@
             return sb.ToString().TrimEnd();
         }
 
+        //3
         public static string GetGoldenBooks(BookShopContext context)
         {
             StringBuilder sb = new StringBuilder();
@@ -61,6 +64,35 @@
                 sb.AppendLine($"{goldenBook.Title}");
             }
             return sb.ToString().TrimEnd();
+        }
+
+
+        //4
+        public static string GetBooksByPrice(BookShopContext context)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            var books = context.Books
+                .Select(x => new
+                {
+                    x.Title,
+                    x.Price
+                })
+                .Where(x => x.Price > 40)
+                .OrderByDescending(x => x.Price)
+                .ToList();
+
+            foreach (var book in books)
+            {
+                sb.AppendLine($"{book.Title} - ${book.Price}");
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        //5
+        public static string GetBooksNotReleasedIn(BookShopContext context, int year)
+        {
+
         }
     }
 }

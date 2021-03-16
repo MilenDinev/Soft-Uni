@@ -4,6 +4,7 @@
     using Data;
     using Initializer;
     using System;
+    using System.Globalization;
     using System.Linq;
     using System.Text;
 
@@ -19,7 +20,8 @@
             //Console.WriteLine(GetBooksByPrice(db));
             //int year = int.Parse(Console.ReadLine());
             //Console.WriteLine(GetBooksNotReleasedIn(db,year));
-
+            string date = Console.ReadLine();
+            Console.WriteLine(GetBooksReleasedBefore(db, date));
         }
 
         //2
@@ -102,7 +104,7 @@
                     x.Title,
                     x.ReleaseDate
                 })
-                .Where(x => x.ReleaseDate.Value.Year != 2000)
+                .Where(x => x.ReleaseDate.Value.Year != year)
                 .OrderBy(x => x.BookId)
                 .ToList();
 
@@ -113,5 +115,42 @@
 
             return sb.ToString().TrimEnd();
         }
+
+        //6
+        public static string GetBooksByCategory(BookShopContext context, string input)
+        {
+            StringBuilder sb = new StringBuilder();
+
+
+            return sb.ToString().TrimEnd();
+        }
+
+        //7
+        public static string GetBooksReleasedBefore(BookShopContext context, string date)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            var books = context.Books
+                .Select(x => new
+                {
+                    x.ReleaseDate,
+                    x.Title,
+                    x.EditionType,
+                    x.Price
+                })
+                .Where(x => x.ReleaseDate.Value < DateTime.ParseExact(date, "dd-MM-yyyy", CultureInfo.InvariantCulture))
+                .OrderByDescending(x => x.ReleaseDate)
+                .ToList();
+
+
+            foreach (var book in books)
+            {
+                sb.AppendLine($"{book.Title} - {book.EditionType} - ${book.Price}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+
     }
 }

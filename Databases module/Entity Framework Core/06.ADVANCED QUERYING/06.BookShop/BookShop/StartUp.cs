@@ -20,8 +20,10 @@
             //Console.WriteLine(GetBooksByPrice(db));
             //int year = int.Parse(Console.ReadLine());
             //Console.WriteLine(GetBooksNotReleasedIn(db,year));
-            string date = Console.ReadLine();
-            Console.WriteLine(GetBooksReleasedBefore(db, date));
+            //string date = Console.ReadLine();
+            //Console.WriteLine(GetBooksReleasedBefore(db, date));
+            string input = Console.ReadLine();
+            Console.WriteLine(GetAuthorNamesEndingIn(db, input));
         }
 
         //2
@@ -151,6 +153,30 @@
             return sb.ToString().TrimEnd();
         }
 
+        //8
+
+        public static string GetAuthorNamesEndingIn(BookShopContext context, string input)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            var authors = context.Authors
+                .Select(x => new
+                {
+                    x.FirstName,
+                    Fullname = x.FirstName + ' ' + x.LastName
+                })
+                .Where(x => x.FirstName.EndsWith(input))
+                .OrderBy(x => x.Fullname)
+                .ToList();
+
+
+            foreach (var author in authors)
+            {
+                sb.AppendLine($"{author.Fullname}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
 
     }
 }

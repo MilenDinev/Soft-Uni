@@ -30,7 +30,8 @@
             //int lenghtCheck = int.Parse(Console.ReadLine());
             //Console.WriteLine(CountBooks(db, lenghtCheck));
             //Console.WriteLine(CountCopiesByAuthor(db));
-            Console.WriteLine(GetTotalProfitByCategory(db));
+            //Console.WriteLine(GetTotalProfitByCategory(db));
+            Console.WriteLine(GetMostRecentBooks(db));
 
 
         }
@@ -287,6 +288,42 @@
             }
 
             return sb.ToString().TrimEnd();
+        }
+
+        //13
+
+        public static string GetMostRecentBooks(BookShopContext context)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            var categories = context.Categories
+                .Select(x => new
+                {
+                    x.Name,
+                    Books = x.CategoryBooks.Select(x => new { 
+                    BookTitle = x.Book.Title,
+                    BookReleaseDate = x.Book.ReleaseDate
+                    })
+                    .OrderByDescending(x => x.BookReleaseDate)
+                    .Take(3)
+                    .ToList()
+                })
+                .OrderBy(x => x.Name)
+                .ToList();
+
+            foreach (var category in categories)
+            {
+                sb.AppendLine($"--{category.Name}");
+
+                foreach (var book in category.Books)
+                {
+                    sb.AppendLine($"{book.BookTitle} ({book.BookReleaseDate.Value.Year})");
+                }
+
+            }
+
+            return sb.ToString().TrimEnd();
+
         }
 
     }

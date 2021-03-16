@@ -24,8 +24,10 @@
             //Console.WriteLine(GetBooksReleasedBefore(db, date));
             //string input = Console.ReadLine();
             //Console.WriteLine(GetAuthorNamesEndingIn(db, input));
-            string input = Console.ReadLine();
-            Console.WriteLine(GetBookTitlesContaining(db, input));
+            //string input = Console.ReadLine();
+            //Console.WriteLine(GetBookTitlesContaining(db, input));
+            //string input = Console.ReadLine();
+            //Console.WriteLine(GetBooksByAuthor(db, input));
         }
 
         //2
@@ -73,7 +75,6 @@
             }
             return sb.ToString().TrimEnd();
         }
-
 
         //4
         public static string GetBooksByPrice(BookShopContext context)
@@ -166,7 +167,7 @@
                     x.FirstName,
                     Fullname = x.FirstName + ' ' + x.LastName
                 })
-                .Where(x => x.FirstName.EndsWith(input))
+                .Where(x => x.FirstName.ToLower().EndsWith(input.ToLower()))
                 .OrderBy(x => x.Fullname)
                 .ToList();
 
@@ -197,6 +198,32 @@
             foreach (var book in books)
             {
                 sb.AppendLine($"{book.Title}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+        //10
+        public static string GetBooksByAuthor(BookShopContext context, string input)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            var books = context.Books
+                .Select(x => new
+                {
+                    x.BookId,
+                    x.Title,
+                    x.Author.LastName,
+                    AuthorFullname = x.Author.FirstName + ' ' + x.Author.LastName
+                })
+                .Where(x => x.LastName.ToLower().StartsWith(input.ToLower()))
+                .OrderBy(x => x.BookId)
+                .ToList();
+
+
+            foreach (var book in books)
+            {
+                sb.AppendLine($"{book.Title} ({book.AuthorFullname})");
             }
 
             return sb.ToString().TrimEnd();

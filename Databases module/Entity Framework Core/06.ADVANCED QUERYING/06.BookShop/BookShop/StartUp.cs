@@ -1,8 +1,10 @@
 ﻿namespace BookShop
 {
+    using BookShop.Models;
     using BookShop.Models.Enums;
     using Data;
     using Initializer;
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Globalization;
     using System.Linq;
@@ -15,15 +17,17 @@
             using var db = new BookShopContext();
 
             DbInitializer.ResetDatabase(db);
+
             string command = Console.ReadLine();
             Console.WriteLine(GetBooksByAgeRestriction(db, command));
             Console.WriteLine(GetGoldenBooks(db));
+            string input = Console.ReadLine();
+            Console.WriteLine(GetBooksByCategory(db, input));
             Console.WriteLine(GetBooksByPrice(db));
             int year = int.Parse(Console.ReadLine());
-            Console.WriteLine(GetBooksNotReleasedIn(db,year));
+            Console.WriteLine(GetBooksNotReleasedIn(db, year));
             string date = Console.ReadLine();
             Console.WriteLine(GetBooksReleasedBefore(db, date));
-            string input = Console.ReadLine();
             Console.WriteLine(GetAuthorNamesEndingIn(db, input));
             Console.WriteLine(GetBookTitlesContaining(db, input));
             Console.WriteLine(GetBooksByAuthor(db, input));
@@ -31,8 +35,8 @@
             Console.WriteLine(CountBooks(db, lenghtCheck));
             Console.WriteLine(CountCopiesByAuthor(db));
             Console.WriteLine(GetTotalProfitByCategory(db));
-            Console.WriteLine(GetMostRecentBooks(db));       
-            IncreasePrices(db);
+            Console.WriteLine(GetMostRecentBooks(db));
+            //IncreasePrices(db);
             Console.WriteLine(RemoveBooks(db));
 
 
@@ -101,7 +105,7 @@
 
             foreach (var book in books)
             {
-                sb.AppendLine($"{book.Title} - ${book.Price}");
+                sb.AppendLine($"{book.Title} - ${book.Price:F2}");
             }
             return sb.ToString().TrimEnd();
         }
@@ -133,7 +137,21 @@
         public static string GetBooksByCategory(BookShopContext context, string input)
         {
             StringBuilder sb = new StringBuilder();
+            var categories = input.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                .Select(x => x.ToLower())
+                .ToArray();
+            var books = context.Books
+                .Include(x => x.BookCategories)
+                .ThenInclude(x => x.Category)
+                .ToList()
+                .Where(x => x.BookCategories.Any(x => categories.Contains(x.Category.Name.ToLower())))
+                .Select(x => x.Title)
+                .OrderBy(x => x);
 
+            foreach (var book in books)
+            {
+                sb.AppendLine($"{book}");
+            }
 
             return sb.ToString().TrimEnd();
         }
@@ -158,7 +176,7 @@
 
             foreach (var book in books)
             {
-                sb.AppendLine($"{book.Title} - {book.EditionType} - ${book.Price}");
+                sb.AppendLine($"{book.Title} - {book.EditionType} - ${book.Price:F2}");
             }
 
             return sb.ToString().TrimEnd();
@@ -346,13 +364,14 @@
         public static int RemoveBooks(BookShopContext context)
         {
             var books = context.Books
-                .Where(x => x.Copies < 4200);
+                .Where(x => x.Copies < 4200)
+                .ToList();
 
-            context.RemoveRange(books);
+            context.Books.RemoveRange(books);
 
             var result = context.SaveChanges();
 
-            return result;
+            return result / 2;
         }
     }
 }

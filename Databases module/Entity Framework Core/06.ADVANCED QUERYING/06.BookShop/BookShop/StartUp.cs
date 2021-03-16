@@ -28,6 +28,10 @@
             //Console.WriteLine(GetBookTitlesContaining(db, input));
             //string input = Console.ReadLine();
             //Console.WriteLine(GetBooksByAuthor(db, input));
+            //int lenghtCheck = int.Parse(Console.ReadLine());
+            //Console.WriteLine(CountBooks(db, lenghtCheck));
+
+
         }
 
         //2
@@ -228,5 +232,15 @@
 
             return sb.ToString().TrimEnd();
         }
+
+        //11
+        public static int CountBooks(BookShopContext context, int lengthCheck)
+        {
+            int counter = context.Books
+                .Where(x => x.Title.Length > lengthCheck).Count();
+
+            return counter;
+        }
+
     }
 }

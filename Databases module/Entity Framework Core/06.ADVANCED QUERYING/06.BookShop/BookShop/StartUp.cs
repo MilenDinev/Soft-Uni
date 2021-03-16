@@ -15,23 +15,25 @@
             using var db = new BookShopContext();
 
             DbInitializer.ResetDatabase(db);
-            //string command = Console.ReadLine();
-            //Console.WriteLine(GetBooksByAgeRestriction(db, command));
-            //Console.WriteLine(GetGoldenBooks(db));
-            //Console.WriteLine(GetBooksByPrice(db));
-            //int year = int.Parse(Console.ReadLine());
-            //Console.WriteLine(GetBooksNotReleasedIn(db,year));
-            //string date = Console.ReadLine();
-            //Console.WriteLine(GetBooksReleasedBefore(db, date));
-            //string input = Console.ReadLine();
-            //Console.WriteLine(GetAuthorNamesEndingIn(db, input));
-            //Console.WriteLine(GetBookTitlesContaining(db, input));
-            //Console.WriteLine(GetBooksByAuthor(db, input));
-            //int lenghtCheck = int.Parse(Console.ReadLine());
-            //Console.WriteLine(CountBooks(db, lenghtCheck));
-            //Console.WriteLine(CountCopiesByAuthor(db));
-            //Console.WriteLine(GetTotalProfitByCategory(db));
-            Console.WriteLine(GetMostRecentBooks(db));
+            string command = Console.ReadLine();
+            Console.WriteLine(GetBooksByAgeRestriction(db, command));
+            Console.WriteLine(GetGoldenBooks(db));
+            Console.WriteLine(GetBooksByPrice(db));
+            int year = int.Parse(Console.ReadLine());
+            Console.WriteLine(GetBooksNotReleasedIn(db,year));
+            string date = Console.ReadLine();
+            Console.WriteLine(GetBooksReleasedBefore(db, date));
+            string input = Console.ReadLine();
+            Console.WriteLine(GetAuthorNamesEndingIn(db, input));
+            Console.WriteLine(GetBookTitlesContaining(db, input));
+            Console.WriteLine(GetBooksByAuthor(db, input));
+            int lenghtCheck = int.Parse(Console.ReadLine());
+            Console.WriteLine(CountBooks(db, lenghtCheck));
+            Console.WriteLine(CountCopiesByAuthor(db));
+            Console.WriteLine(GetTotalProfitByCategory(db));
+            Console.WriteLine(GetMostRecentBooks(db));       
+            IncreasePrices(db);
+            Console.WriteLine(RemoveBooks(db));
 
 
         }
@@ -326,5 +328,31 @@
 
         }
 
+        //14
+
+        public static void IncreasePrices(BookShopContext context)
+        {
+            var books = context.Books;
+
+            foreach (var book in books)
+            {
+                book.Price += 5;
+            }
+
+            context.SaveChanges();
+        }
+
+        //15
+        public static int RemoveBooks(BookShopContext context)
+        {
+            var books = context.Books
+                .Where(x => x.Copies < 4200);
+
+            context.RemoveRange(books);
+
+            var result = context.SaveChanges();
+
+            return result;
+        }
     }
 }

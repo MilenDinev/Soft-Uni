@@ -1,8 +1,0 @@
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\bin\Debug\netcoreapp3.1\BookShop.Models.deps.json
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\bin\Debug\netcoreapp3.1\BookShop.Models.dll
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\bin\Debug\netcoreapp3.1\BookShop.Models.pdb
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\obj\Debug\netcoreapp3.1\BookShop.Models.AssemblyInfoInputs.cache
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\obj\Debug\netcoreapp3.1\BookShop.Models.AssemblyInfo.cs
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\obj\Debug\netcoreapp3.1\BookShop.Models.csproj.CoreCompileInputs.cache
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\obj\Debug\netcoreapp3.1\BookShop.Models.dll
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\06.ADVANCED QUERYING\06.BookShop\BookShop.Models\obj\Debug\netcoreapp3.1\BookShop.Models.pdb

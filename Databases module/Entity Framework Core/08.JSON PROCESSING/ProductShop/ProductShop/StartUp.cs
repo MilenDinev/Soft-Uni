@@ -41,6 +41,27 @@ namespace ProductShop
 
         }
 
+        public static string GetProductsInRange(ProductShopContext context)
+        {
+            var products = context.Products
+                .Where(x => x.Price >= 500 && x.Price <= 1000)
+                .Select(x => new
+                {
+                    name = x.Name,
+                    price = x.Price,
+                    selller = x.Seller.FirstName + ' ' + x.Seller.LastName
+
+                })
+                .OrderBy(x => x.price)
+                .ToList();
+            var result = JsonConvert.SerializeObject(products, Formatting.Indented);
+
+            return string.Join(Environment.NewLine, products);
+        }
+
+
+
+
         public static string ImportUsers(ProductShopContext context, string inputJson)
         {
             InitializeAutoMapper();

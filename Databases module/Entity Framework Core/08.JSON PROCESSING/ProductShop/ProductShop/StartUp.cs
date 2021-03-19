@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using ProductShop.Data;
 using ProductShop.DataTransferObjects;
@@ -38,10 +40,11 @@ namespace ProductShop
             Console.WriteLine(productsResult);
             Console.WriteLine(categoriesResult);
             Console.WriteLine(categoriesProductsResult);
-            Console.WriteLine(GetProductsInRange(productShopContex));
+            //Console.WriteLine(GetProductsInRange(productShopContex));
 
-            Console.WriteLine("NEXT METHOD");
-            Console.WriteLine(GetSoldProducts(productShopContex));
+            //Console.WriteLine("NEXT METHOD");
+           // Console.WriteLine(GetSoldProducts(productShopContex));
+            Console.WriteLine(GetCategoriesByProductsCount(productShopContex));
 
         }
 
@@ -62,7 +65,6 @@ namespace ProductShop
 
             return result;
         }
-
         public static string GetSoldProducts(ProductShopContext context)
         {
             var users = context.Products.Where(x => x.BuyerId != null)
@@ -88,6 +90,25 @@ namespace ProductShop
 
             return result;
         }
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+            StringBuilder sb = new StringBuilder();
+            var products = context.Categories
+                .Select(x => new
+                {
+                    category = x.Name,
+                    productsCount = x.CategoryProducts.Count,
+                    averagePrice = x.CategoryProducts.Average(ap => ap.Product.Price).ToString("F2"),
+                    totalRevenue = x.CategoryProducts.Sum(p => p.Product.Price).ToString("F2")
+                })
+                .OrderByDescending(x => x.productsCount)
+                .ToList();
+
+            var result = JsonConvert.SerializeObject(products, Formatting.Indented);
+
+            return result;
+        }
+
 
 
         public static string ImportUsers(ProductShopContext context, string inputJson)

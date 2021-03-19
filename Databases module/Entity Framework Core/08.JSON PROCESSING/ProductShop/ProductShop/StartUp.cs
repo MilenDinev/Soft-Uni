@@ -30,9 +30,14 @@ namespace ProductShop
             string categoriesJson = File.ReadAllText("../../../Datasets/categories.json");
             string categoriesResult = ImportCategories(productShopContex, categoriesJson);
 
+            string categoriesProductsJson = File.ReadAllText("../../../Datasets/categories-products.json");
+            string categoriesProductsResult = ImportCategoryProducts(productShopContex, categoriesProductsJson);
+
+
             Console.WriteLine(usersResult);
             Console.WriteLine(productsResult);
             Console.WriteLine(categoriesResult);
+            Console.WriteLine(categoriesProductsResult);
 
         }
 
@@ -64,14 +69,28 @@ namespace ProductShop
         public static string ImportCategories(ProductShopContext contex, string inputJson)
         {
             InitializeAutoMapper();
-            var dtoCategories = JsonConvert.DeserializeObject<IEnumerable<CategoryInputModel>>(inputJson);
+            var dtoCategories = JsonConvert.DeserializeObject<IEnumerable<CategoryInputModel>>(inputJson).Where(x => x.Name != null).ToList();
             var categories = mapper.Map<IEnumerable<Category>>(dtoCategories);
 
-            contex.AddRange(categories);
+            contex.Categories.AddRange(categories);
             contex.SaveChanges();
 
             return $"Successfully imported {categories.Count()}";
         }
+
+        public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
+        {
+            InitializeAutoMapper();
+
+            var dtoCategoryProduct = JsonConvert.DeserializeObject<IEnumerable<CategoryProductInputModel>>(inputJson);
+            var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(dtoCategoryProduct);
+
+            context.CategoryProducts.AddRange(categoriesProducts);
+            context.SaveChanges();
+
+            return $"Successfully imported {categoriesProducts.Count()}";
+        }
+
         private static void InitializeAutoMapper()
         {
             var config = new MapperConfiguration(cfg =>

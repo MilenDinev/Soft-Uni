@@ -38,6 +38,10 @@ namespace ProductShop
             Console.WriteLine(productsResult);
             Console.WriteLine(categoriesResult);
             Console.WriteLine(categoriesProductsResult);
+            Console.WriteLine(GetProductsInRange(productShopContex));
+
+            Console.WriteLine("NEXT METHOD");
+            Console.WriteLine(GetSoldProducts(productShopContex));
 
         }
 
@@ -56,10 +60,34 @@ namespace ProductShop
                 .ToList();
             var result = JsonConvert.SerializeObject(products, Formatting.Indented);
 
-            return string.Join(Environment.NewLine, products);
+            return result;
         }
 
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+            var users = context.Products.Where(x => x.BuyerId != null)
+                .Select(x => new
+                {
+                    firstName = x.Seller.FirstName,
+                    lastName = x.Seller.LastName,
+                    soldProducts = x.CategoryProducts.Where(product => product.Product.BuyerId != null)
+                    .Select(p => new
+                    {
+                        name = p.Product.Name,
+                        price = p.Product.Price,
+                        buyerFirstName = p.Product.Buyer.FirstName,
+                        buyerLastName = p.Product.Buyer.LastName
+                    })
+                    .ToList()
+                })
+                .OrderBy(x => x.lastName)
+                .ThenBy(x => x.firstName)
+                .ToList();
 
+            var result = JsonConvert.SerializeObject(users, Formatting.Indented);
+
+            return result;
+        }
 
 
         public static string ImportUsers(ProductShopContext context, string inputJson)

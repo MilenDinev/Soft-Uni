@@ -9,6 +9,8 @@
         public ProductShopProfile()
         {
             this.CreateMap<UserInputModel, User>();
+            this.CreateMap<ProductInputModel, Product>();
+
         }
     }
 }

@@ -22,10 +22,12 @@ namespace ProductShop
 
 
             string usersJson = File.ReadAllText("../../../Datasets/users.json");
-            string productJson = File.ReadAllText("../../../Datasets/product.json");
-            var result = ImportUsers(productShopContex, usersJson);
-            ImportUsers(productShopContex, productJson);
-            Console.WriteLine(result);
+            var usersResult = ImportUsers(productShopContex, usersJson);
+
+            string productsJson = File.ReadAllText("../../../Datasets/products.json");
+            var productsResult = ImportProducts(productShopContex, productsJson);
+            Console.WriteLine(usersResult);
+            Console.WriteLine(productsResult);
 
         }
 
@@ -37,6 +39,7 @@ namespace ProductShop
             var products = mapper.Map<IEnumerable<Product>>(dtoProducts);
             context.Products.AddRange(products);
             context.SaveChanges();
+
 
             return $"Successfully imported {products.Count()}";
         }

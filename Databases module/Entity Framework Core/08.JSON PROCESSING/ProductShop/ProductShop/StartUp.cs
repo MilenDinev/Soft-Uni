@@ -19,32 +19,31 @@ namespace ProductShop
         public static void Main(string[] args)
         {
             var productShopContex = new ProductShopContext();
-            productShopContex.Database.EnsureDeleted();
-            productShopContex.Database.EnsureCreated();
+            //productShopContex.Database.EnsureDeleted();
+            //productShopContex.Database.EnsureCreated();
 
 
-            string usersJson = File.ReadAllText("../../../Datasets/users.json");
-            string usersResult = ImportUsers(productShopContex, usersJson);
+            //string usersJson = File.ReadAllText("../../../Datasets/users.json");
+            //string usersResult = ImportUsers(productShopContex, usersJson);
 
-            string productsJson = File.ReadAllText("../../../Datasets/products.json");
-            string productsResult = ImportProducts(productShopContex, productsJson);
+            //string productsJson = File.ReadAllText("../../../Datasets/products.json");
+            //string productsResult = ImportProducts(productShopContex, productsJson);
 
-            string categoriesJson = File.ReadAllText("../../../Datasets/categories.json");
-            string categoriesResult = ImportCategories(productShopContex, categoriesJson);
+            //string categoriesJson = File.ReadAllText("../../../Datasets/categories.json");
+            //string categoriesResult = ImportCategories(productShopContex, categoriesJson);
 
-            string categoriesProductsJson = File.ReadAllText("../../../Datasets/categories-products.json");
-            string categoriesProductsResult = ImportCategoryProducts(productShopContex, categoriesProductsJson);
+            //string categoriesProductsJson = File.ReadAllText("../../../Datasets/categories-products.json");
+            //string categoriesProductsResult = ImportCategoryProducts(productShopContex, categoriesProductsJson);
 
 
-            Console.WriteLine(usersResult);
-            Console.WriteLine(productsResult);
-            Console.WriteLine(categoriesResult);
-            Console.WriteLine(categoriesProductsResult);
+            //Console.WriteLine(usersResult);
+            //Console.WriteLine(productsResult);
+            //Console.WriteLine(categoriesResult);
+            //Console.WriteLine(categoriesProductsResult);
             //Console.WriteLine(GetProductsInRange(productShopContex));
-
-            //Console.WriteLine("NEXT METHOD");
-           // Console.WriteLine(GetSoldProducts(productShopContex));
-            Console.WriteLine(GetCategoriesByProductsCount(productShopContex));
+            //Console.WriteLine(GetSoldProducts(productShopContex));
+            //Console.WriteLine(GetCategoriesByProductsCount(productShopContex));
+            Console.WriteLine(GetUsersWithProducts(productShopContex));
 
         }
 
@@ -52,35 +51,35 @@ namespace ProductShop
         {
             var products = context.Products
                 .Where(x => x.Price >= 500 && x.Price <= 1000)
-                .Select(x => new
+                .Select(product => new
                 {
-                    name = x.Name,
-                    price = x.Price,
-                    selller = x.Seller.FirstName + ' ' + x.Seller.LastName
+                    name = product.Name,
+                    price = product.Price,
+                    seller = product.Seller.FirstName + " " + product.Seller.LastName
 
                 })
                 .OrderBy(x => x.price)
-                .ToList();
+                .ToArray();
             var result = JsonConvert.SerializeObject(products, Formatting.Indented);
 
             return result;
         }
         public static string GetSoldProducts(ProductShopContext context)
         {
-            var users = context.Products.Where(x => x.BuyerId != null)
+            var users = context.Users
+                .Where(u => u.ProductsSold.Any(x => x.BuyerId != null))
                 .Select(x => new
                 {
-                    firstName = x.Seller.FirstName,
-                    lastName = x.Seller.LastName,
-                    soldProducts = x.CategoryProducts.Where(product => product.Product.BuyerId != null)
+                    firstName = x.FirstName,
+                    lastName = x.LastName,
+                    soldProducts = x.ProductsSold.Where(product => product.BuyerId != null)
                     .Select(p => new
                     {
-                        name = p.Product.Name,
-                        price = p.Product.Price,
-                        buyerFirstName = p.Product.Buyer.FirstName,
-                        buyerLastName = p.Product.Buyer.LastName
+                        name = p.Name,
+                        price = p.Price,
+                        buyerFirstName = p.Buyer.FirstName,
+                        buyerLastName = p.Buyer.LastName
                     })
-                    .ToList()
                 })
                 .OrderBy(x => x.lastName)
                 .ThenBy(x => x.firstName)
@@ -109,66 +108,101 @@ namespace ProductShop
             return result;
         }
 
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            var users = context.Users
+                .Where(p => p.ProductsSold.Any(b => b.BuyerId != null))
+                .Select(u => new
+                {
+                        firstName = u.FirstName,
+                        lastName = u.LastName,
+                        age = u.Age,
+                        soldProducts = new
+                        {
+                            count = u.ProductsSold.Count,
+                            product = u.ProductsSold.Where(b => b.BuyerId != null)
+                            .Select(p => new
+                            {
+                                name = p.Name,
+                                price = p.Price
+                            }).ToList()
+                        }
+                })
+                .OrderByDescending(x => x.soldProducts.count)
+                .ToList();
 
+            var resultObject = new
+            {
+                usersCount = context.Users
+                .Where(p => p.ProductsSold.Any(b => b.BuyerId != null)).Count(),
+                users = users
+            };
+
+            var result = JsonConvert.SerializeObject(resultObject, Formatting.Indented);
+
+            return result;
+
+        }
 
         public static string ImportUsers(ProductShopContext context, string inputJson)
-        {
-            InitializeAutoMapper();
-
-            var dtoUsers = JsonConvert.DeserializeObject<IEnumerable<UserInputModel>>(inputJson);
-
-            var users = mapper.Map<IEnumerable<User>>(dtoUsers);
-
-            context.Users.AddRange(users);
-            context.SaveChanges();
-            return $"Seccessfully imported {users.Count()}";
-        }
-
-        public static string ImportProducts(ProductShopContext context, string inputJson)
-        {
-            InitializeAutoMapper();
-            var dtoProducts = JsonConvert.DeserializeObject<IEnumerable<ProductInputModel>>(inputJson);
-            var products = mapper.Map<IEnumerable<Product>>(dtoProducts);
-            context.Products.AddRange(products);
-            context.SaveChanges();
-
-
-            return $"Successfully imported {products.Count()}";
-        }
-
-        public static string ImportCategories(ProductShopContext contex, string inputJson)
-        {
-            InitializeAutoMapper();
-            var dtoCategories = JsonConvert.DeserializeObject<IEnumerable<CategoryInputModel>>(inputJson).Where(x => x.Name != null).ToList();
-            var categories = mapper.Map<IEnumerable<Category>>(dtoCategories);
-
-            contex.Categories.AddRange(categories);
-            contex.SaveChanges();
-
-            return $"Successfully imported {categories.Count()}";
-        }
-
-        public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
-        {
-            InitializeAutoMapper();
-
-            var dtoCategoryProduct = JsonConvert.DeserializeObject<IEnumerable<CategoryProductInputModel>>(inputJson);
-            var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(dtoCategoryProduct);
-
-            context.CategoryProducts.AddRange(categoriesProducts);
-            context.SaveChanges();
-
-            return $"Successfully imported {categoriesProducts.Count()}";
-        }
-
-        private static void InitializeAutoMapper()
-        {
-            var config = new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile<ProductShopProfile>();
-            });
+                InitializeAutoMapper();
 
-            mapper = config.CreateMapper();
+                var dtoUsers = JsonConvert.DeserializeObject<IEnumerable<UserInputModel>>(inputJson);
+
+                var users = mapper.Map<IEnumerable<User>>(dtoUsers);
+
+                context.Users.AddRange(users);
+                context.SaveChanges();
+                return $"Successfully imported {users.Count()}";
+            }
+
+            public static string ImportProducts(ProductShopContext context, string inputJson)
+            {
+                InitializeAutoMapper();
+                var dtoProducts = JsonConvert.DeserializeObject<IEnumerable<ProductInputModel>>(inputJson);
+                var products = mapper.Map<IEnumerable<Product>>(dtoProducts);
+                context.Products.AddRange(products);
+                context.SaveChanges();
+
+
+                return $"Successfully imported {products.Count()}";
+            }
+
+            public static string ImportCategories(ProductShopContext contex, string inputJson)
+            {
+                InitializeAutoMapper();
+                var dtoCategories = JsonConvert.DeserializeObject<IEnumerable<CategoryInputModel>>(inputJson).Where(x => x.Name != null).ToList();
+                var categories = mapper.Map<IEnumerable<Category>>(dtoCategories);
+
+                contex.Categories.AddRange(categories);
+                contex.SaveChanges();
+
+                return $"Successfully imported {categories.Count()}";
+            }
+
+            public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
+            {
+                InitializeAutoMapper();
+
+                var dtoCategoryProduct = JsonConvert.DeserializeObject<IEnumerable<CategoryProductInputModel>>(inputJson);
+                var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(dtoCategoryProduct);
+
+                context.CategoryProducts.AddRange(categoriesProducts);
+                context.SaveChanges();
+
+                return $"Successfully imported {categoriesProducts.Count()}";
+            }
+
+            private static void InitializeAutoMapper()
+            {
+                var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.AddProfile<ProductShopProfile>();
+                });
+
+                mapper = config.CreateMapper();
+            }
+
         }
     }
-}

@@ -119,7 +119,7 @@ namespace ProductShop
                         age = u.Age,
                         soldProducts = new
                         {
-                            count = u.ProductsSold.Count,
+                            count = u.ProductsSold.Where(b => b.BuyerId != null).Count(),
                             product = u.ProductsSold.Where(b => b.BuyerId != null)
                             .Select(p => new
                             {
@@ -133,8 +133,7 @@ namespace ProductShop
 
             var resultObject = new
             {
-                usersCount = context.Users
-                .Where(p => p.ProductsSold.Any(b => b.BuyerId != null)).Count(),
+                usersCount = users.Count,
                 users = users
             };
 

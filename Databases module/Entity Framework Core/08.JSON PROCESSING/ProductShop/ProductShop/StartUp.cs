@@ -138,7 +138,13 @@ namespace ProductShop
                 users = users
             };
 
-            var result = JsonConvert.SerializeObject(resultObject, Formatting.Indented);
+
+            var jsonSerializerSettings = new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore
+            };
+
+            var result = JsonConvert.SerializeObject(resultObject, Formatting.Indented, jsonSerializerSettings);
 
             return result;
 

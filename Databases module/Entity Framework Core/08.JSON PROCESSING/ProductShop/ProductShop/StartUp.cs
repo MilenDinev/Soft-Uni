@@ -122,7 +122,7 @@ namespace ProductShop
                         soldProducts = new
                         {
                             count = u.ProductsSold.Where(b => b.BuyerId != null).Count(),
-                            product = u.ProductsSold.Where(b => b.BuyerId != null)
+                            products = u.ProductsSold.Where(b => b.BuyerId != null)
                             .Select(p => new
                             {
                                 name = p.Name,
@@ -130,7 +130,7 @@ namespace ProductShop
                             }).ToList()
                         }
                 })
-                .OrderByDescending(x => x.soldProducts.product.Count())
+                .OrderByDescending(x => x.soldProducts.count)
                 .ToList();
 
             var resultObject = new

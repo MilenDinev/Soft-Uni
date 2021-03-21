@@ -19,30 +19,30 @@ namespace ProductShop
         public static void Main(string[] args)
         {
             var productShopContex = new ProductShopContext();
-            //productShopContex.Database.EnsureDeleted();
-            //productShopContex.Database.EnsureCreated();
+            productShopContex.Database.EnsureDeleted();
+            productShopContex.Database.EnsureCreated();
 
 
-            //string usersJson = File.ReadAllText("../../../Datasets/users.json");
-            //string usersResult = ImportUsers(productShopContex, usersJson);
+            string usersJson = File.ReadAllText("../../../Datasets/users.json");
+            string usersResult = ImportUsers(productShopContex, usersJson);
 
-            //string productsJson = File.ReadAllText("../../../Datasets/products.json");
-            //string productsResult = ImportProducts(productShopContex, productsJson);
+            string productsJson = File.ReadAllText("../../../Datasets/products.json");
+            string productsResult = ImportProducts(productShopContex, productsJson);
 
-            //string categoriesJson = File.ReadAllText("../../../Datasets/categories.json");
-            //string categoriesResult = ImportCategories(productShopContex, categoriesJson);
+            string categoriesJson = File.ReadAllText("../../../Datasets/categories.json");
+            string categoriesResult = ImportCategories(productShopContex, categoriesJson);
 
-            //string categoriesProductsJson = File.ReadAllText("../../../Datasets/categories-products.json");
-            //string categoriesProductsResult = ImportCategoryProducts(productShopContex, categoriesProductsJson);
+            string categoriesProductsJson = File.ReadAllText("../../../Datasets/categories-products.json");
+            string categoriesProductsResult = ImportCategoryProducts(productShopContex, categoriesProductsJson);
 
 
-            //Console.WriteLine(usersResult);
-            //Console.WriteLine(productsResult);
-            //Console.WriteLine(categoriesResult);
-            //Console.WriteLine(categoriesProductsResult);
-            //Console.WriteLine(GetProductsInRange(productShopContex));
-            //Console.WriteLine(GetSoldProducts(productShopContex));
-            //Console.WriteLine(GetCategoriesByProductsCount(productShopContex));
+            Console.WriteLine(usersResult);
+            Console.WriteLine(productsResult);
+            Console.WriteLine(categoriesResult);
+            Console.WriteLine(categoriesProductsResult);
+            Console.WriteLine(GetProductsInRange(productShopContex));
+            Console.WriteLine(GetSoldProducts(productShopContex));
+            Console.WriteLine(GetCategoriesByProductsCount(productShopContex));
             Console.WriteLine(GetUsersWithProducts(productShopContex));
 
         }

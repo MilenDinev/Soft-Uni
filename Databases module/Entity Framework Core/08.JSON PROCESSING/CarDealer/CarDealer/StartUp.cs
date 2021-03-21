@@ -27,9 +27,17 @@
             string inputParts = File.ReadAllText("../../../Datasets/parts.json");
             string partsResult = ImportParts(carDealerContext, inputParts);
 
+            string inputCars = File.ReadAllText("../../../Datasets/cars.json");
+            string carsResult = ImportCars(carDealerContext, inputCars);
+
+            string inputCustomers = File.ReadAllText("../../../Datasets/customers.json");
+            string customersResult = ImportCustomers(carDealerContext, inputCustomers);
+
 
             Console.WriteLine(suppliersResult);
             Console.WriteLine(partsResult);
+            Console.WriteLine(carsResult);
+            Console.WriteLine(customersResult);
         }
 
 
@@ -62,9 +70,27 @@
 
         public static string ImportCars(CarDealerContext context, string inputJson)
         {
+            InitializeAutoMapper();
 
+            var dtoCars = JsonConvert.DeserializeObject<IEnumerable<CarInputModel>>(inputJson);
+            var cars = mapper.Map<IEnumerable<Car>>(dtoCars);
+            context.Cars.AddRange(cars);
+            var result = context.SaveChanges();
+
+            return $"Successfully imported {result}.";
         }
 
+        public static string ImportCustomers(CarDealerContext context, string inputJson)
+        {
+            InitializeAutoMapper();
+            var customersDto = JsonConvert.DeserializeObject<IEnumerable<CustomerInputModel>>(inputJson);
+            var customers = mapper.Map<IEnumerable<Customer>>(customersDto);
+
+            context.Customers.AddRange(customers);
+            var result = context.SaveChanges();
+
+            return $"Successfully imported {result}.";
+        }
 
         private static void InitializeAutoMapper()
         {

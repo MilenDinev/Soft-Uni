@@ -78,8 +78,29 @@
             InitializeAutoMapper();
 
             var dtoCars = JsonConvert.DeserializeObject<IEnumerable<CarInputModel>>(inputJson);
-            var cars = mapper.Map<IEnumerable<Car>>(dtoCars);
-            context.Cars.AddRange(cars);
+
+            var listOfCars = new List<Car>();
+            foreach (var car in dtoCars)
+            {
+                var currentCar = new Car
+                {
+                    Make = car.Make,
+                    Model = car.Model,
+                    TravelledDistance = car.TravelledDistance
+                };
+
+                foreach (var partId in car?.PartsId.Distinct())
+                {
+                    currentCar.PartCars.Add(new PartCar
+                    {
+                        PartId = partId
+                    });
+                }
+
+                listOfCars.Add(currentCar);
+            }
+
+            context.Cars.AddRange(listOfCars);
             var result = context.SaveChanges();
 
             return $"Successfully imported {result}.";

@@ -75,7 +75,6 @@
 
         public static string ImportCars(CarDealerContext context, string inputJson)
         {
-            InitializeAutoMapper();
 
             var dtoCars = JsonConvert.DeserializeObject<IEnumerable<CarInputModel>>(inputJson);
 
@@ -101,9 +100,9 @@
             }
 
             context.Cars.AddRange(listOfCars);
-            var result = context.SaveChanges();
+            context.SaveChanges();
 
-            return $"Successfully imported {result}.";
+            return $"Successfully imported {listOfCars.Count}.";
         }
 
         public static string ImportCustomers(CarDealerContext context, string inputJson)

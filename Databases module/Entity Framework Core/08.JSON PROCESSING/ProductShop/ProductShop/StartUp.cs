@@ -116,19 +116,19 @@ namespace ProductShop
                 .Where(p => p.ProductsSold.Any(b => b.BuyerId != null))
                 .Select(u => new
                 {
-                        firstName = u.FirstName,
-                        lastName = u.LastName,
-                        age = u.Age,
-                        soldProducts = new
-                        {
-                            count = u.ProductsSold.Where(b => b.BuyerId != null).Count(),
-                            products = u.ProductsSold.Where(b => b.BuyerId != null)
+                    firstName = u.FirstName,
+                    lastName = u.LastName,
+                    age = u.Age,
+                    soldProducts = new
+                    {
+                        count = u.ProductsSold.Where(b => b.BuyerId != null).Count(),
+                        products = u.ProductsSold.Where(b => b.BuyerId != null)
                             .Select(p => new
                             {
                                 name = p.Name,
                                 price = p.Price
                             }).ToList()
-                        }
+                    }
                 })
                 .OrderByDescending(x => x.soldProducts.count)
                 .ToList();
@@ -152,64 +152,64 @@ namespace ProductShop
         }
 
         public static string ImportUsers(ProductShopContext context, string inputJson)
-            {
-                InitializeAutoMapper();
+        {
+            InitializeAutoMapper();
 
-                var dtoUsers = JsonConvert.DeserializeObject<IEnumerable<UserInputModel>>(inputJson);
+            var dtoUsers = JsonConvert.DeserializeObject<IEnumerable<UserInputModel>>(inputJson);
 
-                var users = mapper.Map<IEnumerable<User>>(dtoUsers);
+            var users = mapper.Map<IEnumerable<User>>(dtoUsers);
 
-                context.Users.AddRange(users);
-                context.SaveChanges();
-                return $"Successfully imported {users.Count()}";
-            }
-
-            public static string ImportProducts(ProductShopContext context, string inputJson)
-            {
-                InitializeAutoMapper();
-                var dtoProducts = JsonConvert.DeserializeObject<IEnumerable<ProductInputModel>>(inputJson);
-                var products = mapper.Map<IEnumerable<Product>>(dtoProducts);
-                context.Products.AddRange(products);
-                context.SaveChanges();
-
-
-                return $"Successfully imported {products.Count()}";
-            }
-
-            public static string ImportCategories(ProductShopContext contex, string inputJson)
-            {
-                InitializeAutoMapper();
-                var dtoCategories = JsonConvert.DeserializeObject<IEnumerable<CategoryInputModel>>(inputJson).Where(x => x.Name != null).ToList();
-                var categories = mapper.Map<IEnumerable<Category>>(dtoCategories);
-
-                contex.Categories.AddRange(categories);
-                contex.SaveChanges();
-
-                return $"Successfully imported {categories.Count()}";
-            }
-
-            public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
-            {
-                InitializeAutoMapper();
-
-                var dtoCategoryProduct = JsonConvert.DeserializeObject<IEnumerable<CategoryProductInputModel>>(inputJson);
-                var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(dtoCategoryProduct);
-
-                context.CategoryProducts.AddRange(categoriesProducts);
-                context.SaveChanges();
-
-                return $"Successfully imported {categoriesProducts.Count()}";
-            }
-
-            private static void InitializeAutoMapper()
-            {
-                var config = new MapperConfiguration(cfg =>
-                {
-                    cfg.AddProfile<ProductShopProfile>();
-                });
-
-                mapper = config.CreateMapper();
-            }
-
+            context.Users.AddRange(users);
+            context.SaveChanges();
+            return $"Successfully imported {users.Count()}";
         }
+
+        public static string ImportProducts(ProductShopContext context, string inputJson)
+        {
+            InitializeAutoMapper();
+            var dtoProducts = JsonConvert.DeserializeObject<IEnumerable<ProductInputModel>>(inputJson);
+            var products = mapper.Map<IEnumerable<Product>>(dtoProducts);
+            context.Products.AddRange(products);
+            context.SaveChanges();
+
+
+            return $"Successfully imported {products.Count()}";
+        }
+
+        public static string ImportCategories(ProductShopContext contex, string inputJson)
+        {
+            InitializeAutoMapper();
+            var dtoCategories = JsonConvert.DeserializeObject<IEnumerable<CategoryInputModel>>(inputJson).Where(x => x.Name != null).ToList();
+            var categories = mapper.Map<IEnumerable<Category>>(dtoCategories);
+
+            contex.Categories.AddRange(categories);
+            contex.SaveChanges();
+
+            return $"Successfully imported {categories.Count()}";
+        }
+
+        public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
+        {
+            InitializeAutoMapper();
+
+            var dtoCategoryProduct = JsonConvert.DeserializeObject<IEnumerable<CategoryProductInputModel>>(inputJson);
+            var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(dtoCategoryProduct);
+
+            context.CategoryProducts.AddRange(categoriesProducts);
+            context.SaveChanges();
+
+            return $"Successfully imported {categoriesProducts.Count()}";
+        }
+
+        private static void InitializeAutoMapper()
+        {
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<ProductShopProfile>();
+            });
+
+            mapper = config.CreateMapper();
+        }
+
+
     }

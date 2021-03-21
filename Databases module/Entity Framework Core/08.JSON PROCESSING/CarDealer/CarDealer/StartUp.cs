@@ -34,10 +34,15 @@
             string customersResult = ImportCustomers(carDealerContext, inputCustomers);
 
 
+            string inputSales = File.ReadAllText("../../../Datasets/sales.json");
+            string salesResult = ImportCustomers(carDealerContext, inputSales);
+
+
             Console.WriteLine(suppliersResult);
             Console.WriteLine(partsResult);
             Console.WriteLine(carsResult);
             Console.WriteLine(customersResult);
+            Console.WriteLine(salesResult);
         }
 
 
@@ -87,6 +92,17 @@
             var customers = mapper.Map<IEnumerable<Customer>>(customersDto);
 
             context.Customers.AddRange(customers);
+            var result = context.SaveChanges();
+
+            return $"Successfully imported {result}.";
+        }
+
+        public static string ImportSales(CarDealerContext context, string inputJson)
+        {
+            InitializeAutoMapper();
+            var salesDto = JsonConvert.DeserializeObject<IEnumerable<SaleInputModel>>(inputJson);
+            var sales = mapper.Map<IEnumerable<Sale>>(salesDto);
+            context.Sales.AddRange(sales);
             var result = context.SaveChanges();
 
             return $"Successfully imported {result}.";

@@ -111,6 +111,8 @@ namespace ProductShop
         public static string GetUsersWithProducts(ProductShopContext context)
         {
             var users = context.Users
+                .Include(x => x.ProductsSold)
+                .ToList()
                 .Where(p => p.ProductsSold.Any(b => b.BuyerId != null))
                 .Select(u => new
                 {
@@ -128,12 +130,12 @@ namespace ProductShop
                             }).ToList()
                         }
                 })
-                .OrderByDescending(x => x.soldProducts.count)
+                .OrderByDescending(x => x.soldProducts.product.Count())
                 .ToList();
 
             var resultObject = new
             {
-                usersCount = users.Count,
+                usersCount = users.Count(),
                 users = users
             };
 

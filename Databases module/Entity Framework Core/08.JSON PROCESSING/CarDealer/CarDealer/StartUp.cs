@@ -63,7 +63,7 @@
                     IsYoungDriver = x.IsYoungDriver
                 })
                 .OrderBy(x => x.BirthDate)
-                .ThenBy(x => Convert.ToInt32(x.IsYoungDriver))
+                .ThenBy(x => x.IsYoungDriver)
                 .ToList();
 
 
@@ -118,18 +118,16 @@
                         Make = x.Make,
                         Model = x.Model,
                         TravelledDistance = x.TravelledDistance,
-                        parts = x.PartCars.
-                        Select(p => new
-                        {
-                            name = p.Part.Name,
-                            price = p.Part.Price.ToString("F2")
-                        })
                     },
+                    parts = x.PartCars
+                        .Select(p => new
+                        {
+                            p.Part.Name,
+                            Price = p.Part.Price.ToString("F2")
+                        })
+                }).ToList();
 
-                })
-                .ToList();
-
-            var result = JsonConvert.SerializeObject(cars, Formatting.Indented, );
+            var result = JsonConvert.SerializeObject(cars, Formatting.Indented);
             return result;
         }
 

@@ -10,7 +10,5 @@
         public ICollection<int> PartsId { get; set; }
 
 
-
-
     }
 }

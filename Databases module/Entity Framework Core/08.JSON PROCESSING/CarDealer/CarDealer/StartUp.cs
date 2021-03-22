@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Globalization;
     using System.IO;
     using System.Linq;
     using AutoMapper;
@@ -18,31 +19,56 @@
         {
             var carDealerContext = new CarDealerContext();
 
-            carDealerContext.Database.EnsureDeleted();
-            carDealerContext.Database.EnsureCreated();
+            //carDealerContext.Database.EnsureDeleted();
+            //carDealerContext.Database.EnsureCreated();
 
-            string inputSuppliers = File.ReadAllText("../../../Datasets/suppliers.json");
-            string suppliersResult = ImportSuppliers(carDealerContext, inputSuppliers);
+            //string inputSuppliers = File.ReadAllText("../../../Datasets/suppliers.json");
+            //string suppliersResult = ImportSuppliers(carDealerContext, inputSuppliers);
 
-            string inputParts = File.ReadAllText("../../../Datasets/parts.json");
-            string partsResult = ImportParts(carDealerContext, inputParts);
+            //string inputParts = File.ReadAllText("../../../Datasets/parts.json");
+            //string partsResult = ImportParts(carDealerContext, inputParts);
 
-            string inputCars = File.ReadAllText("../../../Datasets/cars.json");
-            string carsResult = ImportCars(carDealerContext, inputCars);
+            //string inputCars = File.ReadAllText("../../../Datasets/cars.json");
+            //string carsResult = ImportCars(carDealerContext, inputCars);
 
-            string inputCustomers = File.ReadAllText("../../../Datasets/customers.json");
-            string customersResult = ImportCustomers(carDealerContext, inputCustomers);
-
-
-            string inputSales = File.ReadAllText("../../../Datasets/sales.json");
-            string salesResult = ImportCustomers(carDealerContext, inputSales);
+            //string inputCustomers = File.ReadAllText("../../../Datasets/customers.json");
+            //string customersResult = ImportCustomers(carDealerContext, inputCustomers);
 
 
-            Console.WriteLine(suppliersResult);
-            Console.WriteLine(partsResult);
-            Console.WriteLine(carsResult);
-            Console.WriteLine(customersResult);
-            Console.WriteLine(salesResult);
+            //string inputSales = File.ReadAllText("../../../Datasets/sales.json");
+            //string salesResult = ImportCustomers(carDealerContext, inputSales);
+
+
+            //Console.WriteLine(suppliersResult);
+            //Console.WriteLine(partsResult);
+            //Console.WriteLine(carsResult);
+            //Console.WriteLine(customersResult);
+            //Console.WriteLine(salesResult);
+
+            Console.WriteLine(GetOrderedCustomers(carDealerContext));
+        }
+
+
+        public static string GetOrderedCustomers(CarDealerContext context)
+        {
+            var customers = context.Customers
+                .Where(x => x.Name != null)
+                .Select(x => new CustomerInputModel
+                {
+                    Name = x.Name,
+                    BirthDate = x.BirthDate,
+                    IsYoungDriver = x.IsYoungDriver
+                })
+                .OrderBy(x => x.BirthDate)
+                .ThenBy(x => Convert.ToInt32(x.IsYoungDriver))
+                .ToList();
+
+
+            var settings = new JsonSerializerSettings { DateFormatString = "dd/MM/yyyy" };
+
+            var result = JsonConvert.SerializeObject(customers, Formatting.Indented, settings);
+
+            return result;
         }
 
 
@@ -110,7 +136,6 @@
             InitializeAutoMapper();
             var customersDto = JsonConvert.DeserializeObject<IEnumerable<CustomerInputModel>>(inputJson);
             var customers = mapper.Map<IEnumerable<Customer>>(customersDto);
-
             context.Customers.AddRange(customers);
             var result = context.SaveChanges();
 

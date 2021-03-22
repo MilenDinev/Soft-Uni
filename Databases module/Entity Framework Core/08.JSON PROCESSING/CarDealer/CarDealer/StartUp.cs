@@ -9,6 +9,7 @@
     using CarDealer.Data;
     using CarDealer.DTO;
     using CarDealer.Models;
+    using Microsoft.EntityFrameworkCore;
     using Newtonsoft.Json;
 
     public class StartUp
@@ -45,7 +46,8 @@
             //Console.WriteLine(customersResult);
             //Console.WriteLine(salesResult);
             //Console.WriteLine(GetOrderedCustomers(carDealerContext));
-            Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
+            //Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
+            Console.WriteLine(GetLocalSuppliers(carDealerContext));
         }
 
 
@@ -86,6 +88,22 @@
                 .ThenByDescending(c => c.TravelledDistance);
 
             var result = JsonConvert.SerializeObject(cars, Formatting.Indented);
+            return result;
+        }
+
+        public static string GetLocalSuppliers(CarDealerContext context)
+        {
+            var suppliers = context.Suppliers
+                .Where(x => !x.IsImporter)
+                .Select(x => new
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    PartsCount = x.Parts.Count()
+                })
+                .ToList();
+
+            var result = JsonConvert.SerializeObject(suppliers, Formatting.Indented);
             return result;
         }
 

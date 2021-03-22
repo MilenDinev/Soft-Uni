@@ -47,7 +47,8 @@
             //Console.WriteLine(salesResult);
             //Console.WriteLine(GetOrderedCustomers(carDealerContext));
             //Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
-            Console.WriteLine(GetLocalSuppliers(carDealerContext));
+            //Console.WriteLine(GetLocalSuppliers(carDealerContext));
+            Console.WriteLine(GetCarsWithTheirListOfParts(carDealerContext));
         }
 
 
@@ -55,7 +56,7 @@
         {
             var customers = context.Customers
                 .Where(x => x.Name != null)
-                .Select(x => new 
+                .Select(x => new
                 {
                     Name = x.Name,
                     BirthDate = x.BirthDate,
@@ -104,6 +105,31 @@
                 .ToList();
 
             var result = JsonConvert.SerializeObject(suppliers, Formatting.Indented);
+            return result;
+        }
+
+        public static string GetCarsWithTheirListOfParts(CarDealerContext context)
+        {
+            var cars = context.Cars
+                .Select(x => new
+                {
+                    car = new
+                    {
+                        Make = x.Make,
+                        Model = x.Model,
+                        TravelledDistance = x.TravelledDistance,
+                        parts = x.PartCars.
+                        Select(p => new
+                        {
+                            name = p.Part.Name,
+                            price = p.Part.Price.ToString("F2")
+                        })
+                    },
+
+                })
+                .ToList();
+
+            var result = JsonConvert.SerializeObject(cars, Formatting.Indented, );
             return result;
         }
 

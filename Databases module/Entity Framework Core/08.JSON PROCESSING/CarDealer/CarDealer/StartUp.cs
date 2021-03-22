@@ -20,36 +20,36 @@
         {
             var carDealerContext = new CarDealerContext();
 
-            //carDealerContext.Database.EnsureDeleted();
-            //carDealerContext.Database.EnsureCreated();
+            carDealerContext.Database.EnsureDeleted();
+            carDealerContext.Database.EnsureCreated();
 
-            //string inputSuppliers = File.ReadAllText("../../../Datasets/suppliers.json");
-            //string suppliersResult = ImportSuppliers(carDealerContext, inputSuppliers);
+            string inputSuppliers = File.ReadAllText("../../../Datasets/suppliers.json");
+            string suppliersResult = ImportSuppliers(carDealerContext, inputSuppliers);
 
-            //string inputParts = File.ReadAllText("../../../Datasets/parts.json");
-            //string partsResult = ImportParts(carDealerContext, inputParts);
+            string inputParts = File.ReadAllText("../../../Datasets/parts.json");
+            string partsResult = ImportParts(carDealerContext, inputParts);
 
-            //string inputCars = File.ReadAllText("../../../Datasets/cars.json");
-            //string carsResult = ImportCars(carDealerContext, inputCars);
+            string inputCars = File.ReadAllText("../../../Datasets/cars.json");
+            string carsResult = ImportCars(carDealerContext, inputCars);
 
-            //string inputCustomers = File.ReadAllText("../../../Datasets/customers.json");
-            //string customersResult = ImportCustomers(carDealerContext, inputCustomers);
-
-
-            //string inputSales = File.ReadAllText("../../../Datasets/sales.json");
-            //string salesResult = ImportSales(carDealerContext, inputSales);
+            string inputCustomers = File.ReadAllText("../../../Datasets/customers.json");
+            string customersResult = ImportCustomers(carDealerContext, inputCustomers);
 
 
-            //Console.WriteLine(suppliersResult);
-            //Console.WriteLine(partsResult);
-            //Console.WriteLine(carsResult);
-            //Console.WriteLine(customersResult);
-            //Console.WriteLine(salesResult);
-            //Console.WriteLine(GetOrderedCustomers(carDealerContext));
-            //Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
-            //Console.WriteLine(GetLocalSuppliers(carDealerContext));
-            //Console.WriteLine(GetCarsWithTheirListOfParts(carDealerContext));
-            //Console.WriteLine(GetTotalSalesByCustomer(carDealerContext));
+            string inputSales = File.ReadAllText("../../../Datasets/sales.json");
+            string salesResult = ImportSales(carDealerContext, inputSales);
+
+
+            Console.WriteLine(suppliersResult);
+            Console.WriteLine(partsResult);
+            Console.WriteLine(carsResult);
+            Console.WriteLine(customersResult);
+            Console.WriteLine(salesResult);
+            Console.WriteLine(GetOrderedCustomers(carDealerContext));
+            Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
+            Console.WriteLine(GetLocalSuppliers(carDealerContext));
+            Console.WriteLine(GetCarsWithTheirListOfParts(carDealerContext));
+            Console.WriteLine(GetTotalSalesByCustomer(carDealerContext));
             Console.WriteLine(GetSalesWithAppliedDiscount(carDealerContext));
         }
 

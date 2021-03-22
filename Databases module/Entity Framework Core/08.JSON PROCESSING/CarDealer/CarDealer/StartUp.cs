@@ -37,7 +37,7 @@
 
 
             //string inputSales = File.ReadAllText("../../../Datasets/sales.json");
-            //string salesResult = ImportCustomers(carDealerContext, inputSales);
+            //string salesResult = ImportSales(carDealerContext, inputSales);
 
 
             //Console.WriteLine(suppliersResult);
@@ -48,7 +48,9 @@
             //Console.WriteLine(GetOrderedCustomers(carDealerContext));
             //Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
             //Console.WriteLine(GetLocalSuppliers(carDealerContext));
-            Console.WriteLine(GetCarsWithTheirListOfParts(carDealerContext));
+            //Console.WriteLine(GetCarsWithTheirListOfParts(carDealerContext));
+
+            Console.WriteLine(GetTotalSalesByCustomer(carDealerContext));
         }
 
 
@@ -91,7 +93,6 @@
             var result = JsonConvert.SerializeObject(cars, Formatting.Indented);
             return result;
         }
-
         public static string GetLocalSuppliers(CarDealerContext context)
         {
             var suppliers = context.Suppliers
@@ -107,7 +108,6 @@
             var result = JsonConvert.SerializeObject(suppliers, Formatting.Indented);
             return result;
         }
-
         public static string GetCarsWithTheirListOfParts(CarDealerContext context)
         {
             var cars = context.Cars
@@ -128,6 +128,25 @@
                 }).ToList();
 
             var result = JsonConvert.SerializeObject(cars, Formatting.Indented);
+            return result;
+        }
+
+        public static string GetTotalSalesByCustomer(CarDealerContext context)
+        {
+            var customers = context.Customers
+                .Where(x => x.Sales.Any())
+                .Select(x => new
+                {
+                    fullName = x.Name,
+                    boughtCars = x.Sales.Count(),
+                    spentMoney = x.Sales.Sum(s => s.Car.PartCars.Sum(p => p.Part.Price))
+                })
+                 .OrderByDescending(x => x.spentMoney)
+                .ThenByDescending(x => x.boughtCars)
+                .ToList();
+
+            var result = JsonConvert.SerializeObject(customers, Formatting.Indented);
+
             return result;
         }
 
@@ -196,9 +215,9 @@
             var customersDto = JsonConvert.DeserializeObject<IEnumerable<CustomerInputModel>>(inputJson);
             var customers = mapper.Map<IEnumerable<Customer>>(customersDto);
             context.Customers.AddRange(customers);
-            var result = context.SaveChanges();
+           context.SaveChanges();
 
-            return $"Successfully imported {result}.";
+            return $"Successfully imported {customers.Count()}.";
         }
 
         public static string ImportSales(CarDealerContext context, string inputJson)
@@ -207,9 +226,9 @@
             var salesDto = JsonConvert.DeserializeObject<IEnumerable<SaleInputModel>>(inputJson);
             var sales = mapper.Map<IEnumerable<Sale>>(salesDto);
             context.Sales.AddRange(sales);
-            var result = context.SaveChanges();
+            context.SaveChanges();
 
-            return $"Successfully imported {result}.";
+            return $"Successfully imported {sales.Count()}.";
         }
 
         private static void InitializeAutoMapper()

@@ -49,8 +49,8 @@
             //Console.WriteLine(GetCarsFromMakeToyota(carDealerContext));
             //Console.WriteLine(GetLocalSuppliers(carDealerContext));
             //Console.WriteLine(GetCarsWithTheirListOfParts(carDealerContext));
-
-            Console.WriteLine(GetTotalSalesByCustomer(carDealerContext));
+            //Console.WriteLine(GetTotalSalesByCustomer(carDealerContext));
+            Console.WriteLine(GetSalesWithAppliedDiscount(carDealerContext));
         }
 
 
@@ -146,6 +146,30 @@
                 .ToList();
 
             var result = JsonConvert.SerializeObject(customers, Formatting.Indented);
+
+            return result;
+        }
+
+        public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+        {
+            var sales = context.Sales
+                .Select(x => new
+                {
+                    car = new
+                    {
+                        Make = x.Car.Make,
+                        Model = x.Car.Model,
+                        TravelledDistance = x.Car.TravelledDistance
+                    },
+                    customerName = x.Customer.Name,
+                    Discount = x.Discount.ToString("F2"),
+                    price = x.Car.PartCars.Sum(p => p.Part.Price).ToString("F2"),
+                    priceWithDiscount = (x.Car.PartCars.Sum(c => c.Part.Price) - x.Car.PartCars.Sum(p => p.Part.Price) * (x.Discount / 100.00m)).ToString("F2")
+                })
+                .Take(10)
+                .ToList();
+
+            var result = JsonConvert.SerializeObject(sales);
 
             return result;
         }

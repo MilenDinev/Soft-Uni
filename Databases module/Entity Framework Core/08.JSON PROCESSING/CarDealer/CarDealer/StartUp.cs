@@ -9,7 +9,6 @@
     using CarDealer.Data;
     using CarDealer.DTO;
     using CarDealer.Models;
-    using Microsoft.EntityFrameworkCore;
     using Newtonsoft.Json;
 
     public class StartUp
@@ -169,7 +168,7 @@
                 .Take(10)
                 .ToList();
 
-            var result = JsonConvert.SerializeObject(sales);
+            var result = JsonConvert.SerializeObject(sales, Formatting.Indented);
 
             return result;
         }

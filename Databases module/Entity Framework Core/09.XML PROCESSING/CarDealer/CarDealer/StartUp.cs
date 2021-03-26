@@ -45,7 +45,9 @@
 
             //Console.WriteLine(GetCarsWithDistance(context));
             //Console.WriteLine(GetCarsFromMakeBmw(context));
-            Console.WriteLine(GetLocalSuppliers(context));
+            //Console.WriteLine(GetLocalSuppliers(context));
+            Console.WriteLine(GetCarsWithTheirListOfParts(context));
+
         }
 
         public static string ImportSuppliers(CarDealerContext context, string inputXml)
@@ -222,6 +224,36 @@
 
             return result;
         }
+        public static string GetCarsWithTheirListOfParts(CarDealerContext context)
+        {
+            InitializeAutoMapper();
+            var cars = context.Cars
+                .Select(x => new CarWithListOfPartsExportModel
+                {
+                    Make = x.Make,
+                    Model = x.Model,
+                    TravelledDistance = x.TravelledDistance,
+                    Parts = x.PartCars.Select(p => new CarPartsExportModel
+                    {
+                        Name = p.Part.Name,
+                        Price = p.Part.Price
+                    })
+                    .OrderByDescending(p => p.Price)
+                    .ToArray()
+                })
+                .OrderByDescending(x => x.TravelledDistance)
+                .ThenBy(x => x.Model)
+                .Take(5)
+                .ToList();
+
+            //var carsDto = mapper.Map<IEnumerable<CarWithListOfPartsExportModel>>(cars).ToList();
+
+            var result = XmlConverter.Serialize(cars, "cars");
+
+            return result;
+        }
+
+
 
         private static void InitializeAutoMapper()
         {

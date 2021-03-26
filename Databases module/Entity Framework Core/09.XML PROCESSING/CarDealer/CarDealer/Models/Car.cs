@@ -7,6 +7,7 @@
         public Car()
         {
             this.PartCars = new HashSet<PartCar>();
+            this.Sales = new HashSet<Sale>();
         }
 
         public int Id { get; set; }

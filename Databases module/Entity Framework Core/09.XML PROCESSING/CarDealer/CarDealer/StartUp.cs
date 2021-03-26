@@ -32,10 +32,14 @@
             var customersXml = File.ReadAllText("./Datasets/customers.xml");
             var customersResult = ImportCustomers(context, customersXml);
 
+            var salesXml = File.ReadAllText("./Datasets/sales.xml");
+            var salesResult = ImportSales(context, salesXml);
+
             Console.WriteLine(suppliersResult);
             Console.WriteLine(partsResult);
             Console.WriteLine(carsResult);
             Console.WriteLine(customersResult);
+            Console.WriteLine(salesResult);
         }
 
         public static string ImportSuppliers(CarDealerContext context, string inputXml)
@@ -154,6 +158,21 @@
 
             return $"Successfully imported {result}";
         }
+        public static string ImportSales(CarDealerContext context, string inputXml)
+        {
+            InitializeAutoMapper();
+
+            var carIds = context.Cars.Select(x => x.Id).ToList();
+            var salesDto = XmlConverter.Deserializer<SaleImportModel>(inputXml, "Sales").Where(x => carIds.Contains(x.CarId));
+
+
+            var sales = mapper.Map<IEnumerable<Sale>>(salesDto);
+            context.Sales.AddRange(sales);
+            var result = context.SaveChanges();
+
+            return $"Successfully imported {result}";
+        }
+
         private static void InitializeAutoMapper()
         {
             var config = new MapperConfiguration(cfg =>

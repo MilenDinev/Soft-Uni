@@ -74,37 +74,63 @@
 
             return $"Successfully imported {result}";
         }
+        //public static string ImportCars(CarDealerContext context, string inputXml)
+        //{
+        //    var cars = new List<Car>();
+        //    var carsDto = XmlConverter.Deserializer<CarImportModel>(inputXml, "Cars");
+
+        //    var allParts = context.Parts.Select(x => x.Id).ToList();
+
+        //    foreach (var currentCar in carsDto)
+        //    {
+        //        var distinctedParts = currentCar.PartsIds.Select(x => x.Id).Distinct();
+        //        var parts = distinctedParts.Intersect(allParts);
+
+        //        var car = new Car
+        //        {
+        //            Make = currentCar.Make,
+        //            Model = currentCar.Model,
+        //            TravelledDistance = currentCar.TraveledDistance,
+        //        };
+
+        //        foreach (var part in parts)
+        //        {
+        //            var partCar = new PartCar
+        //            {
+        //                PartId = part
+        //            };
+
+        //            car.PartCars.Add(partCar);
+        //        }
+
+        //        cars.Add(car);
+        //    }
+
+        //    context.Cars.AddRange(cars);
+        //    var result = context.SaveChanges();
+
+        //    return $"Successfully imported {cars.Count()}";
+        //}
+
         public static string ImportCars(CarDealerContext context, string inputXml)
         {
-            var cars = new List<Car>();
             var carsDto = XmlConverter.Deserializer<CarImportModel>(inputXml, "Cars");
 
             var allParts = context.Parts.Select(x => x.Id).ToList();
 
-            foreach (var currentCar in carsDto)
-            {
-                var distinctedParts = currentCar.PartsIds.Select(x => x.Id).Distinct();
-                var parts = distinctedParts.Intersect(allParts);
-
-                var car = new Car
+            var cars = carsDto
+                .Select(x => new Car
                 {
-                    Make = currentCar.Make,
-                    Model = currentCar.Model,
-                    TravelledDistance = currentCar.TraveledDistance,
-                };
-
-                foreach (var part in parts)
-                {
-                    var partCar = new PartCar
+                    Make = x.Make,
+                    Model = x.Model,
+                    TravelledDistance = x.TraveledDistance,
+                    PartCars = x.PartsIds.Select(x => x.Id).Distinct().Intersect(allParts).Select(pc => new PartCar
                     {
-                        PartId = part
-                    };
+                        PartId = pc
+                    })
+                    .ToList()
+                });
 
-                    car.PartCars.Add(partCar);
-                }
-
-                cars.Add(car);
-            }
 
             context.Cars.AddRange(cars);
             var result = context.SaveChanges();

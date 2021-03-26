@@ -46,7 +46,8 @@
             //Console.WriteLine(GetCarsWithDistance(context));
             //Console.WriteLine(GetCarsFromMakeBmw(context));
             //Console.WriteLine(GetLocalSuppliers(context));
-            Console.WriteLine(GetCarsWithTheirListOfParts(context));
+            //Console.WriteLine(GetCarsWithTheirListOfParts(context));
+            Console.WriteLine(GetTotalSalesByCustomer(context));
 
         }
 
@@ -252,7 +253,21 @@
 
             return result;
         }
+        public static string GetTotalSalesByCustomer(CarDealerContext context)
+        {
+            InitializeAutoMapper();
+            var customers = context.Customers
+                .Where(x => x.Sales.Any())
+                .Include(x => x.Sales)
+                .ThenInclude(x => x.Car)
+                .ThenInclude(x => x.PartCars)
+                .ThenInclude(x => x.Part);
+                
+            var customersDto = mapper.Map<IEnumerable<CustomerExportModel>>(customers).OrderByDescending(x => x.SpentMoney).ToArray();
+            var result = XmlConverter.Serialize(customersDto, "cars");
 
+            return result;
+        }
 
 
         private static void InitializeAutoMapper()

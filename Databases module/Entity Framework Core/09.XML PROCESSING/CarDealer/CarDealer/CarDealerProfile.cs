@@ -13,6 +13,9 @@
            this.CreateMap<SaleImportModel, Sale>();
            this.CreateMap<Car, CarExportModel>();
            this.CreateMap<Car, CarMakeExportModel>();
+            this.CreateMap<Supplier, SupplierExportModel>();
+                 //.ForMember(pc => pc.PartsCount,
+                 //source => source.MapFrom(src => src.Parts.Count));
         }
     }
 }

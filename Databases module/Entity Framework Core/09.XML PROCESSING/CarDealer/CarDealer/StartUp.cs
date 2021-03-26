@@ -6,6 +6,7 @@
     using CarDealer.DataTransferObjects.Import;
     using CarDealer.Models;
     using CarDealer.XMLHelper;
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -44,6 +45,7 @@
 
             //Console.WriteLine(GetCarsWithDistance(context));
             //Console.WriteLine(GetCarsFromMakeBmw(context));
+            Console.WriteLine(GetLocalSuppliers(context));
         }
 
         public static string ImportSuppliers(CarDealerContext context, string inputXml)
@@ -208,6 +210,19 @@
             return result;
 
         }
+        public static string GetLocalSuppliers(CarDealerContext context)
+        {
+            InitializeAutoMapper();
+            var suppliers = context.Suppliers
+                .Include(x => x.Parts)
+                .Where(x => !x.IsImporter);
+            var carsDto = mapper.Map<IEnumerable<SupplierExportModel>>(suppliers).ToList();
+
+            var result = XmlConverter.Serialize(carsDto, "suppliers");
+
+            return result;
+        }
+
         private static void InitializeAutoMapper()
         {
             var config = new MapperConfiguration(cfg =>

@@ -264,10 +264,11 @@
                 .ThenInclude(x => x.Part);
                 
             var customersDto = mapper.Map<IEnumerable<CustomerExportModel>>(customers).OrderByDescending(x => x.SpentMoney).ToArray();
-            var result = XmlConverter.Serialize(customersDto, "cars");
+            var result = XmlConverter.Serialize(customersDto, "customers");
 
             return result;
         }
+
 
 
         private static void InitializeAutoMapper()

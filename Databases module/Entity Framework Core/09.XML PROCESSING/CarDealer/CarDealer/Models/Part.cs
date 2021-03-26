@@ -1,5 +1,4 @@
-﻿
-namespace CarDealer.Models
+﻿namespace CarDealer.Models
 {
     using System.Collections.Generic;
 

@@ -1,6 +1,5 @@
 ﻿namespace CarDealer.DataTransferObjects.Import
 {
-    using System.Collections.Generic;
     using System.Xml.Serialization;
 
     [XmlType("Car")]
@@ -9,13 +8,13 @@
         [XmlElement("make")]
         public string Make { get; set; }
 
-        [XmlElement("make")]
+        [XmlElement("model")]
         public string Model { get; set; }
 
         [XmlElement("TraveledDistance")]
         public long TraveledDistance { get; set; }
 
         [XmlArray("parts")]
-        public ICollection<CarPartsImportModel> PartsIds { get; set; }
+        public CarPartsImportModel[] PartsIds { get; set; }
     }
 }

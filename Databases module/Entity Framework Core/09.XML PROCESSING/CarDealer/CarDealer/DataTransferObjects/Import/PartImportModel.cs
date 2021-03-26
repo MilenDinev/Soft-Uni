@@ -1,7 +1,7 @@
-﻿using System.Xml.Serialization;
-
-namespace CarDealer.DataTransferObjects.Import
+﻿namespace CarDealer.DataTransferObjects.Import
 {
+    using System.Xml.Serialization;
+
     [XmlType("Part")]
     public class PartImportModel
     {

@@ -111,7 +111,6 @@
 
         //    return $"Successfully imported {cars.Count()}";
         //}
-
         public static string ImportCars(CarDealerContext context, string inputXml)
         {
             var carsDto = XmlConverter.Deserializer<CarImportModel>(inputXml, "Cars");

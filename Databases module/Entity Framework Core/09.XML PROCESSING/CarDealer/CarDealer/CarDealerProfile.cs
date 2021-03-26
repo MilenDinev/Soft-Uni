@@ -11,7 +11,8 @@
         {
            this.CreateMap<CustomerImportModel, Customer>();
            this.CreateMap<SaleImportModel, Sale>();
-           this.CreateMap<Car, CarsExportModel>();
+           this.CreateMap<Car, CarExportModel>();
+           this.CreateMap<Car, CarMakeExportModel>();
         }
     }
 }

@@ -2,6 +2,7 @@
 {
     using AutoMapper;
     using CarDealer.Data;
+    using CarDealer.DataTransferObjects.Export;
     using CarDealer.DataTransferObjects.Import;
     using CarDealer.Models;
     using CarDealer.XMLHelper;
@@ -17,29 +18,31 @@
         public static void Main(string[] args)
         {
             var context = new CarDealerContext();
-            context.Database.EnsureDeleted();
-            context.Database.EnsureCreated();
+            //context.Database.EnsureDeleted();
+            //context.Database.EnsureCreated();
 
-            var suppliersXml = File.ReadAllText("./Datasets/suppliers.xml");
-            var suppliersResult = ImportSuppliers(context, suppliersXml);
+            //var suppliersXml = File.ReadAllText("./Datasets/suppliers.xml");
+            //var suppliersResult = ImportSuppliers(context, suppliersXml);
 
-            var partsXml = File.ReadAllText("./Datasets/parts.xml");
-            var partsResult = ImportParts(context, partsXml);
+            //var partsXml = File.ReadAllText("./Datasets/parts.xml");
+            //var partsResult = ImportParts(context, partsXml);
 
-            var carsXml = File.ReadAllText("./Datasets/cars.xml");
-            var carsResult = ImportCars(context, carsXml);
+            //var carsXml = File.ReadAllText("./Datasets/cars.xml");
+            //var carsResult = ImportCars(context, carsXml);
 
-            var customersXml = File.ReadAllText("./Datasets/customers.xml");
-            var customersResult = ImportCustomers(context, customersXml);
+            //var customersXml = File.ReadAllText("./Datasets/customers.xml");
+            //var customersResult = ImportCustomers(context, customersXml);
 
-            var salesXml = File.ReadAllText("./Datasets/sales.xml");
-            var salesResult = ImportSales(context, salesXml);
+            //var salesXml = File.ReadAllText("./Datasets/sales.xml");
+            //var salesResult = ImportSales(context, salesXml);
 
-            Console.WriteLine(suppliersResult);
-            Console.WriteLine(partsResult);
-            Console.WriteLine(carsResult);
-            Console.WriteLine(customersResult);
-            Console.WriteLine(salesResult);
+            //Console.WriteLine(suppliersResult);
+            //Console.WriteLine(partsResult);
+            //Console.WriteLine(carsResult);
+            //Console.WriteLine(customersResult);
+            //Console.WriteLine(salesResult);
+
+            Console.WriteLine(GetCarsWithDistance(context)); 
         }
 
         public static string ImportSuppliers(CarDealerContext context, string inputXml)
@@ -132,7 +135,7 @@
                 {
                     Make = x.Make,
                     Model = x.Model,
-                    TravelledDistance = x.TraveledDistance,
+                    TravelledDistance = x.TravelledDistance,
                     PartCars = x.PartsIds.Select(x => x.Id).Distinct().Intersect(allParts).Select(pc => new PartCar
                     {
                         PartId = pc
@@ -171,6 +174,28 @@
             var result = context.SaveChanges();
 
             return $"Successfully imported {result}";
+        }
+
+        public static string GetCarsWithDistance(CarDealerContext context)
+        {
+            InitializeAutoMapper();
+            var cars = context.Cars.Where(x => x.TravelledDistance > 2_000_000);
+
+            var carsDto = mapper.Map<IEnumerable<CarsExportModel>>(cars).OrderBy(x => x.Make).ThenBy(x=> x.Model).Take(10).ToArray();
+
+            //XmlSerializer xmlSerializer = new XmlSerializer(typeof(CarsExportModel[]), new XmlRootAttribute("cars"));
+
+            //var textWriter = new StringWriter();
+
+            //var ns = new XmlSerializerNamespaces();
+            //ns.Add("", "");
+
+            //xmlSerializer.Serialize(textWriter, carsDto, ns);
+            //var result = textWriter.ToString();
+
+            var result = XmlConverter.Serialize(carsDto, "cars");
+
+            return result;
         }
 
         private static void InitializeAutoMapper()

@@ -1,6 +1,7 @@
 ﻿namespace CarDealer
 {
     using AutoMapper;
+    using CarDealer.DataTransferObjects.Export;
     using CarDealer.DataTransferObjects.Import;
     using CarDealer.Models;
 
@@ -10,6 +11,7 @@
         {
            this.CreateMap<CustomerImportModel, Customer>();
            this.CreateMap<SaleImportModel, Sale>();
+           this.CreateMap<Car, CarsExportModel>();
         }
     }
 }

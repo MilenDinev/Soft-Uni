@@ -1,9 +1,9 @@
-﻿namespace CarDealer.DataTransferObjects.Import
+﻿namespace CarDealer.DataTransferObjects.Export
 {
     using System.Xml.Serialization;
 
-    [XmlType("Car")]
-   public class CarImportModel
+    [XmlType("car")]
+   public class CarsExportModel
     {
         [XmlElement("make")]
         public string Make { get; set; }
@@ -11,10 +11,7 @@
         [XmlElement("model")]
         public string Model { get; set; }
 
-        [XmlElement("TraveledDistance")]
+        [XmlElement("travelled-distance")]
         public long TravelledDistance { get; set; }
-
-        [XmlArray("parts")]
-        public CarPartsImportModel[] PartsIds { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿namespace CarDealer
 {
     using AutoMapper;
+    using AutoMapper.QueryableExtensions;
     using CarDealer.Data;
     using CarDealer.DataTransferObjects.Export;
     using CarDealer.DataTransferObjects.Import;
@@ -47,7 +48,8 @@
             //Console.WriteLine(GetCarsFromMakeBmw(context));
             //Console.WriteLine(GetLocalSuppliers(context));
             //Console.WriteLine(GetCarsWithTheirListOfParts(context));
-            Console.WriteLine(GetTotalSalesByCustomer(context));
+            //Console.WriteLine(GetTotalSalesByCustomer(context));
+            Console.WriteLine(GetSalesWithAppliedDiscount(context));
 
         }
 
@@ -187,7 +189,7 @@
             InitializeAutoMapper();
             var cars = context.Cars.Where(x => x.TravelledDistance > 2_000_000);
 
-            var carsDto = mapper.Map<IEnumerable<CarExportModel>>(cars).OrderBy(x => x.Make).ThenBy(x=> x.Model).Take(10).ToArray();
+            var carsDto = mapper.Map<IEnumerable<CarExportModel>>(cars).OrderBy(x => x.Make).ThenBy(x => x.Model).Take(10).ToArray();
 
             //XmlSerializer xmlSerializer = new XmlSerializer(typeof(CarsExportModel[]), new XmlRootAttribute("cars"));
 
@@ -203,31 +205,40 @@
 
             return result;
         }
+
         public static string GetCarsFromMakeBmw(CarDealerContext context)
         {
             InitializeAutoMapper();
-            var cars = context.Cars.Where(x => x.Make == "BMW");
-            var carsDto = mapper.Map<IEnumerable<CarMakeExportModel>>(cars).OrderBy(x => x.Model).ToArray();
-            var result = XmlConverter.Serialize(carsDto, "cars");
+            var cars = context.Cars.Where(x => x.Make == "BMW")
+                .ProjectTo<CarMakeExportModel>(mapper.ConfigurationProvider)
+                .OrderBy(x => x.Model).ToArray();
+            //var carsDto = mapper.Map<IEnumerable<CarMakeExportModel>>(cars).ToArray();
+            var result = XmlConverter.Serialize(cars, "cars");
 
             return result;
 
         }
+
         public static string GetLocalSuppliers(CarDealerContext context)
         {
-            InitializeAutoMapper();
             var suppliers = context.Suppliers
-                .Include(x => x.Parts)
-                .Where(x => !x.IsImporter);
-            var carsDto = mapper.Map<IEnumerable<SupplierExportModel>>(suppliers).ToList();
+                .Where(x => !x.IsImporter)
+                .Select(x => new SupplierExportModel
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    PartsCount = x.Parts.Count()
+                })
+                .ToArray();
 
-            var result = XmlConverter.Serialize(carsDto, "suppliers");
+
+            var result = XmlConverter.Serialize(suppliers, "suppliers");
 
             return result;
         }
+
         public static string GetCarsWithTheirListOfParts(CarDealerContext context)
         {
-            InitializeAutoMapper();
             var cars = context.Cars
                 .Select(x => new CarWithListOfPartsExportModel
                 {
@@ -247,12 +258,11 @@
                 .Take(5)
                 .ToList();
 
-            //var carsDto = mapper.Map<IEnumerable<CarWithListOfPartsExportModel>>(cars).ToList();
-
             var result = XmlConverter.Serialize(cars, "cars");
 
             return result;
         }
+
         public static string GetTotalSalesByCustomer(CarDealerContext context)
         {
             InitializeAutoMapper();
@@ -262,14 +272,36 @@
                 .ThenInclude(x => x.Car)
                 .ThenInclude(x => x.PartCars)
                 .ThenInclude(x => x.Part);
-                
+
             var customersDto = mapper.Map<IEnumerable<CustomerExportModel>>(customers).OrderByDescending(x => x.SpentMoney).ToArray();
             var result = XmlConverter.Serialize(customersDto, "customers");
 
             return result;
         }
 
+        public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+        {
+            var sales = context.Sales
+                .Select(x => new SaleExportModel
+                {
+                    Car = new CarSaleExportModel
+                    {
+                        Make = x.Car.Make,
+                        Model = x.Car.Model,
+                        TravelledDistance = x.Car.TravelledDistance
+                    },
+                    CustomerName = x.Customer.Name,
+                    Discount = x.Discount,
+                    Price = x.Car.PartCars.Sum(p => p.Part.Price),
+                    PriceWithDiscount = (x.Car.PartCars.Sum(c => c.Part.Price) - x.Car.PartCars.Sum(p => p.Part.Price) * (x.Discount / 100.00m))
+                })
+                .Take(10)
+                .ToArray();
 
+            var result = XmlConverter.Serialize(sales, "sales");
+
+            return result;
+        }
 
         private static void InitializeAutoMapper()
         {

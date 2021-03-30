@@ -10,6 +10,7 @@
         {
             this.CreateMap<UserImportModel, User>();
             this.CreateMap<ProductImportModel, Product>();
+            this.CreateMap<CategoryImportModel, Category>();
         }
     }
 }

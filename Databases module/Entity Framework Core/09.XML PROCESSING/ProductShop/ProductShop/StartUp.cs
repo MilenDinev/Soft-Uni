@@ -19,11 +19,14 @@
             context.Database.EnsureDeleted();
             context.Database.EnsureCreated();
 
-            var usersXML = File.ReadAllText("../../../Datasets/users.xml");
-            Console.WriteLine(ImportUsers(context, usersXML));
+            var usersXml = File.ReadAllText("../../../Datasets/users.xml");
+            Console.WriteLine(ImportUsers(context, usersXml));
 
-            var productsXML = File.ReadAllText("../../../Datasets/products.xml");
-            Console.WriteLine(ImportUsers(context, productsXML));
+            var productsXml = File.ReadAllText("../../../Datasets/products.xml");
+            Console.WriteLine(ImportProducts(context, productsXml));
+
+            var categoriesXml = File.ReadAllText("../../../Datasets/categories.xml");
+            Console.WriteLine(ImportCategoryProducts(context, categoriesXml));
 
         }
 
@@ -41,9 +44,20 @@
         public static string ImportProducts(ProductShopContext context, string inputXml)
         {
             InitializeAutoMapper();
-            var productsDto = XmlConverter.Deserializer<ProductImportModel>(inputXml, "Products");
+            var productsDto = XmlConverter.Deserializer<ProductImportModel>(inputXml,"Products");
             var products = mapper.Map<IEnumerable<Product>>(productsDto);
             context.Products.AddRange(products);
+            var result = context.SaveChanges();
+
+            return $"Successfully imported {result}";
+        }
+
+        public static string ImportCategoryProducts(ProductShopContext context, string inputXml)
+        {
+            InitializeAutoMapper();
+            var categoriesDto = XmlConverter.Deserializer<CategoryImportModel>(inputXml, "Categories");
+            var categories = mapper.Map<IEnumerable<Category>>(categoriesDto);
+            context.Categories.AddRange(categories);
             var result = context.SaveChanges();
 
             return $"Successfully imported {result}";

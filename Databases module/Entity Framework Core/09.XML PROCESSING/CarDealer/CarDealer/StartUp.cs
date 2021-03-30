@@ -290,13 +290,12 @@
                         Model = x.Car.Model,
                         TravelledDistance = x.Car.TravelledDistance
                     },
-                    CustomerName = x.Customer.Name,
                     Discount = x.Discount,
-                    Price = x.Car.PartCars.Sum(p => p.Part.Price),
-                    PriceWithDiscount = (x.Car.PartCars.Sum(c => c.Part.Price) - x.Car.PartCars.Sum(p => p.Part.Price) * (x.Discount / 100.00m))
+                    CustomerName = x.Customer.Name,
+                    Price = x.Car.PartCars.Sum(x => x.Part.Price),
+                    PriceWithDiscount = x.Car.PartCars.Sum(x => x.Part.Price) - x.Car.PartCars.Sum(x => x.Part.Price) * x.Discount / 100m
                 })
-                .Take(10)
-                .ToArray();
+                .ToList();
 
             var result = XmlConverter.Serialize(sales, "sales");
 

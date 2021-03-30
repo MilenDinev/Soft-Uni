@@ -22,6 +22,9 @@
             var usersXML = File.ReadAllText("../../../Datasets/users.xml");
             Console.WriteLine(ImportUsers(context, usersXML));
 
+            var productsXML = File.ReadAllText("../../../Datasets/products.xml");
+            Console.WriteLine(ImportUsers(context, productsXML));
+
         }
 
         public static string ImportUsers(ProductShopContext context, string inputXml)

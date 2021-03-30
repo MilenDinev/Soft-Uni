@@ -8,6 +8,7 @@
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
 
     public class StartUp
     {
@@ -26,7 +27,10 @@
             Console.WriteLine(ImportProducts(context, productsXml));
 
             var categoriesXml = File.ReadAllText("../../../Datasets/categories.xml");
-            Console.WriteLine(ImportCategoryProducts(context, categoriesXml));
+            Console.WriteLine(ImportCategories(context, categoriesXml));
+
+            var categoriesProductsXml = File.ReadAllText("../../../Datasets/categories-products.xml");
+            Console.WriteLine(ImportCategoryProducts(context, categoriesProductsXml));
 
         }
 
@@ -52,12 +56,26 @@
             return $"Successfully imported {result}";
         }
 
+        public static string ImportCategories(ProductShopContext context, string inputXml)
+        {
+            InitializeAutoMapper();
+            var categoriesDto = XmlConverter.Deserializer<CategoryImportModel>(inputXml, "Categories").Where(x => x.Name != null);
+            var categories = mapper.Map<IEnumerable<Category>>(categoriesDto);
+            context.Categories.AddRange(categories);
+            var result = context.SaveChanges();
+
+            return $"Successfully imported {result}";
+        }
+
         public static string ImportCategoryProducts(ProductShopContext context, string inputXml)
         {
             InitializeAutoMapper();
-            var categoriesDto = XmlConverter.Deserializer<CategoryImportModel>(inputXml, "Categories");
-            var categories = mapper.Map<IEnumerable<Category>>(categoriesDto);
-            context.Categories.AddRange(categories);
+            var categoryIds = context.Categories.Select(x => x.Id).ToList();
+            var productIds = context.Products.Select(x => x.Id).ToList();
+
+            var categoriesProductsDto = XmlConverter.Deserializer<CategoryProductImportModel>(inputXml, "CategoryProducts").Where(x => categoryIds.Contains(x.CategoryId) && productIds.Contains(x.ProductId));
+            var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(categoriesProductsDto);
+            context.CategoryProducts.AddRange(categoriesProducts);
             var result = context.SaveChanges();
 
             return $"Successfully imported {result}";

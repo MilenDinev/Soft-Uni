@@ -88,7 +88,6 @@
 
         public static string GetProductsInRange(ProductShopContext context)
         {
-            InitializeAutoMapper();
             var products = context.Products
                 .Where(x => x.Price >= 500 && x.Price <= 1000)
                 .Select(x => new ProductExportModel

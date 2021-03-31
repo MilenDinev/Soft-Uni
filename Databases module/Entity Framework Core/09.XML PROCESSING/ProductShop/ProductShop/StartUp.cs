@@ -3,6 +3,7 @@
     using AutoMapper;
     using CarDealer.XMLHelper;
     using ProductShop.Data;
+    using ProductShop.Dtos.Export;
     using ProductShop.Dtos.Import;
     using ProductShop.Models;
     using System;
@@ -17,20 +18,22 @@
         public static void Main(string[] args)
         {
             var context = new ProductShopContext();
-            context.Database.EnsureDeleted();
-            context.Database.EnsureCreated();
+            //context.Database.EnsureDeleted();
+            //context.Database.EnsureCreated();
 
-            var usersXml = File.ReadAllText("../../../Datasets/users.xml");
-            Console.WriteLine(ImportUsers(context, usersXml));
+            //var usersXml = File.ReadAllText("../../../Datasets/users.xml");
+            //Console.WriteLine(ImportUsers(context, usersXml));
 
-            var productsXml = File.ReadAllText("../../../Datasets/products.xml");
-            Console.WriteLine(ImportProducts(context, productsXml));
+            //var productsXml = File.ReadAllText("../../../Datasets/products.xml");
+            //Console.WriteLine(ImportProducts(context, productsXml));
 
-            var categoriesXml = File.ReadAllText("../../../Datasets/categories.xml");
-            Console.WriteLine(ImportCategories(context, categoriesXml));
+            //var categoriesXml = File.ReadAllText("../../../Datasets/categories.xml");
+            //Console.WriteLine(ImportCategories(context, categoriesXml));
 
-            var categoriesProductsXml = File.ReadAllText("../../../Datasets/categories-products.xml");
-            Console.WriteLine(ImportCategoryProducts(context, categoriesProductsXml));
+            //var categoriesProductsXml = File.ReadAllText("../../../Datasets/categories-products.xml");
+            //Console.WriteLine(ImportCategoryProducts(context, categoriesProductsXml));
+
+            Console.WriteLine(GetProductsInRange(context));
 
         }
 
@@ -75,11 +78,35 @@
 
             var categoriesProductsDto = XmlConverter.Deserializer<CategoryProductImportModel>(inputXml, "CategoryProducts").Where(x => categoryIds.Contains(x.CategoryId) && productIds.Contains(x.ProductId));
             var categoriesProducts = mapper.Map<IEnumerable<CategoryProduct>>(categoriesProductsDto);
+
             context.CategoryProducts.AddRange(categoriesProducts);
             var result = context.SaveChanges();
 
             return $"Successfully imported {result}";
         }
+
+
+        public static string GetProductsInRange(ProductShopContext context)
+        {
+            InitializeAutoMapper();
+            var products = context.Products
+                .Where(x => x.Price >= 500 && x.Price <= 1000)
+                .Select(x => new ProductExportModel
+                {
+                    Name = x.Name,
+                    Price = x.Price,
+                    BuyerFullName = x.Buyer.FirstName + " " + x.Buyer.LastName
+                })
+                .OrderBy(x => x.Price)
+                .Take(10)
+                .ToList();
+
+            var result= XmlConverter.Serialize(products, "Products");
+
+            return result;
+
+        }
+
 
         private static void InitializeAutoMapper()
         {

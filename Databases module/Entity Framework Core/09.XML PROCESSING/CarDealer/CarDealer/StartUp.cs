@@ -20,36 +20,36 @@
         public static void Main(string[] args)
         {
             var context = new CarDealerContext();
-            //context.Database.EnsureDeleted();
-            //context.Database.EnsureCreated();
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
 
-            //var suppliersXml = File.ReadAllText("./Datasets/suppliers.xml");
-            //var suppliersResult = ImportSuppliers(context, suppliersXml);
+            var suppliersXml = File.ReadAllText("./Datasets/suppliers.xml");
+            var suppliersResult = ImportSuppliers(context, suppliersXml);
 
-            //var partsXml = File.ReadAllText("./Datasets/parts.xml");
-            //var partsResult = ImportParts(context, partsXml);
+            var partsXml = File.ReadAllText("./Datasets/parts.xml");
+            var partsResult = ImportParts(context, partsXml);
 
-            //var carsXml = File.ReadAllText("./Datasets/cars.xml");
-            //var carsResult = ImportCars(context, carsXml);
+            var carsXml = File.ReadAllText("./Datasets/cars.xml");
+            var carsResult = ImportCars(context, carsXml);
 
-            //var customersXml = File.ReadAllText("./Datasets/customers.xml");
-            //var customersResult = ImportCustomers(context, customersXml);
+            var customersXml = File.ReadAllText("./Datasets/customers.xml");
+            var customersResult = ImportCustomers(context, customersXml);
 
-            //var salesXml = File.ReadAllText("./Datasets/sales.xml");
-            //var salesResult = ImportSales(context, salesXml);
+            var salesXml = File.ReadAllText("./Datasets/sales.xml");
+            var salesResult = ImportSales(context, salesXml);
 
-            //Console.WriteLine(suppliersResult);
-            //Console.WriteLine(partsResult);
-            //Console.WriteLine(carsResult);
-            //Console.WriteLine(customersResult);
-            //Console.WriteLine(salesResult);
+            Console.WriteLine(suppliersResult);
+            Console.WriteLine(partsResult);
+            Console.WriteLine(carsResult);
+            Console.WriteLine(customersResult);
+            Console.WriteLine(salesResult);
 
-            //Console.WriteLine(GetCarsWithDistance(context));
-            //Console.WriteLine(GetCarsFromMakeBmw(context));
+            Console.WriteLine(GetCarsWithDistance(context));
+            Console.WriteLine(GetCarsFromMakeBmw(context));
             Console.WriteLine(GetLocalSuppliers(context));
-            //Console.WriteLine(GetCarsWithTheirListOfParts(context));
-            //Console.WriteLine(GetTotalSalesByCustomer(context));
-            //Console.WriteLine(GetSalesWithAppliedDiscount(context));
+            Console.WriteLine(GetCarsWithTheirListOfParts(context));
+            Console.WriteLine(GetTotalSalesByCustomer(context));
+            Console.WriteLine(GetSalesWithAppliedDiscount(context));
 
         }
 

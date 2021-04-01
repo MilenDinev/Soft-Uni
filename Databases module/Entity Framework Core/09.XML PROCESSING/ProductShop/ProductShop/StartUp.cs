@@ -20,24 +20,24 @@
         public static void Main(string[] args)
         {
             var context = new ProductShopContext();
-            //context.Database.EnsureDeleted();
-            //context.Database.EnsureCreated();
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
 
-            //var usersXml = File.ReadAllText("../../../Datasets/users.xml");
-            //Console.WriteLine(ImportUsers(context, usersXml));
+            var usersXml = File.ReadAllText("../../../Datasets/users.xml");
+            Console.WriteLine(ImportUsers(context, usersXml));
 
-            //var productsXml = File.ReadAllText("../../../Datasets/products.xml");
-            //Console.WriteLine(ImportProducts(context, productsXml));
+            var productsXml = File.ReadAllText("../../../Datasets/products.xml");
+            Console.WriteLine(ImportProducts(context, productsXml));
 
-            //var categoriesXml = File.ReadAllText("../../../Datasets/categories.xml");
-            //Console.WriteLine(ImportCategories(context, categoriesXml));
+            var categoriesXml = File.ReadAllText("../../../Datasets/categories.xml");
+            Console.WriteLine(ImportCategories(context, categoriesXml));
 
-            //var categoriesProductsXml = File.ReadAllText("../../../Datasets/categories-products.xml");
-            //Console.WriteLine(ImportCategoryProducts(context, categoriesProductsXml));
+            var categoriesProductsXml = File.ReadAllText("../../../Datasets/categories-products.xml");
+            Console.WriteLine(ImportCategoryProducts(context, categoriesProductsXml));
 
-            //Console.WriteLine(GetProductsInRange(context));
-            //Console.WriteLine(GetSoldProducts(context));
-            //Console.WriteLine(GetCategoriesByProductsCount(context));
+            Console.WriteLine(GetProductsInRange(context));
+            Console.WriteLine(GetSoldProducts(context));
+            Console.WriteLine(GetCategoriesByProductsCount(context));
             Console.WriteLine(GetUsersWithProducts(context));
 
         }

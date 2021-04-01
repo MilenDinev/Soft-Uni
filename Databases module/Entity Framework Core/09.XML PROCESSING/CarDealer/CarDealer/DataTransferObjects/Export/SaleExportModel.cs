@@ -1,6 +1,5 @@
 ﻿namespace CarDealer.DataTransferObjects.Export
 {
-
     using System.Xml.Serialization;
 
     [XmlType("sale")]

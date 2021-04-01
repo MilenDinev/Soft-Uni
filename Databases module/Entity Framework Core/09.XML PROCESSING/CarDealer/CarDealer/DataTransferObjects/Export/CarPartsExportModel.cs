@@ -1,6 +1,4 @@
-﻿
-
-namespace CarDealer.DataTransferObjects.Export
+﻿namespace CarDealer.DataTransferObjects.Export
 {
     using System.Xml.Serialization;
 

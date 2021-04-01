@@ -14,9 +14,6 @@
             this.CreateMap<SaleImportModel, Sale>();
             this.CreateMap<Car, CarExportModel>();
             this.CreateMap<Car, CarMakeExportModel>();
-            this.CreateMap<Supplier, SupplierExportModel>()
-                  .ForMember(pc => pc.PartsCount,
-                  source => source.MapFrom(src => src.Parts.Count));
             this.CreateMap<Customer, CustomerExportModel>()
                   .ForMember(x => x.BoughtCars,
                   source => source.MapFrom(x => x.Sales.Count))

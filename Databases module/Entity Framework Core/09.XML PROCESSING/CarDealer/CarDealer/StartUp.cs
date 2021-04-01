@@ -46,10 +46,10 @@
 
             //Console.WriteLine(GetCarsWithDistance(context));
             //Console.WriteLine(GetCarsFromMakeBmw(context));
-            //Console.WriteLine(GetLocalSuppliers(context));
+            Console.WriteLine(GetLocalSuppliers(context));
             //Console.WriteLine(GetCarsWithTheirListOfParts(context));
             //Console.WriteLine(GetTotalSalesByCustomer(context));
-            Console.WriteLine(GetSalesWithAppliedDiscount(context));
+            //Console.WriteLine(GetSalesWithAppliedDiscount(context));
 
         }
 
@@ -211,12 +211,11 @@
             InitializeAutoMapper();
             var cars = context.Cars.Where(x => x.Make == "BMW")
                 .ProjectTo<CarMakeExportModel>(mapper.ConfigurationProvider)
-                .OrderBy(x => x.Model).ToArray();
-            //var carsDto = mapper.Map<IEnumerable<CarMakeExportModel>>(cars).ToArray();
+                .OrderBy(c => c.Model)
+                .ThenByDescending(c => c.TravelledDistance).ToArray();
             var result = XmlConverter.Serialize(cars, "cars");
 
             return result;
-
         }
 
         public static string GetLocalSuppliers(CarDealerContext context)

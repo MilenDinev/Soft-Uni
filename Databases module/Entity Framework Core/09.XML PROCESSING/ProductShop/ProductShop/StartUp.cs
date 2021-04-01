@@ -33,7 +33,9 @@
             //var categoriesProductsXml = File.ReadAllText("../../../Datasets/categories-products.xml");
             //Console.WriteLine(ImportCategoryProducts(context, categoriesProductsXml));
 
-            Console.WriteLine(GetProductsInRange(context));
+            //Console.WriteLine(GetProductsInRange(context));
+            //Console.WriteLine(GetSoldProducts(context));
+            Console.WriteLine(GetCategoriesByProductsCount(context));
 
         }
 
@@ -85,7 +87,6 @@
             return $"Successfully imported {result}";
         }
 
-
         public static string GetProductsInRange(ProductShopContext context)
         {
             var products = context.Products
@@ -106,6 +107,48 @@
 
         }
 
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+            var users = context.Users
+                .Where(x => x.ProductsSold.Any())
+                .Select(x => new UserExportModel
+                {
+                    FirstName = x.FirstName,
+                    LastName = x.LastName,
+                    SoldProducts = x.ProductsSold.Select(p => new SoldProductExportModel
+                    {
+                        Name = p.Name,
+                        Price = p.Price
+                    }).ToArray()
+                })
+                .OrderBy(x => x.LastName)
+                .ThenBy(x => x.FirstName)
+                .Take(5)
+                .ToArray();
+
+            var result = XmlConverter.Serialize(users, "Users");
+
+            return result;
+        }
+
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+            var categories = context.Categories
+                .Select(x => new CategoryProductExportModel
+                {
+                    Name = x.Name,
+                    Count = x.CategoryProducts.Count,
+                    AveragePrice = x.CategoryProducts.Average(ap => ap.Product.Price),
+                    TotalRevenue = x.CategoryProducts.Sum(p => p.Product.Price)
+                })
+                .OrderByDescending(x => x.Count)
+                .ThenBy(x => x.TotalRevenue)
+                .ToList();
+
+            var result = XmlConverter.Serialize(categories, "Categories");
+
+            return result;
+        }
 
         private static void InitializeAutoMapper()
         {

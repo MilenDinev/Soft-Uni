@@ -2,6 +2,7 @@
 {
     using AutoMapper;
     using CarDealer.XMLHelper;
+    using Microsoft.EntityFrameworkCore;
     using ProductShop.Data;
     using ProductShop.Dtos.Export;
     using ProductShop.Dtos.Import;
@@ -10,6 +11,7 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    using System.Xml.Serialization;
 
     public class StartUp
     {
@@ -35,7 +37,8 @@
 
             //Console.WriteLine(GetProductsInRange(context));
             //Console.WriteLine(GetSoldProducts(context));
-            Console.WriteLine(GetCategoriesByProductsCount(context));
+            //Console.WriteLine(GetCategoriesByProductsCount(context));
+            Console.WriteLine(GetUsersWithProducts(context));
 
         }
 
@@ -53,7 +56,7 @@
         public static string ImportProducts(ProductShopContext context, string inputXml)
         {
             InitializeAutoMapper();
-            var productsDto = XmlConverter.Deserializer<ProductImportModel>(inputXml,"Products");
+            var productsDto = XmlConverter.Deserializer<ProductImportModel>(inputXml, "Products");
             var products = mapper.Map<IEnumerable<Product>>(productsDto);
             context.Products.AddRange(products);
             var result = context.SaveChanges();
@@ -101,7 +104,7 @@
                 .Take(10)
                 .ToList();
 
-            var result= XmlConverter.Serialize(products, "Products");
+            var result = XmlConverter.Serialize(products, "Products");
 
             return result;
 
@@ -147,6 +150,41 @@
 
             var result = XmlConverter.Serialize(categories, "Categories");
 
+            return result;
+        }
+
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+
+            var users = context.Users
+                .Where(x => x.ProductsSold.Any((b => b.BuyerId != null)))
+                .Select(u => new UserSoldProductExportModel
+                {
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    Age = u.Age,
+                    SoldProducts = new SoldProductCountExportModel
+                    {
+                        Count = u.ProductsSold.Count,
+                        SoldProducts = u.ProductsSold
+                        .Select(p => new SoldProductExportModel
+                        {
+                            Name = p.Name,
+                            Price = p.Price
+                        }).OrderByDescending(p => p.Price).ToArray()
+                    }
+                })
+                .OrderByDescending(u => u.SoldProducts.Count)
+                .Take(10).ToArray();
+
+            var finalResult = new UserFinalExportModel
+            {
+                Count = context.Users.Count(u => u.ProductsSold.Any(p => p.BuyerId != null)),
+                Users = users
+            };
+
+
+            var result = XmlConverter.Serialize(finalResult, "Users");
             return result;
         }
 

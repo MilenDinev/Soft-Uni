@@ -1,0 +1,138 @@
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.exe
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.deps.json
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.runtimeconfig.json
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.runtimeconfig.dev.json
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\ref\RealEstates.ConsoleApplication.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Data.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Models.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Services.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Data.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Services.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Models.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.csprojAssemblyReference.cache
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.AssemblyInfo.cs
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.csproj.CopyComplete
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\ref\RealEstates.ConsoleApplication.dll
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.pdb
+C:\Users\MIlen\source\repos\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.genruntimeconfig.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\ref\RealEstates.ConsoleApplication.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.ConsoleApplication.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Drawing.Common.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Security.Permissions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\System.Windows.Extensions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Data.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Services.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\bin\Debug\net5.0\RealEstates.Models.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\ref\RealEstates.ConsoleApplication.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.ConsoleApplication\obj\Debug\net5.0\RealEstates.ConsoleApplication.genruntimeconfig.cache

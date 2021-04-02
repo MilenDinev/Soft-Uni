@@ -1,0 +1,12 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\bin\Debug\net5.0\RealEstates.Models.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\bin\Debug\net5.0\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\bin\Debug\net5.0\ref\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\bin\Debug\net5.0\RealEstates.Models.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\ref\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Models\obj\Debug\net5.0\RealEstates.Models.pdb

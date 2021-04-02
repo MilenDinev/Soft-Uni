@@ -1,0 +1,17 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Services.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\ref\RealEstates.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Services.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Data.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\bin\Debug\net5.0\RealEstates.Models.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\ref\RealEstates.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstates\RealEstates.Services\obj\Debug\net5.0\RealEstates.Services.pdb

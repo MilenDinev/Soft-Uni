@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zbxPmnBDDNzo1xp1YJQzAImeyGrVTi4YykzacJQfq/B+ZJXFhLFzxuJunAAZMLoCybWCupVlz4XeSKsVjA878Q==",
+  "dgSpecHash": "pSt+q9qGnKFIlh1nbbaiSW+MLArhoxmK5a+BSI30wLJyQ9xl10JbfHldp/ugvzIdzcFTLzh4dBqRhTpTe8ySLg==",
   "success": true,
-  "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Importer\\RealEstates.Importer.csproj",
+  "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Importer\\RealEstates.Importer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

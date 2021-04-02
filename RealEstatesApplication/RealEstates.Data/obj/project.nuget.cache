@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x3VgGoKupOEzSeWIRZvjgyfkaxue5rRlCgzG4UQazZIJPNwuMMdFYIzs07k2wSLRc84CDFlqYPdyhiQca+0XKw==",
+  "dgSpecHash": "2L1NucnUjZIkatjXmWcvewMg4w6MqtPuT3iCAAUKs5ttPzi23IXOVIkkcSSKHVzcUcXnUrHQAtrRk7DP2iNgjw==",
   "success": true,
-  "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj",
+  "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MIlen\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

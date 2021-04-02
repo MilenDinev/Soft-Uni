@@ -5761,11 +5761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.ConsoleApplication\\RealEstates.ConsoleApplication.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.ConsoleApplication\\RealEstates.ConsoleApplication.csproj",
       "projectName": "RealEstates.ConsoleApplication",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.ConsoleApplication\\RealEstates.ConsoleApplication.csproj",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.ConsoleApplication\\RealEstates.ConsoleApplication.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.ConsoleApplication\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.ConsoleApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5786,11 +5786,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj": {
-              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj"
+            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj": {
+              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj"
             },
-            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Services\\RealEstates.Services.csproj": {
-              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Services\\RealEstates.Services.csproj"
+            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Services\\RealEstates.Services.csproj": {
+              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Services\\RealEstates.Services.csproj"
             }
           }
         }

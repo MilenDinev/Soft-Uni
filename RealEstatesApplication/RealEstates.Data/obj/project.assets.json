@@ -5782,11 +5782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj",
       "projectName": "RealEstates.Data",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Data\\RealEstates.Data.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Data\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5807,8 +5807,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Models\\RealEstates.Models.csproj": {
-              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstatesApplication\\RealEstates.Models\\RealEstates.Models.csproj"
+            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Models\\RealEstates.Models.csproj": {
+              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Models\\RealEstates.Models.csproj"
             }
           }
         }

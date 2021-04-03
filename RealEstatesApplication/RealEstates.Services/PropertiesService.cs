@@ -76,5 +76,13 @@
 
             return properties;
         }
+
+        public decimal AveragePricePerSquareMeter()
+        {
+            var result = dbContext.Properties.Where(x => x.Price.HasValue)
+                .Average(x => x.Price / (decimal)x.Size) ?? 0;
+
+            return result;
+        }
     }
 }

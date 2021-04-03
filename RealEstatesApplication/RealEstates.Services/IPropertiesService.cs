@@ -10,5 +10,7 @@
             int year, string propertyType, string buildingType);
 
         IEnumerable<PropertyInfoDto> Search(int minPrice, int maxPrice, int minSize, int maxSize);
+
+        decimal AveragePricePerSquareMeter();
     }
 }

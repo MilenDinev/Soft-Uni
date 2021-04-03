@@ -7,7 +7,7 @@
     using System.IO;
     using System.Text.Json;
 
-    public class Program
+    public class Startup
     {
         static void Main(string[] args)
         {

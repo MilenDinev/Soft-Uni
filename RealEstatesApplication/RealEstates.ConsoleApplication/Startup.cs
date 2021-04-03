@@ -6,9 +6,9 @@
     using System;
     using System.Text;
 
-    public class Program
+    public class Startup
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = Encoding.Unicode;
             var db = new ApplicationDbContext();

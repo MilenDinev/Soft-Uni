@@ -2,7 +2,6 @@
 {
     using Microsoft.EntityFrameworkCore;
     using RealEstates.Data;
-    using RealEstates.Models;
     using RealEstates.Services;
     using System;
     using System.Text;
@@ -52,9 +51,12 @@
 
         private static void MostExpensiveDistricts(ApplicationDbContext db)
         {
+            Console.Write("Districts count: ");
+            int count = int.Parse(Console.ReadLine());
+
             IDistrictService districtService = new DistrictsService(db);
 
-            var districts = districtService.GetMostExpensiveDistricts(20);
+            var districts = districtService.GetMostExpensiveDistricts(count);
 
             foreach (var district in districts)
             {
@@ -64,16 +66,16 @@
 
         private static void PropertySearch(ApplicationDbContext db)
         {
-            Console.WriteLine("Min price:");
+            Console.Write("Min price: ");
             int minPrice = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Max price:");
+            Console.Write("Max price: ");
             int maxPrice = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Min size:");
+            Console.Write("Min size: ");
             int minSize = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Max size:");
+            Console.Write("Max size: ");
             int maxSize = int.Parse(Console.ReadLine());
 
             IPropertiesService service = new PropertiesService(db);

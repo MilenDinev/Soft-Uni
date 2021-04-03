@@ -1,7 +1,6 @@
 ﻿namespace RealEstates.Services
 {
     using RealEstates.Services.Models;
-    using System;
     using System.Collections.Generic;
 
     public interface IPropertiesService

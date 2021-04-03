@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pSt+q9qGnKFIlh1nbbaiSW+MLArhoxmK5a+BSI30wLJyQ9xl10JbfHldp/ugvzIdzcFTLzh4dBqRhTpTe8ySLg==",
+  "dgSpecHash": "DMKjgKmAZTN9tggRS8T17zGn9svz1ueqPYmtAJoz3VJfyEEa3OGdmq7vxpFKbkWzRjx94laymTZ6rfSrmI0Fkw==",
   "success": true,
   "projectFilePath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\RealEstatesApplication\\RealEstates.Importer\\RealEstates.Importer.csproj",
   "expectedPackageFiles": [
@@ -89,6 +89,7 @@
     "C:\\Users\\MIlen\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\MIlen\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\MIlen\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

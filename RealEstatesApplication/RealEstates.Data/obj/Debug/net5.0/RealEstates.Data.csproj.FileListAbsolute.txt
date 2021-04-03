@@ -34,3 +34,21 @@ D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST 
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\ref\RealEstates.Data.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.pdb
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\10.BEST PRACTICES AND ARCHITECTURE\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.genruntimeconfig.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Data.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Data.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Data.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\ref\RealEstates.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Data.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Models.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\bin\Debug\net5.0\RealEstates.Models.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\ref\RealEstates.Data.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\RealEstatesApplication\RealEstates.Data\obj\Debug\net5.0\RealEstates.Data.genruntimeconfig.cache

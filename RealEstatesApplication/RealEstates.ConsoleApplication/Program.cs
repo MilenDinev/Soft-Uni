@@ -60,7 +60,7 @@
 
             foreach (var district in districts)
             {
-                Console.WriteLine($"{district.Name} => {district.AveragePricePerSquareMeter}€/m²({district.PropertiesCount})");
+                Console.WriteLine($"{district.Name} => {district.AveragePricePerSquareMeter:0.00}€/m²({district.PropertiesCount})");
             }
         }
 

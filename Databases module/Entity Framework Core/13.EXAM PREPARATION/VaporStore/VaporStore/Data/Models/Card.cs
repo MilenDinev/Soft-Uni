@@ -12,11 +12,8 @@ namespace VaporStore.Data.Models
         }
         public int Id { get; set; }
 
-        //[RegularExpression(@"^[\d]{4} [\d]{4} [\d]{4} [\d]{4}$")]
         [Required]
         public string Number { get; set; }
-
-        //[RegularExpression(@"^[\d]{3}$")]
 
         [Required]
         public string Cvc { get; set; }

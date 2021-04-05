@@ -1,6 +1,3 @@
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.AssemblyInfoInputs.cache
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.AssemblyInfo.cs
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csproj.CoreCompileInputs.cache
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\bin\Debug\netcoreapp3.1\VaporStore.exe
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\bin\Debug\netcoreapp3.1\VaporStore.deps.json
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\bin\Debug\netcoreapp3.1\VaporStore.runtimeconfig.json
@@ -43,8 +40,11 @@ D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM 
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csproj.CoreCompileInputs.cache
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csproj.CopyComplete
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.pdb
 D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.genruntimeconfig.cache
-D:\My Files\SoftUni\GIT\Soft-Uni\Databases module\Entity Framework Core\13.EXAM PREPARATION\VaporStore\VaporStore\obj\Debug\netcoreapp3.1\VaporStore.csprojAssemblyReference.cache

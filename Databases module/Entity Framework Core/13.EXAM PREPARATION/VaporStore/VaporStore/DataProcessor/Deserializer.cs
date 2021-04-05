@@ -6,12 +6,14 @@
     using System.Globalization;
     using System.Linq;
     using System.Text;
+    using System.Xml;
     using Data;
     using Microsoft.EntityFrameworkCore.Internal;
     using Newtonsoft.Json;
     using VaporStore.Data.Models;
     using VaporStore.Data.Models.Enums;
     using VaporStore.DataProcessor.Dto.Import;
+    using VaporStore.DataProcessor.XmlHelper;
 
     public static class Deserializer
     {
@@ -105,7 +107,48 @@
 
         public static string ImportPurchases(VaporStoreDbContext context, string xmlString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+            var purchasesDto = XmlConverter.Deserializer<PurchaseImportModel>(xmlString, "Purchases");
+
+            foreach (var currentPurchase in purchasesDto)
+            {
+                var isValidDate = DateTime.TryParseExact(currentPurchase.Date, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime date);
+
+                if (!IsValid(currentPurchase))
+                {
+                    sb.AppendLine("Invalid Data");
+                    continue;
+                }
+
+                var card = context.Cards.FirstOrDefault(x => x.Number == currentPurchase.Card);
+                if (card == null)
+                {
+                    sb.AppendLine("Invalid Data");
+                    continue;
+                }
+
+                var game = context.Games.FirstOrDefault(x => x.Name == currentPurchase.GameTitle);
+                if (game == null)
+                {
+                    sb.AppendLine("Invalid Data");
+                    continue;
+                }
+
+                var purchase = new Purchase
+                {
+                    ProductKey = currentPurchase.Key,
+                    Date = date,
+                    Type = Enum.Parse<PurchaseType>(currentPurchase.Type),
+                    Card = card,
+                    Game = game
+                };
+
+                context.Purchases.Add(purchase);
+                sb.AppendLine($"Imported {purchase.Game.Name} for {purchase.Card.User.Username}");
+            }
+            context.SaveChanges();
+
+            return sb.ToString().TrimEnd();
         }
 
         private static bool IsValid(object dto)

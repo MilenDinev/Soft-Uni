@@ -12,7 +12,7 @@
         {
             var gernesGames = context.Genres
                 .ToList()
-                .Where(x => genreNames.Contains(x.Name) && x.Games.Select(x => x.Purchases.Any()).Any())
+                .Where(x => genreNames.Contains(x.Name) && x.Games.Select(x => x.Purchases).Any())
                 .Select(x => new
                 {
                     Id = x.Id,

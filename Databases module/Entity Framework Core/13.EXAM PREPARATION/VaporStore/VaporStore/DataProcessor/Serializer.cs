@@ -1,10 +1,13 @@
 ﻿namespace VaporStore.DataProcessor
 {
     using System;
+    using System.Globalization;
     using System.Linq;
     using Data;
     using Newtonsoft.Json;
     using VaporStore.Data.Models;
+    using VaporStore.DataProcessor.Dto.Export;
+    using VaporStore.DataProcessor.XmlHelper;
 
     public static class Serializer
     {
@@ -40,7 +43,36 @@
 
         public static string ExportUserPurchasesByType(VaporStoreDbContext context, string storeType)
         {
-            throw new NotImplementedException();
+            var usersDto = context.Users
+                .ToList()
+                .Where(x => x.Cards.Any(c => c.Purchases.Any(s => s.Type.ToString() == storeType)))
+                .Select(x => new UserExportModel
+                {
+                    Username = x.Username,
+                    Purchases = x.Cards.SelectMany(c => c.Purchases.Where(p => p.Type.ToString() == storeType), (card, purchase) => new PurchaseExportModel
+                    {
+                        Card = card.Number,
+                        Cvc = card.Cvc,
+                        Date = purchase.Date.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture),
+                        Game = new GameExportModel()
+                        {
+                            Tittle = purchase.Game.Name,
+                            Genre = purchase.Game.Genre.Name,
+                            Price = purchase.Game.Price
+                        }
+                    })
+                        .OrderBy(p => p.Date)
+                        .ToArray(),
+                    TotalSpent = x.Cards.Sum(c => c.Purchases.Where(p => p.Type.ToString() == storeType).Sum(p => p.Game.Price))
+
+                })
+                .OrderByDescending(x => x.TotalSpent)
+                .ThenBy(x => x.Username)
+                .ToList();
+
+            var result = XmlConverter.Serialize(usersDto, "Users");
+
+            return result;
         }
     }
 }

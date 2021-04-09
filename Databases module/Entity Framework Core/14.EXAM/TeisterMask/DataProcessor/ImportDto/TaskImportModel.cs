@@ -22,9 +22,9 @@ namespace TeisterMask.DataProcessor.ImportDto
 
         [EnumDataType(typeof(ExecutionType))]
         [XmlElement("ExecutionType")]
-        public string ExecutionType { get; set; }
+        public int ExecutionType { get; set; }
         [EnumDataType(typeof(LabelType))]
         [XmlElement("LabelType")]
-        public string LabelType { get; set; }
+        public int LabelType { get; set; }
     }
 }

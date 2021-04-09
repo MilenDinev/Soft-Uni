@@ -27,34 +27,35 @@
 
         public static string ImportProjects(TeisterMaskContext context, string xmlString)
         {
-            StringBuilder sb = new StringBuilder();
-            var projects = new List<Project>();
 
             var projectsDto = XmlConverter.Deserializer<ProjectImportModel>(xmlString, "Projects");
+            var projects = new List<Project>();
+            StringBuilder sb = new StringBuilder();
 
             foreach (var currentProject in projectsDto)
             {
-                var projectOpenDate = DateTime.ParseExact(currentProject.OpenDate, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                var isValidprojectDueDate = DateTime.TryParseExact(currentProject.DueDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime projectDueDate);
-
-
-                if (!IsValid(currentProject))
+                var isValidProjectOpenDate = DateTime.TryParseExact(currentProject.OpenDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime projectOpenDate);
+                var isValidProjectDueDate = DateTime.TryParseExact(currentProject.DueDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime projectDueDate);
+                if (!IsValid(currentProject) || !isValidProjectOpenDate)
                 {
                     sb.AppendLine("Invalid data!");
                     continue;
                 }
 
-
                 var tasks = new List<Task>();
 
                 foreach (var currentTask in currentProject.Tasks)
                 {
-                    var taskOpenDate = DateTime.ParseExact(currentTask.OpenDate.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    var taskDueDate = DateTime.ParseExact(currentTask.DueDate.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    var isValidTaskOpenDate = DateTime.TryParseExact(currentTask.OpenDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime taskOpenDate);
+                    var isValidTaskDueDate = DateTime.TryParseExact(currentTask.DueDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime taskDueDate);
+
+
 
                     int compareOpenDates = DateTime.Compare(taskOpenDate, projectOpenDate);
+
                     int compareDueDates = DateTime.Compare(taskDueDate, projectDueDate);
-                    if (!IsValid(currentTask) || compareOpenDates < 0 || (isValidprojectDueDate && compareDueDates > 0))
+
+                    if (!IsValid(currentTask) || !isValidTaskOpenDate || !isValidTaskDueDate || compareOpenDates < 0 || (isValidProjectDueDate && compareDueDates > 0))
                     {
                         sb.AppendLine("Invalid data!");
                         continue;
@@ -65,21 +66,20 @@
                         Name = currentTask.Name,
                         OpenDate = taskOpenDate,
                         DueDate = taskDueDate,
-                        ExecutionType = Enum.Parse<ExecutionType>(currentTask.ExecutionType),
-                        LabelType = Enum.Parse<LabelType>(currentTask.LabelType)
+                        ExecutionType = (ExecutionType)(currentTask.ExecutionType),
+                        LabelType = (LabelType)(currentTask.LabelType),
                     };
-
 
                     tasks.Add(task);
                 }
-
 
                 var project = new Project
                 {
                     Name = currentProject.Name,
                     OpenDate = projectOpenDate,
-                    DueDate = isValidprojectDueDate ? projectDueDate : (DateTime?)null,
-                    Tasks  = tasks
+                    DueDate = isValidProjectDueDate ? projectDueDate : (DateTime?)null,
+
+                    Tasks = tasks
                 };
 
                 projects.Add(project);
@@ -96,22 +96,22 @@
         public static string ImportEmployees(TeisterMaskContext context, string jsonString)
         {
             StringBuilder sb = new StringBuilder();
-
             var employeesDto = JsonConvert.DeserializeObject<IEnumerable<EmployeeImportModel>>(jsonString);
+
 
             foreach (var currentEmployee in employeesDto)
             {
-                if (IsValid(currentEmployee) == false)
+                if (!IsValid(currentEmployee))
                 {
                     sb.AppendLine("Invalid data!");
                     continue;
                 }
 
-                var employee = new Employee()
+                var employee = new Employee
                 {
                     Username = currentEmployee.Username,
                     Email = currentEmployee.Email,
-                    Phone = currentEmployee.Phone,
+                    Phone = currentEmployee.Phone
                 };
 
                 foreach (var currentTask in currentEmployee.Tasks.Distinct())
@@ -124,24 +124,21 @@
                         continue;
                     }
 
-
                     employee.EmployeesTasks.Add(new EmployeeTask { Task = task });
 
                 }
 
                 context.Employees.Add(employee);
                 context.SaveChanges();
-
                 sb.AppendLine($"Successfully imported employee - {employee.Username} with {employee.EmployeesTasks.Count()} tasks.");
             }
-
 
             var result = sb.ToString().TrimEnd();
             return result;
         }
 
 
-        
+
 
         private static bool IsValid(object dto)
         {

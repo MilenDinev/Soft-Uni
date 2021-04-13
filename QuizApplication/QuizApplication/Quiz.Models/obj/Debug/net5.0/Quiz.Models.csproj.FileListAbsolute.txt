@@ -9,4 +9,3 @@ D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Models\obj
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Models\obj\Debug\net5.0\Quiz.Models.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Models\obj\Debug\net5.0\ref\Quiz.Models.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Models\obj\Debug\net5.0\Quiz.Models.pdb
-D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Models\obj\Debug\net5.0\Quiz.Models.csprojAssemblyReference.cache

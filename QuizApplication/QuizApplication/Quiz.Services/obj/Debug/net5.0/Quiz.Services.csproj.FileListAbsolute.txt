@@ -1,0 +1,11 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\bin\Debug\net5.0\Quiz.Services.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\bin\Debug\net5.0\Quiz.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\bin\Debug\net5.0\ref\Quiz.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\bin\Debug\net5.0\Quiz.Services.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\Quiz.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\Quiz.Services.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\Quiz.Services.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\Quiz.Services.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\Quiz.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\ref\Quiz.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Services\obj\Debug\net5.0\Quiz.Services.pdb

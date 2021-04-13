@@ -1,0 +1,15 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.ConsoleUI.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.ConsoleUI.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.ConsoleUI.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.ConsoleUI.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.ConsoleUI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\ref\Quiz.ConsoleUI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.ConsoleUI.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\ref\Quiz.ConsoleUI.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.genruntimeconfig.cache

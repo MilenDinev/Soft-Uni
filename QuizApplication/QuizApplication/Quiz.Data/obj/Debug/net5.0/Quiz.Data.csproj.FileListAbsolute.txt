@@ -16,3 +16,4 @@ D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Data\obj\D
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Data\bin\Debug\net5.0\Quiz.Models.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Data\bin\Debug\net5.0\Quiz.Models.pdb
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Data\obj\Debug\net5.0\Quiz.Data.csproj.CopyComplete
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.Data\bin\Debug\net5.0\appsettings.json

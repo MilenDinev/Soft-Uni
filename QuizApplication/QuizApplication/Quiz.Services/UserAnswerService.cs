@@ -54,28 +54,18 @@ namespace Quiz.Services
 
         public int GetUserResult(string userId, int quizId)
         {
-            var originalQuiz = this.dbContext.Quizzes
+            var totalPoints = this.dbContext.Quizzes
                 .Include(x => x.Questions)
                 .ThenInclude(x => x.Answers)
-                .FirstOrDefault(x => x.Id == quizId);
+                .ThenInclude(x => x.UserAnswers)
+                .Where(x => x.Id == quizId &&
+                    x.UserAnswers.Any(x => x.IdentityUserId == userId))
+                .SelectMany(x => x.UserAnswers)
+                .Where(x => x.Answer.IsCorrect)
+                .Sum(x => x.Answer.Points);
 
-            var userAnswers = this.dbContext.UserAnswers
-                .Where(x => x.IdentityUserId == userId && x.QuizId == quizId)
-                .ToList();
 
-
-            int? totalPoints = 0;
-            foreach (var userAnswer in userAnswers)
-            {
-                totalPoints += originalQuiz.Questions
-                    .FirstOrDefault(x => x.Id == userAnswer.QuestionId)
-                    .Answers
-                    .Where(x => x.IsCorrect)
-                    .FirstOrDefault(x => x.Id == userAnswer.AnswerId)
-                    ?.Points;
-            }
-
-            return totalPoints.GetValueOrDefault();
+            return totalPoints;
         }
 
     }

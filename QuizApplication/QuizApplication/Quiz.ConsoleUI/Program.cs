@@ -28,20 +28,24 @@ namespace Quiz.ConsoleUI
             //var userAnswerService = serviceProvider.GetService<IUserAnswerService>();
             //userAnswerService.AddUserAnswer("598bab03-e71d-42ec-bba1-264fba7e632c", 1,1,1);
 
-            var quizService = serviceProvider.GetService<IQuizService>();
-           var quiz = quizService.GetQuizById(1);
+            //var quizService = serviceProvider.GetService<IQuizService>();
+            //var quiz = quizService.GetQuizById(1);
+            // Console.WriteLine(quiz.Title);
+            //foreach (var question in quiz.Questions)
+            //{
+            //    Console.WriteLine(question.Title);
 
-            Console.WriteLine(quiz.Title);
+            //    foreach (var answer in question.Answers)
+            //    {
+            //        Console.WriteLine(answer.Title);
+            //    }
+            //}
 
-            foreach (var question in quiz.Questions)
-            {
-                Console.WriteLine(question.Title);
 
-                foreach (var answer in question.Answers)
-                {
-                    Console.WriteLine(answer.Title);
-                }
-            }
+            var userAnswerService = serviceProvider.GetService<IUserAnswerService>();
+            var quiz = userAnswerService.GetUserResult("598bab03-e71d-42ec-bba1-264fba7e632c", 1);
+
+            Console.WriteLine(quiz);
 
         }
 

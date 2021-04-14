@@ -1672,6 +1672,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.5",
+          "Microsoft.EntityFrameworkCore": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
@@ -1696,6 +1697,19 @@
         },
         "runtime": {
           "bin/placeholder/Quiz.Models.dll": {}
+        }
+      },
+      "Quiz.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Quiz.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Quiz.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Quiz.Services.dll": {}
         }
       }
     }
@@ -6215,12 +6229,18 @@
       "type": "project",
       "path": "../Quiz.Models/Quiz.Models.csproj",
       "msbuildProject": "../Quiz.Models/Quiz.Models.csproj"
+    },
+    "Quiz.Services/1.0.0": {
+      "type": "project",
+      "path": "../Quiz.Services/Quiz.Services.csproj",
+      "msbuildProject": "../Quiz.Services/Quiz.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.AspNetCore.Identity.UI >= 5.0.5",
-      "Quiz.Data >= 1.0.0"
+      "Quiz.Data >= 1.0.0",
+      "Quiz.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6257,6 +6277,9 @@
           "projectReferences": {
             "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\QuizApplication\\QuizApplication\\Quiz.Data\\Quiz.Data.csproj": {
               "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\QuizApplication\\QuizApplication\\Quiz.Data\\Quiz.Data.csproj"
+            },
+            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\QuizApplication\\QuizApplication\\Quiz.Services\\Quiz.Services.csproj": {
+              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\QuizApplication\\QuizApplication\\Quiz.Services\\Quiz.Services.csproj"
             }
           }
         }

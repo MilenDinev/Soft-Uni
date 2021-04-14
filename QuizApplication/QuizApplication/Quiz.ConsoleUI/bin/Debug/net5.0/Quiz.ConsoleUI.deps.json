@@ -9,7 +9,8 @@
       "Quiz.ConsoleUI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.UI": "5.0.5",
-          "Quiz.Data": "1.0.0"
+          "Quiz.Data": "1.0.0",
+          "Quiz.Services": "1.0.0"
         },
         "runtime": {
           "Quiz.ConsoleUI.dll": {}
@@ -1058,6 +1059,7 @@
       "Quiz.Data/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.5",
+          "Microsoft.EntityFrameworkCore": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
@@ -1074,6 +1076,14 @@
         },
         "runtime": {
           "Quiz.Models.dll": {}
+        }
+      },
+      "Quiz.Services/1.0.0": {
+        "dependencies": {
+          "Quiz.Data": "1.0.0"
+        },
+        "runtime": {
+          "Quiz.Services.dll": {}
         }
       }
     }
@@ -1839,6 +1849,11 @@
       "sha512": ""
     },
     "Quiz.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Quiz.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

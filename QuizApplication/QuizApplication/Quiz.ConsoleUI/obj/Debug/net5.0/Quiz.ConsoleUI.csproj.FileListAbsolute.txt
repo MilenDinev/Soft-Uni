@@ -58,3 +58,5 @@ D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\ref\Quiz.ConsoleUI.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.pdb
 D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\obj\Debug\net5.0\Quiz.ConsoleUI.genruntimeconfig.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.Services.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\QuizApplication\QuizApplication\Quiz.ConsoleUI\bin\Debug\net5.0\Quiz.Services.pdb

@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Quiz.Data;
+using Quiz.Services;
+using System;
 using System.IO;
 
 namespace Quiz.ConsoleUI
@@ -15,11 +17,30 @@ namespace Quiz.ConsoleUI
             ConfigureServices(serviceCollection);
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            var dbContext = serviceProvider.GetService<ApplicationDbContext>();
+            //var quizService = serviceProvider.GetService<IQuizService>();
+            //quizService.Add("C# DB");
 
-            foreach (var item in dbContext.Users)
+            //var questionService = serviceProvider.GetService<IQuestionService>();
+            //Console.WriteLine(questionService.Add("What is Entity Framework Core", 1));            
+
+            //var answerService = serviceProvider.GetService<IAnswerService>();
+            //Console.WriteLine(answerService.Add("It is a ORM", 5, true, 1));            
+            //var userAnswerService = serviceProvider.GetService<IUserAnswerService>();
+            //userAnswerService.AddUserAnswer("598bab03-e71d-42ec-bba1-264fba7e632c", 1,1,1);
+
+            var quizService = serviceProvider.GetService<IQuizService>();
+           var quiz = quizService.GetQuizById(1);
+
+            Console.WriteLine(quiz.Title);
+
+            foreach (var question in quiz.Questions)
             {
-                System.Console.WriteLine(item.UserName);
+                Console.WriteLine(question.Title);
+
+                foreach (var answer in question.Answers)
+                {
+                    Console.WriteLine(answer.Title);
+                }
             }
 
         }
@@ -34,6 +55,11 @@ namespace Quiz.ConsoleUI
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddTransient<IQuizService, QuizService>();
+            services.AddTransient<IQuestionService, QuestionService>();
+            services.AddTransient<IAnswerService, AnswerService>();
+            services.AddTransient<IUserAnswerService, UserAnswerService>();
         }
     }
 }

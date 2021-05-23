@@ -1,31 +1,56 @@
-﻿using System.Collections.Generic;
-
-namespace _01.Chronometer
+﻿namespace _01.Chronometer
 {
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Threading.Tasks;
+
     public class Chronometer : IChronometer
     {
-        public string GetTime => throw new System.NotImplementedException();
+        private Stopwatch stopwatch = new Stopwatch();
+        public Chronometer()
+        {
+            this.Laps = new List<string>();
+        }
 
-        public List<string> Laps => throw new System.NotImplementedException();
+        public string GetTime => Time();
+
+        public List<string> Laps { get; }
 
         public string Lap()
         {
-            throw new System.NotImplementedException();
+
+            string lap = Time();
+            this.Laps.Add(lap);
+            return lap;
         }
 
         public void Reset()
         {
-            throw new System.NotImplementedException();
+            this.stopwatch.Restart();
         }
 
         public void Start()
         {
-            throw new System.NotImplementedException();
+            this.stopwatch.Start();
         }
 
         public void Stop()
         {
-            throw new System.NotImplementedException();
+            this.stopwatch.Stop();
+        }
+
+        private  string Time ()
+        {
+            long totalMiliseconds = this.stopwatch.ElapsedMilliseconds;
+            long totalSeconds = totalMiliseconds / 1000;
+            long totalMinutes = totalSeconds / 60;
+
+            string miliSeconds = (totalMiliseconds % 1000).ToString().PadLeft(4, '0');
+            string seconds = (totalSeconds % 60).ToString().PadLeft(2, '0'); ;
+            string minutes = (totalMinutes % 60).ToString().PadLeft(2, '0'); ;
+            string hours = (totalMinutes / 60).ToString().PadLeft(2, '0'); ;
+
+            return $"{hours}:{minutes}:{seconds}.{miliSeconds}";
         }
     }
 }

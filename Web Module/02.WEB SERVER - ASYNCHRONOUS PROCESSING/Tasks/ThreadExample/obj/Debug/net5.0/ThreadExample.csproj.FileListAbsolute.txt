@@ -1,0 +1,16 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ThreadExample.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ThreadExample.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ThreadExample.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ThreadExample.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ThreadExample.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ref\ThreadExample.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\bin\Debug\net5.0\ThreadExample.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ref\ThreadExample.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\ThreadExample\obj\Debug\net5.0\ThreadExample.genruntimeconfig.cache

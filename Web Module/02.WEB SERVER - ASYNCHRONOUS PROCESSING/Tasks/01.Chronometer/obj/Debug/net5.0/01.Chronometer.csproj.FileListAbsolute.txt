@@ -1,0 +1,16 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\01.Chronometer.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\01.Chronometer.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\01.Chronometer.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\01.Chronometer.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\01.Chronometer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\ref\01.Chronometer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\bin\Debug\net5.0\01.Chronometer.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\ref\01.Chronometer.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\01.Chronometer\obj\Debug\net5.0\01.Chronometer.genruntimeconfig.cache

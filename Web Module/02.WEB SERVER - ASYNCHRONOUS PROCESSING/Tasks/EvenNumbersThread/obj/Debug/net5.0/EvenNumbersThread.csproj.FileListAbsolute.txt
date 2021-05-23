@@ -1,0 +1,16 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\EvenNumbersThread.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\EvenNumbersThread.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\EvenNumbersThread.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\EvenNumbersThread.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\EvenNumbersThread.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\ref\EvenNumbersThread.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\bin\Debug\net5.0\EvenNumbersThread.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\ref\EvenNumbersThread.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\EvenNumbersThread\obj\Debug\net5.0\EvenNumbersThread.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\Tests.exe
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\Tests.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\Tests.runtimeconfig.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\Tests.runtimeconfig.dev.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\Tests.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\ref\Tests.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\bin\Debug\net5.0\Tests.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\ref\Tests.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\02.WEB SERVER - ASYNCHRONOUS PROCESSING\Tasks\Tests\obj\Debug\net5.0\Tests.genruntimeconfig.cache

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstates\\RealEstates.Models\\RealEstates.Models.csproj",
-      "projectName": "RealEstates.Models",
-      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstates\\RealEstates.Models\\RealEstates.Models.csproj",
+      "projectUniqueName": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Web Module\\02.WEB SERVER - ASYNCHRONOUS PROCESSING\\Tasks\\01.Chronometer\\01.Chronometer.csproj",
+      "projectName": "01.Chronometer",
+      "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Web Module\\02.WEB SERVER - ASYNCHRONOUS PROCESSING\\Tasks\\01.Chronometer\\01.Chronometer.csproj",
       "packagesPath": "C:\\Users\\MIlen\\.nuget\\packages\\",
-      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Databases module\\Entity Framework Core\\10.BEST PRACTICES AND ARCHITECTURE\\RealEstates\\RealEstates.Models\\obj\\",
+      "outputPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Web Module\\02.WEB SERVER - ASYNCHRONOUS PROCESSING\\Tasks\\01.Chronometer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

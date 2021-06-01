@@ -1,0 +1,12 @@
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\bin\Debug\net5.0\MyWebServer.Server.deps.json
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\bin\Debug\net5.0\MyWebServer.Server.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\bin\Debug\net5.0\ref\MyWebServer.Server.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\bin\Debug\net5.0\MyWebServer.Server.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.csprojAssemblyReference.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.AssemblyInfoInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.AssemblyInfo.cs
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.csproj.CoreCompileInputs.cache
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\ref\MyWebServer.Server.dll
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.Server\obj\Debug\net5.0\MyWebServer.Server.pdb

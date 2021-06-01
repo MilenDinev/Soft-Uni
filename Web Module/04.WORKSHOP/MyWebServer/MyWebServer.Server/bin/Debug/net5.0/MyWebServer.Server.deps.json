@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "MyWebServer/1.0.0": {
-        "dependencies": {
-          "MyWebServer.Server": "1.0.0"
-        },
-        "runtime": {
-          "MyWebServer.dll": {}
-        }
-      },
       "MyWebServer.Server/1.0.0": {
         "runtime": {
           "MyWebServer.Server.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "MyWebServer/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "MyWebServer.Server/1.0.0": {
       "type": "project",
       "serviceable": false,

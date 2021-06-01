@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace _01.Chronometer
@@ -9,6 +10,7 @@ namespace _01.Chronometer
         {
             Chronometer chronometer = new Chronometer();
             string command = Console.ReadLine();
+            int lapsCounter = 0;
             while (true)
             {
                 switch (command)
@@ -35,9 +37,16 @@ namespace _01.Chronometer
                 {
                     var laps = chronometer.Laps;
 
+                    if (!laps.Any())
+                    {
+                        Console.WriteLine("Laps: no laps");
+                    }
+
                     foreach (var lap in laps)
                     {
-                        Console.WriteLine(lap);
+                        
+                        Console.WriteLine($"{lapsCounter}. {lap}");
+                        lapsCounter++;
                     }
                 }
                 if (command == "exit")

@@ -36,7 +36,7 @@ namespace ThreadExample
 
 
 ;
-            int totalMiliseconds = 7100300;
+            int totalMiliseconds = 60000;
             int miliSeconds = totalMiliseconds % 1000;
             int totalSeconds = totalMiliseconds / 1000;
             int totalMinutes = totalSeconds / 60;

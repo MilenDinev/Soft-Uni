@@ -1,8 +1,9 @@
 ﻿namespace MyWebServer.Server.Http
 {
+    using System.Collections;
     using System.Collections.Generic;
 
-    public  class HttpHeaderCollection
+    public  class HttpHeaderCollection : IEnumerable<HttpHeader>
     {
         private readonly Dictionary<string, HttpHeader> headers;
         public HttpHeaderCollection()
@@ -18,5 +19,10 @@
             this.headers.Add(name, header);
         }
 
+        public IEnumerator<HttpHeader> GetEnumerator()
+            => this.headers.Values.GetEnumerator();
+
+        IEnumerator IEnumerable.GetEnumerator()
+            => this.GetEnumerator();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace MyWebServer.Server.Routi
+﻿namespace MyWebServer.Server.Routing
 {
     using MyWebServer.Server.Http;
 

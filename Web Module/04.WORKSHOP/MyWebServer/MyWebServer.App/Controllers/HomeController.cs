@@ -10,8 +10,10 @@
         {
         }
 
-        public HttpResponse Index() 
-            =>  Text("Hello from Milen");
+        public HttpResponse Index() =>  Text("Hello from Milen");
+
+        public HttpResponse LocalRedirect() => Redirect("/Cats");
+        public HttpResponse ToSoftUni() => Redirect("https://softuni.bg");
 
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace MyWebServer.App.Controllers
 {
     using MyWebServer.Http;
-    using MyWebServer.Responses;
+    using MyWebServer.Controllers;
 
     public class HomeController : Controller
     {

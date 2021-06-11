@@ -1,7 +1,8 @@
 ﻿namespace MyWebServer.App.Controllers
 {
+    using MyWebServer.Controllers;
     using MyWebServer.Http;
-    using MyWebServer.Responses;
+
 
     public class AnimalsController : Controller
     {

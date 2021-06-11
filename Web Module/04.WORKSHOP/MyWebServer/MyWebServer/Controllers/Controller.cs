@@ -1,4 +1,4 @@
-﻿namespace MyWebServer
+﻿namespace MyWebServer.Controllers
 {
     using MyWebServer.Http;
     using MyWebServer.Responses;

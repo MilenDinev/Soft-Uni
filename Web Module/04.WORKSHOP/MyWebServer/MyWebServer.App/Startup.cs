@@ -3,7 +3,7 @@
     using System.Threading.Tasks;
     using MyWebServer;
     using MyWebServer.App.Controllers;
-
+    using MyWebServer.Controllers;
 
     //localhost 127.0.0.1
 
@@ -11,9 +11,9 @@
     {
         static async Task Main(string[] args) 
             => await new HttpServer(routes => routes
-            .MapGet("/", request => new HomeController(request).Index())
-            .MapGet("/Cats", request => new AnimalsController(request).Cats())
-            .MapGet("/Dogs", request => new AnimalsController(request).Dogs()))
+            .MapGet<HomeController>("/", c => c.Index())
+            .MapGet<AnimalsController>("/Cats", c => c.Cats())
+            .MapGet<AnimalsController>("/Dogs", c => c.Dogs()))
             .Start();
 
 

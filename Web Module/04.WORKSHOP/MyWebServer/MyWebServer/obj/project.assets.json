@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "MyWebServer.Server/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/MyWebServer.Server.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyWebServer.Server.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "MyWebServer.Server/1.0.0": {
-      "type": "project",
-      "path": "../MyWebServer.Server/MyWebServer.Server.csproj",
-      "msbuildProject": "../MyWebServer.Server/MyWebServer.Server.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "MyWebServer.Server >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\MIlen\\.nuget\\packages\\": {},
@@ -57,11 +38,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Web Module\\04.WORKSHOP\\MyWebServer\\MyWebServer.Server\\MyWebServer.Server.csproj": {
-              "projectPath": "D:\\My Files\\SoftUni\\GIT\\Soft-Uni\\Web Module\\04.WORKSHOP\\MyWebServer\\MyWebServer.Server\\MyWebServer.Server.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

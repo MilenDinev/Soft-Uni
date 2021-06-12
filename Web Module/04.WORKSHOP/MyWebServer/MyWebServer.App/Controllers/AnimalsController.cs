@@ -25,18 +25,8 @@
             return Html(result);
         }
 
-        public HttpResponse Dogs()
-        {
-            const string nameKey = "Name";
-            var query = this.Request.Query;
-
-            var dogName = query.ContainsKey(nameKey)
-            ? query[nameKey]
-            : "the dogs";
-
-            var result = $"<h1>Hello from {dogName}!</h1>";
-
-            return Html(result);
-        }
+        public HttpResponse Dogs() => View(); 
+        public HttpResponse Bunnies() => View("Rabbits"); 
+        public HttpResponse Turtles() => View("/Animals/Wild/Turtles"); 
     }
 }

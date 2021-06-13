@@ -6,7 +6,7 @@
     {
 
         public TextResponse(string text) 
-            : base(text, HttpContenctType.PlainText)
+            : base(text, HttpContentType.PlainText)
         {
 
         }

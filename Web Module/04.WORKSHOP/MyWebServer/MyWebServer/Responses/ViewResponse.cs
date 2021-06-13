@@ -33,7 +33,7 @@
 
             var viewContent = File.ReadAllText(viewPath);
 
-            this.PrepareContent(viewContent, HttpContenctType.Html);
+            this.PrepareContent(viewContent, HttpContentType.Html);
 
         }
 
@@ -45,7 +45,7 @@
             var errorMessage = $"View '{viewPath}' was not found.";
 
 
-            this.PrepareContent(errorMessage, HttpContenctType.PlainText);
+            this.PrepareContent(errorMessage, HttpContentType.PlainText);
         }
     }
 }

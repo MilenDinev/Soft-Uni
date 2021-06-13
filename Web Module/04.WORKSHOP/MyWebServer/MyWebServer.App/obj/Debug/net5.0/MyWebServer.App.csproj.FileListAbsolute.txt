@@ -38,3 +38,4 @@ D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.
 D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.App\bin\Debug\net5.0\Views\Animals\Dogs.cshtml
 D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.App\bin\Debug\net5.0\Views\Animals\Wild\Turtles.cshtml
 D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.App\bin\Debug\net5.0\Views\Animals\Rabbits.cshtml
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer.App\bin\Debug\net5.0\Views\Cats\Create.cshtml

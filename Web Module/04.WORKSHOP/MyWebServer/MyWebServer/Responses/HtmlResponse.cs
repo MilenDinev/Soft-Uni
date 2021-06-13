@@ -5,7 +5,7 @@
     public class HtmlResponse : ContentResponse
     {
         public HtmlResponse(string html) 
-            : base(html, HttpContenctType.Html)
+            : base(html, HttpContentType.Html)
         {
         }
     }

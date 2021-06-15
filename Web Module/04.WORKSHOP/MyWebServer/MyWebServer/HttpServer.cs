@@ -25,7 +25,6 @@
             routingTableConfiguration(this.routingtable);
         }
 
-
         public HttpServer(int port, Action<IRoutingTable> routingTable) : this("127.0.0.1", port, routingTable)
         {
 
@@ -43,7 +42,6 @@
             Console.WriteLine($"Server started on port {port}...");
             Console.WriteLine("Listening for requests...");
 
-
             while (true)
             {
 
@@ -53,13 +51,22 @@
 
                 var requestText = await this.ReadRequest(networkStream);
 
-                Console.WriteLine(requestText);
+                try
+                {
+                    var request = HttpRequest.Parse(requestText);
 
-                var request = HttpRequest.Parse(requestText);
+                    var response = this.routingtable.ExecuteRequest(request);
 
-                var response = this.routingtable.ExecuteRequest(request);
+                    this.PrepareSession(request, response);
 
-                await WriteResponse(networkStream, response);
+                    this.LogPipeline(request, response);
+
+                    await WriteResponse(networkStream, response);
+                }
+                catch (Exception exception)
+                {
+                    await HandleError(networkStream, exception);
+                }
 
                 connection.Close();
             }
@@ -72,6 +79,7 @@
             var totalBytes = 0;
 
             var requestBuilder = new StringBuilder();
+
             do
             {
                 var bytesRead = await networkStream.ReadAsync(buffer, 0, bufferLenght);
@@ -87,14 +95,44 @@
             }
             while (networkStream.DataAvailable);
 
-
             return requestBuilder.ToString().TrimEnd();
         }
 
+        private void PrepareSession(HttpRequest request, HttpResponse response) 
+            => response.AddCookie(HttpSession.SessionCookieName, request.Session.Id);
 
-        private async Task WriteResponse(NetworkStream networkStream, HttpResponse response)
+        private async Task HandleError(NetworkStream networkStream, Exception exception)
         {
+            var errorMessage = $"{exception.Message} {Environment.NewLine} {exception.StackTrace}";
+            var errorResponse = HttpResponse.ForError(errorMessage);
 
+            await WriteResponse(networkStream, errorResponse);
+        }
+
+        private void LogPipeline(HttpRequest request, HttpResponse response)
+        {
+            var separator = new string('-', 50);
+            var log = new StringBuilder();
+
+            log.AppendLine();
+            log.AppendLine(separator);
+
+            log.AppendLine("Request");
+            log.AppendLine(request.ToString());
+
+            log.AppendLine();
+            log.AppendLine(separator);
+
+            log.AppendLine("RESPONSE");
+            log.AppendLine(response.ToString());
+
+            Console.WriteLine(log.ToString().TrimEnd());
+        }
+
+        private async Task WriteResponse(
+            NetworkStream networkStream, 
+            HttpResponse response)
+        {
             var responseBytes = Encoding.UTF8.GetBytes(response.ToString());
             await networkStream.WriteAsync(responseBytes);
         }

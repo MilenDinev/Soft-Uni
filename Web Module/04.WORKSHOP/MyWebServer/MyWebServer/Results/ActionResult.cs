@@ -28,7 +28,7 @@
         {
             foreach (var cookie in cookies.Values)
             {
-                this.AddCookies(cookie.Name, cookie.Value);
+                this.AddCookie(cookie.Name, cookie.Value);
             }
         }
     }

@@ -7,20 +7,28 @@
 
     public class HttpResponse
     {
+
         public HttpResponse(HttpStatusCode statusCode)
         {
             this.StatusCode = statusCode;
             this.AddHeader(HttpHeader.Server, "My Web Server");
             this.AddHeader(HttpHeader.Date, $"{DateTime.UtcNow:r}");
-
-
         }
+
         public HttpStatusCode StatusCode { get; protected set; }
 
         public IDictionary<string, HttpHeader> Headers { get; } = new Dictionary<string, HttpHeader>();
+
         public IDictionary<string, HttpCookie> Cookies { get; } = new Dictionary<string, HttpCookie>();
 
         public string Content { get; protected set; }
+
+        public static HttpResponse ForError(string message)
+            => new HttpResponse(HttpStatusCode.InternalServerError)
+            {
+                Content = message
+
+            };
 
         public void AddHeader(string name, string value)
         {
@@ -30,7 +38,7 @@
             this.Headers[name] = new HttpHeader(name, value);
         }
 
-        public void AddCookies(string name, string value)
+        public void AddCookie(string name, string value)
         {
             Guard.AgainstNull(name, nameof(name));
             Guard.AgainstNull(value, nameof(value));

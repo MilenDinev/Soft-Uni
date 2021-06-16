@@ -61,7 +61,7 @@
 
                           this.PrepareSession(request, response);
 
-                          this.LogPipeline(request, response);
+                          this.LogPipeline(requestText, response.ToString());
 
                           await WriteResponse(networkStream, response);
                       }
@@ -101,8 +101,14 @@
             return requestBuilder.ToString().TrimEnd();
         }
 
-        private void PrepareSession(HttpRequest request, HttpResponse response) 
-            => response.AddCookie(HttpSession.SessionCookieName, request.Session.Id);
+        private void PrepareSession(HttpRequest request, HttpResponse response)
+        {
+            if (request.Session.IsNew)
+            {
+                response.AddCookie(HttpSession.SessionCookieName, request.Session.Id);
+                request.Session.IsNew = false;
+            }
+        } 
 
         private async Task HandleError(NetworkStream networkStream, Exception exception)
         {
@@ -112,7 +118,7 @@
             await WriteResponse(networkStream, errorResponse);
         }
 
-        private void LogPipeline(HttpRequest request, HttpResponse response)
+        private void LogPipeline(string request, string response)
         {
             var separator = new string('-', 50);
             var log = new StringBuilder();
@@ -121,15 +127,15 @@
             log.AppendLine(separator);
 
             log.AppendLine("Request");
-            log.AppendLine(request.ToString());
+            log.AppendLine(request);
 
             log.AppendLine();
             log.AppendLine(separator);
 
             log.AppendLine("RESPONSE");
-            log.AppendLine(response.ToString());
+            log.AppendLine(response);
 
-            Console.WriteLine(log.ToString().TrimEnd());
+            Console.WriteLine(log);
         }
 
         private async Task WriteResponse(

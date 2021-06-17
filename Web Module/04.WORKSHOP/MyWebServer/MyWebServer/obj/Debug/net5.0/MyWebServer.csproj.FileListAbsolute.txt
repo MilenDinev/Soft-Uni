@@ -20,3 +20,4 @@ D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer\
 D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer\obj\Debug\net5.0\MyWebServer.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer\obj\Debug\net5.0\ref\MyWebServer.dll
 D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer\obj\Debug\net5.0\MyWebServer.pdb
+D:\My Files\SoftUni\GIT\Soft-Uni\Web Module\04.WORKSHOP\MyWebServer\MyWebServer\obj\Debug\net5.0\MyWebServer.csprojAssemblyReference.cache

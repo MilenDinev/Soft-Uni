@@ -7,7 +7,7 @@
 
     public abstract class Controller
     {
-        private const string UserSessionKey = "AuthenticatedUserId";
+        public const string UserSessionKey = "AuthenticatedUserId";
 
         protected Controller(HttpRequest request)
         {
@@ -18,6 +18,7 @@
         }
 
         protected HttpRequest Request { get; private init; }
+
         protected HttpResponse Response { get; private init; } = new HttpResponse(HttpStatusCode.OK);
 
         protected UserIdentity User { get; private set; }

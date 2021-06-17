@@ -137,7 +137,7 @@
 
                     var cookie = new HttpCookie(cookieName, cookieValue);
 
-                    cookieCollection.[cookieName] = cookie;
+                    cookieCollection[cookieName] = cookie;
                 }
             }
 

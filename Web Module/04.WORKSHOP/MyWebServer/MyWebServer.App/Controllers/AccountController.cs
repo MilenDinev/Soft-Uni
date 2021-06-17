@@ -11,9 +11,6 @@
         {
         }
 
-
-        
-
         public HttpResponse Login()
         {
             // user = this.db.Users.Find(username, password);
@@ -48,6 +45,11 @@
 
             return Text("User is not authenticated!");
         }
+
+        [Authorize]
+        public HttpResponse AuthorizationCheck() 
+            => Text($"Current user: {this.User.Id}");
+
 
         public HttpResponse CookiesCheck()
         {

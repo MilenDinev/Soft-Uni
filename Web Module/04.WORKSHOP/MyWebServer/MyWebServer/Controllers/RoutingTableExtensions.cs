@@ -17,7 +17,6 @@
             where TController : Controller
             => routingTable.MapGet(path, request => controllerFunction(CreateController<TController>(request)));
 
-
         public static IRoutingTable MapPost<TController>(
             this IRoutingTable routingTable,
             string path,
@@ -38,20 +37,34 @@
 
                 var responseFunction = GetResponseFunction(controllerAction);
 
-                routingTable.MapGet(path, responseFunction);
+                var httpMethod = HttpMethod.Get;
 
-                MapDefaultRoutes(routingTable, controllerName, actionName, responseFunction);
+                var httpMethodAttribute = controllerAction
+                    .GetCustomAttribute<HttpMethodAttribute>();
+
+                if (httpMethodAttribute != null)
+                {
+                    httpMethod = httpMethodAttribute.HttpMehod;
+                }
+
+                routingTable.Map(httpMethod, path, responseFunction);
+
+                MapDefaultRoutes(
+                    routingTable,
+                    httpMethod,
+                    controllerName,
+                    actionName,
+                    responseFunction);
             }
 
             return routingTable;
         }
 
-
         private static IEnumerable<MethodInfo> GetControllerActions()
             => Assembly
                 .GetEntryAssembly()
                 .GetExportedTypes()
-                .Where(t => !t.IsAbstract 
+                .Where(t => !t.IsAbstract
                     && t.IsAssignableTo(typeof(Controller))
                     && t.Name.EndsWith(nameof(Controller)))
                 .SelectMany(t => t.GetMethods(BindingFlags.Public | BindingFlags.Instance)
@@ -62,13 +75,18 @@
             MethodInfo controllerAction)
             => request =>
             {
+                if (!UserIsAuthorized(controllerAction, request.Session))
+                {
+                    return new HttpResponse(HttpStatusCode.Unauthorized);
+                }
+
                 var controllerInstance = CreateController(controllerAction.DeclaringType, request);
 
                 return (HttpResponse)controllerAction.Invoke(controllerInstance, Array.Empty<object>());
             };
 
         private static Controller CreateController(Type controller, HttpRequest request)
-            =>(Controller) Activator.CreateInstance(controller, new[] { request });
+            => (Controller)Activator.CreateInstance(controller, new[] { request });
 
         private static TController CreateController<TController>(HttpRequest request)
             where TController : Controller
@@ -76,6 +94,7 @@
 
         private static void MapDefaultRoutes(
             IRoutingTable routingTable,
+            HttpMethod httpMethod,
             string controllerName,
             string actionName,
             Func<HttpRequest, HttpResponse> responseFunction)
@@ -85,14 +104,38 @@
 
             if (actionName == defaultActionName)
             {
-                routingTable.MapGet($"/{controllerName}", responseFunction);
+                routingTable.Map(httpMethod, $"/{controllerName}", responseFunction);
 
                 if (controllerName == defaultControllerName)
                 {
-                    routingTable.MapGet("/", responseFunction);
+                    routingTable.Map(httpMethod, "/", responseFunction);
                 }
             }
         }
-  
+
+        private static bool UserIsAuthorized(
+            MethodInfo controllerAction,
+            HttpSession session)
+        {
+            var authorizationRequired = controllerAction
+                .DeclaringType
+                .GetCustomAttribute<AuthorizeAttribute>()
+                ?? controllerAction
+                .GetCustomAttribute<AuthorizeAttribute>();
+
+            if (authorizationRequired != null)
+            {
+                var userIsAuthorized = session.ContainsKey(Controller.UserSessionKey)
+                && session[Controller.UserSessionKey] != null;
+
+                if (!userIsAuthorized)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
     }
 }

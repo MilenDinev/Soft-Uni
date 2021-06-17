@@ -11,10 +11,12 @@
     {
         static async Task Main(string[] args) 
             => await new HttpServer(routes => routes
+            .MapStaticFiles()
             .MapGet<HomeController>("/", c => c.Index())
             .MapGet<HomeController>("/ToCats", c => c.LocalRedirect())
             .MapGet<HomeController>("/Softuni", c => c.ToSoftUni())
             .MapGet<HomeController>("/Error", c => c.Error())
+            .MapGet<HomeController>("/StaticFiles", c => c.StaticFiles())
             .MapGet<AccountController>("/Cookies", c => c.CookiesCheck())
             .MapGet<AccountController>("/Session", c => c.SessionCheck())
             .MapGet<AccountController>("/Login", c => c.Login())

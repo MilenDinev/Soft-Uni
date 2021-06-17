@@ -42,7 +42,7 @@
                 viewContent = this.PopulateModel(viewContent, model);
             }
 
-            this.PrepareContent(viewContent, HttpContentType.Html);
+            this.SetContent(viewContent, HttpContentType.Html);
 
         }
 
@@ -54,7 +54,7 @@
             var errorMessage = $"View '{viewPath}' was not found.";
 
 
-            this.PrepareContent(errorMessage, HttpContentType.PlainText);
+            this.SetContent(errorMessage, HttpContentType.PlainText);
         }
 
 
